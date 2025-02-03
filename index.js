@@ -1,51 +1,47 @@
-// Import des modules nécessaires
-import { Client, GatewayIntentBits, REST, Routes } from 'discord.js';
-import dotenv from 'dotenv';
+const { Client, GatewayIntentBits, Partials, REST, Routes, SlashCommandBuilder } = require('discord.js');
+const dotenv = require('dotenv');
 
 // Chargement des variables d'environnement
 dotenv.config();
 
-// Création du client Discord
+// Initialize Discord client
 const client = new Client({
     intents: [
+        GatewayIntentBits.DirectMessages,
         GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMessages,
         GatewayIntentBits.MessageContent,
     ],
+    partials: [Partials.Channel],
 });
 
 // Liste des commandes disponibles
 const commands = [
-    {
-        name: 'addcard',
-        description: 'Ajoute une carte à ta collection',
-        options: [{
-            name: 'id',
-            type: 3, // STRING
-            description: "L'ID de la carte",
-            required: true,
-        }]
-    },
-    {
-        name: 'init',
-        description: 'Initialise ta collection de cartes'
-    }
+    new SlashCommandBuilder()
+        .setName('addcard')
+        .setDescription('Ajoute une carte à ta collection')
+        .addStringOption(option =>
+            option.setName('id')
+                .setDescription("L'ID de la carte")
+                .setRequired(true)),
+    new SlashCommandBuilder()
+        .setName('init')
+        .setDescription('Initialise ta collection de cartes')
 ];
 
 // Enregistrement des commandes
-const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
-(async () => {
+const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);
+async function registerCommands() {
     try {
         console.log('Enregistrement des commandes...');
-        await rest.put(
-            Routes.applicationCommands(process.env.CLIENT_ID),
-            { body: commands }
-        );
-        console.log('Commandes enregistrées avec succès');
+        await rest.put(Routes.applicationCommands(process.env.CLIENT_ID, process.env.GUILD_ID
+        ), { body: commands });
+        console.log('Commandes enregistrées avec succès.');
     } catch (error) {
-        console.error(error);
+        console.error('Erreur lors de l\'enregistrement des commandes:', error);
     }
-})();
+}
+registerCommands();
 
 // Gestion des interactions
 client.on('interactionCreate', async interaction => {
