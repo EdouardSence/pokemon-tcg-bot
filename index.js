@@ -86,7 +86,7 @@ client.on('interactionCreate', async interaction => {
         await interaction.reply('Réinitialisation de ta collection en cours...');
     } else if (commandName === 'showcard') {
         const cardId = options.getString('id');
-        const filePath = `/home/uxy/pokemon-tcg-bot/assets/cards/${cardId}.webp`;
+        const filePath = `assets/cards/${cardId}.webp`;
         await interaction.reply({ files: [filePath] });
     }
 });
