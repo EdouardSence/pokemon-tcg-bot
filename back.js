@@ -19,18 +19,18 @@ app.use(cors());
 // 🔹 Récupérer tous les utilisateurs
 app.get('/users', async (req, res) => {
     try {
-        const users = await sql`SELECT * FROM "User"`;
+        const users = await sql`SELECT * FROM "user"`;
         res.json(users);
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
-    
+
 });
 
 // 🔹 Ajouter un utilisateur
 app.post('/users', async (req, res) => {
     const { nom } = req.body;
-    const { data, error } = await supabase.from('User').insert([{ nom }]).select();
+    const { data, error } = await supabase.from('user').insert([{ nom }]).select();
     if (error) return res.status(500).json({ error: error.message });
     res.json(data);
 });
