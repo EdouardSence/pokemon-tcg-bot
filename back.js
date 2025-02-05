@@ -2,6 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const postgres = require('postgres');
+const cards = require('./assets/cards.json');
 
 dotenv.config();
 
@@ -23,6 +24,22 @@ async function checkUserExists(id) {
     return users.length > 0;
 }
 
+async function getIdUserByDiscordId(id) {
+    const users = await sql`SELECT id FROM "user" WHERE id_discord = ${id}`;
+    return users[0].id;
+}
+
+// function who check if the card exists
+async function checkCardExists(id) {
+    // parcours cards et check si id existe
+    for (let i = 0; i < cards.length; i++) {
+        if (cards[i].id === id) {
+            return true;
+        }
+    }
+    return false;
+}
+
 // 🔹 Récupérer tous les utilisateurs
 app.get('/users', async (req, res) => {
     try {
@@ -36,10 +53,11 @@ app.get('/users', async (req, res) => {
 // 🔹 Ajouter un utilisateur besoin en parametre de id et de la langue
 app.post('/users', async (req, res) => {
     const { id, langue } = req.body;
-
-    if (checkUserExists(id)) { res.status(400).json({ error: 'Utilisateur déjà existant' }); return; }
+    langue = langue.toLowerCase();
+    if (await checkUserExists(id)) { res.status(400).json({ error: 'Utilisateur déjà existant' }); return; }
     if (!id) { res.status(400).json({ error: "l'id est requis" }); return; }
     if (!langue) { res.status(400).json({ error: 'la langue est requise' }); return; }
+    if(langue !== 'fr' && langue !== 'en') { res.status(400).json({ error: 'la langue doit être fr ou en' }); return; }
 
     try {
         const user = await sql`
@@ -99,6 +117,61 @@ app.get('/users/:id', async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 });
+
+// 🔹 Ajouter une given_card à un utilisateur. il faut en parametres l'id de la carte et l'id discord
+// on peut avoir une quantite, si celle-ci n'est pas renseignée, elle est à 1
+app.post('/users/:id/given_card/:id_card', async (req, res) => {
+    const { id,id_card } = req.params;
+    const { amount } = req.body;
+
+    if (!id) { res.status(400).json({ error: "l'id est requis" }); return; }
+    if (!id_card) { res.status(400).json({ error: 'l\'id de la carte est requis' }); return; }
+
+    let id_bd = await getIdUserByDiscordId(id);
+    if (!id_bd) { res.status(404).json({ error: 'Utilisateur non trouvé' }); return; }
+
+    console.log(checkCardExists(id_card))
+    if ( !await checkCardExists(id_card)) { res.status(404).json({ error: 'Carte non trouvée' }); return; }
+    
+    try {
+        const user = await sql`
+            INSERT INTO given_card (id_user, id_card ${amount ? ', amount' : ''})
+            VALUES (${id_bd}, ${id_card} ${amount ? `, ${amount}` : ''})
+            RETURNING *`;
+        res.status(201).json(user[0]);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+);
+
+
+// 🔹 Ajouter une receive_card à un utilisateur. il faut en parametres l'id de la carte et l'id discord
+// on peut avoir une quantite, si celle-ci n'est pas renseignée, elle est à 1
+app.post('/users/:id/receive_card/:id_card', async (req, res) => {
+    const { id,id_card } = req.params;
+    const { amount } = req.body;
+
+    if (!id) { res.status(400).json({ error: "l'id est requis" }); return; }
+    if (!id_card) { res.status(400).json({ error: 'l\'id de la carte est requis' }); return; }
+
+    let id_bd = await getIdUserByDiscordId(id);
+    if (!id_bd) { res.status(404).json({ error: 'Utilisateur non trouvé' }); return; }
+
+    console.log(checkCardExists(id_card))
+    if ( !await checkCardExists(id_card)) { res.status(404).json({ error: 'Carte non trouvée' }); return; }
+    
+    try {
+        const user = await sql`
+            INSERT INTO receive_card (id_user, id_card ${amount ? ', amount' : ''})
+            VALUES (${id_bd}, ${id_card} ${amount ? `, ${amount}` : ''})
+            RETURNING *`;
+        res.status(201).json(user[0]);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+);
 
 
 // Lancer le serveur
