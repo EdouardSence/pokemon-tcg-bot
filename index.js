@@ -31,14 +31,140 @@ const client = new Client({
 // Liste des commandes disponibles
 const commands = [
     new SlashCommandBuilder()
-        .setName("addcard")
-        .setDescription("Ajoute une carte à ta collection")
+        .setName("cards_to_give")
+        .setDescription("Ajoute une liste de cartes à donner")
         .addStringOption((option) =>
             option
-                .setName("id")
+                .setName("id1")
                 .setDescription("L'ID de la carte")
                 .setRequired(true)
                 .setAutocomplete(true)
+        )
+        .addIntegerOption((option) =>
+            option
+                .setName("amount1")
+                .setDescription("Le nombre de cartes")
+                .setRequired(true)
+        )
+        .addStringOption((option) =>
+            option
+                .setName("id2")
+                .setDescription("L'ID de la carte")
+                .setRequired(false)
+                .setAutocomplete(true)
+        )
+        .addIntegerOption((option) =>
+            option
+                .setName("amount2")
+                .setDescription("Le nombre de cartes")
+                .setRequired(false)
+        )
+        .addStringOption((option) =>
+            option
+                .setName("id3")
+                .setDescription("L'ID de la carte")
+                .setRequired(false)
+                .setAutocomplete(true)
+        )
+        .addIntegerOption((option) =>
+            option
+                .setName("amount3")
+                .setDescription("Le nombre de cartes")
+                .setRequired(false)
+        )
+        .addStringOption((option) =>
+            option
+                .setName("id4")
+                .setDescription("L'ID de la carte")
+                .setRequired(false)
+                .setAutocomplete(true)
+        )
+        .addIntegerOption((option) =>
+            option
+                .setName("amount4")
+                .setDescription("Le nombre de cartes")
+                .setRequired(false)
+        )
+        .addStringOption((option) =>
+            option
+                .setName("id5")
+                .setDescription("L'ID de la carte")
+                .setRequired(false)
+                .setAutocomplete(true)
+        )
+        .addIntegerOption((option) =>
+            option
+                .setName("amount5")
+                .setDescription("Le nombre de cartes")
+                .setRequired(false)
+        ),
+    new SlashCommandBuilder()
+        .setName("cards_wanted")
+        .setDescription("Ajoute une liste de cartes recherchées")
+        .addStringOption((option) =>
+            option
+                .setName("id1")
+                .setDescription("L'ID de la carte")
+                .setRequired(true)
+                .setAutocomplete(true)
+        )
+        .addIntegerOption((option) =>
+            option
+                .setName("amount1")
+                .setDescription("Le nombre de cartes")
+                .setRequired(true)
+        )
+        .addStringOption((option) =>
+            option
+                .setName("id2")
+                .setDescription("L'ID de la carte")
+                .setRequired(false)
+                .setAutocomplete(true)
+        )
+        .addIntegerOption((option) =>
+            option
+                .setName("amount2")
+                .setDescription("Le nombre de cartes")
+                .setRequired(false)
+        )
+        .addStringOption((option) =>
+            option
+                .setName("id3")
+                .setDescription("L'ID de la carte")
+                .setRequired(false)
+                .setAutocomplete(true)
+        )
+        .addIntegerOption((option) =>
+            option
+                .setName("amount3")
+                .setDescription("Le nombre de cartes")
+                .setRequired(false)
+        )
+        .addStringOption((option) =>
+            option
+                .setName("id4")
+                .setDescription("L'ID de la carte")
+                .setRequired(false)
+                .setAutocomplete(true)
+        )
+        .addIntegerOption((option) =>
+            option
+                .setName("amount4")
+                .setDescription("Le nombre de cartes")
+                .setRequired(false)
+        )
+        .addStringOption((option) =>
+            option
+                .setName("id5")
+                .setDescription("L'ID de la carte")
+                .setRequired(false)
+                .setAutocomplete(true)
+        )
+        .addIntegerOption((option) =>
+            option
+                .setName("amount5")
+                .setDescription("Le nombre de cartes")
+                .setRequired(false)
         ),
     new SlashCommandBuilder()
         .setName("init")
@@ -103,13 +229,11 @@ client.on("interactionCreate", async (interaction) => {
 
     // get user id
     const userId = interaction.user.id;
-
     try {
         // Vérifier si l'utilisateur est dans la base de données
         const response = await axios.get(API_URL + "users");
         const users = response.data;
-        const user = users.find((user) => user.id === userId);
-
+        const user = users.find((user) => user.id_discord === userId);
         if (!user) {
             // Création des boutons de sélection de langue
             const row = new ActionRowBuilder()
@@ -148,34 +272,27 @@ client.on("interactionCreate", async (interaction) => {
         return;
     }
 
-    let language = "";
 
-    if (interaction.customId === "lang_fr") {
-        language = "fr";
-    } else if (interaction.customId === "lang_en") {
-        language = "en";
-    } else {
-        return;
-    }
-
-    try {
-        // Envoyer la langue choisie à l'API
-        await axios.post(API_URL + "users", { id: userId, langue: language });
-
-        await interaction.update({
-            content: `Langue sélectionnée : ${language === "fr" ? "Français" : "English"}`,
-            components: []
-        });
-
-    } catch (error) {
-        console.error("Erreur lors de l'enregistrement de la langue :", error);
-        await interaction.reply({ content: "Erreur lors de l'enregistrement de votre langue.", ephemeral: true });
-    }
 
     switch (commandName) {
-        case "addcard":
-            const addCardId = options.getString("id");
-            await interaction.reply(`Carte ${addCardId} ajoutée à ta collection !`);
+        // fonction qui ajoute une carte à la collection (ajoute l'id de la carte dans la table given_cards)
+        case "cards_to_give":
+            // obtenir le nombre de paramètres saisis par l'utilisateur
+            const params = options.data;
+            for (let i = 1; i <= params.length / 2; i++) {
+                // verifier si l'id de la carte est valide
+                const addCardId = options.getString("id" + i);
+                if (!cards.find((card) => card.id === addCardId)) {
+                    await interaction.reply("Carte introuvable");
+                    return;
+                }
+                await interaction.reply(
+                    `Carte ${addCardId} ajoutée à ta collection !`
+                );
+                axios.post(API_URL + `users/${userId}/given_card/${addCardId}`, {
+                    amount: options.getInteger("amount" + i)
+                });
+            }
             break;
         case "init":
             await interaction.reply("Initialisation de ta collection en cours...");
@@ -211,7 +328,7 @@ client.on("interactionCreate", async (interaction) => {
             axios.get(API_URL + "users").then((response) => {
                 const users = response.data;
                 interaction.reply(
-                    `Liste des utilisateurs : ${users.map((user) => user.nom).join(", ")}`
+                    `Liste des utilisateurs : ${users.map((user) => user.name).join(", ")}`
                 );
             });
             break;
@@ -226,7 +343,7 @@ async function autocomplete(interaction) {
         const cardIds = cards.map((card) => card.id);
 
         const focusedOption = interaction.options.getFocused(true);
-        if (focusedOption.name === "id") {
+        if (focusedOption.name === "id" || focusedOption.name.startsWith("id")) {
             const filtered = cardIds.filter((id) =>
                 id.startsWith(focusedOption.value)
             );
