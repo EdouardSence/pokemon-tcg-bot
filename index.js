@@ -31,75 +31,65 @@ const client = new Client({
 // Liste des commandes disponibles
 const commands = [
     new SlashCommandBuilder()
-        .setName("cards_to_give")
+        .setName("add_cards_to_offer")
         .setDescription("Ajoute une liste de cartes à donner")
-        .addStringOption((option) =>
-            option
-                .setName("id1")
-                .setDescription("L'ID de la carte")
+        .addStringOption(option =>
+            option.setName("id1")
+                .setDescription("ID de la carte 1")
                 .setRequired(true)
                 .setAutocomplete(true)
         )
-        .addIntegerOption((option) =>
-            option
-                .setName("amount1")
-                .setDescription("Le nombre de cartes")
-                .setRequired(true)
+        .addIntegerOption(option =>
+            option.setName("amount1")
+                .setDescription("Nombre d'exemplaires (par défaut: 1)")
+                .setRequired(false)
         )
-        .addStringOption((option) =>
-            option
-                .setName("id2")
-                .setDescription("L'ID de la carte")
+        .addStringOption(option =>
+            option.setName("id2")
+                .setDescription("ID de la carte 2")
                 .setRequired(false)
                 .setAutocomplete(true)
         )
-        .addIntegerOption((option) =>
-            option
-                .setName("amount2")
-                .setDescription("Le nombre de cartes")
+        .addIntegerOption(option =>
+            option.setName("amount2")
+                .setDescription("Nombre d'exemplaires (par défaut: 1)")
                 .setRequired(false)
         )
-        .addStringOption((option) =>
-            option
-                .setName("id3")
-                .setDescription("L'ID de la carte")
+        .addStringOption(option =>
+            option.setName("id3")
+                .setDescription("ID de la carte 3")
                 .setRequired(false)
                 .setAutocomplete(true)
         )
-        .addIntegerOption((option) =>
-            option
-                .setName("amount3")
-                .setDescription("Le nombre de cartes")
+        .addIntegerOption(option =>
+            option.setName("amount3")
+                .setDescription("Nombre d'exemplaires (par défaut: 1)")
                 .setRequired(false)
         )
-        .addStringOption((option) =>
-            option
-                .setName("id4")
-                .setDescription("L'ID de la carte")
+        .addStringOption(option =>
+            option.setName("id4")
+                .setDescription("ID de la carte 4")
                 .setRequired(false)
                 .setAutocomplete(true)
         )
-        .addIntegerOption((option) =>
-            option
-                .setName("amount4")
-                .setDescription("Le nombre de cartes")
+        .addIntegerOption(option =>
+            option.setName("amount4")
+                .setDescription("Nombre d'exemplaires (par défaut: 1)")
                 .setRequired(false)
         )
-        .addStringOption((option) =>
-            option
-                .setName("id5")
-                .setDescription("L'ID de la carte")
+        .addStringOption(option =>
+            option.setName("id5")
+                .setDescription("ID de la carte 5")
                 .setRequired(false)
                 .setAutocomplete(true)
         )
-        .addIntegerOption((option) =>
-            option
-                .setName("amount5")
-                .setDescription("Le nombre de cartes")
+        .addIntegerOption(option =>
+            option.setName("amount5")
+                .setDescription("Nombre d'exemplaires (par défaut: 1)")
                 .setRequired(false)
         ),
     new SlashCommandBuilder()
-        .setName("cards_wanted")
+        .setName("add_cards_wanted")
         .setDescription("Ajoute une liste de cartes recherchées")
         .addStringOption((option) =>
             option
@@ -166,6 +156,12 @@ const commands = [
                 .setDescription("Le nombre de cartes")
                 .setRequired(false)
         ),
+    new SlashCommandBuilder()
+        .setName("show_cards_to_offer")
+        .setDescription("Affiche la liste des cartes à donner"),
+    new SlashCommandBuilder()
+        .setName("show_cards_wanted")
+        .setDescription("Affiche la liste des cartes recherchées"),
     new SlashCommandBuilder()
         .setName("init")
         .setDescription("Initialise ta collection de cartes"),
@@ -275,24 +271,50 @@ client.on("interactionCreate", async (interaction) => {
 
 
     switch (commandName) {
-        // fonction qui ajoute une carte à la collection (ajoute l'id de la carte dans la table given_cards)
-        case "cards_to_give":
-            // obtenir le nombre de paramètres saisis par l'utilisateur
-            const params = options.data;
-            for (let i = 1; i <= params.length / 2; i++) {
-                // verifier si l'id de la carte est valide
-                const addCardId = options.getString("id" + i);
-                if (!cards.find((card) => card.id === addCardId)) {
-                    await interaction.reply("Carte introuvable");
-                    return;
-                }
-                await interaction.reply(
-                    `Carte ${addCardId} ajoutée à ta collection !`
-                );
-                axios.post(API_URL + `users/${userId}/given_card/${addCardId}`, {
-                    amount: options.getInteger("amount" + i)
-                });
+        // fonction qui ajoute une carte à la collection (ajoute l'id de la carte dans la table cards_to_offer)
+        case "add_cards_to_offer":
+            await interaction.deferReply({ ephemeral: true });
+
+            let cardsList = [];
+            for (let i = 1; i <= 5; i++) {
+                const cardId = options.getString(`id${i}`);
+                if (!cardId) continue; // Si aucun ID n'est fourni, on passe
+
+                const amount = options.getInteger(`amount${i}`) || 1; // Si amount n'est pas défini, mettre 1 par défaut
+                cardsList.push({ id: cardId, amount });
             }
+
+            if (cardsList.length === 0) {
+                await interaction.editReply("Tu dois sélectionner au moins une carte !");
+                return;
+            }
+
+            // Vérifier si les cartes existent
+            const invalidCards = cardsList.filter(c => !cards.find(card => card.id === c.id));
+            if (invalidCards.length > 0) {
+                await interaction.editReply(`Cartes introuvables : ${invalidCards.map(c => c.id).join(", ")}`);
+                return;
+            }
+
+            // Récupérer l'ID de l'utilisateur
+            const userId = interaction.user.id;
+
+            try {
+                const requests = cardsList.map(({ id, amount }) =>
+                    axios.post(`${API_URL}users/${userId}/card_to_offer/${id}`, { amount })
+                );
+
+                await Promise.all(requests);
+                const addedCards = cardsList.map(({ id, amount }) => `- Carte ${id} (x${amount})`).join("\n");
+                await interaction.editReply(`Cartes ajoutées à ta collection :\n${addedCards}`);
+            } catch (error) {
+                console.error(error);
+                await interaction.editReply("Une erreur est survenue lors de l'ajout des cartes.");
+            }
+            break;
+
+        case "show_cards_to_give":
+            await interaction.reply("Not implemented yet");
             break;
         case "init":
             await interaction.reply("Initialisation de ta collection en cours...");
