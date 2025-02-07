@@ -40,6 +40,38 @@ async function checkCardExists(id) {
     return false;
 }
 
+
+// autocompletion pour trouver les cartes
+app.get('/cards/autocomplete', async (req, res) => {
+    let { id, name, language } = req.body;
+    try {
+    if (!language) { res.status(400).json({ error: "la langue est requise" }); return; }
+    language = language.toLowerCase();
+    if (language !== 'fr' && language !== 'en') { res.status(400).json({ error: "la langue doit être fr ou en" }); return; }
+
+    if (!id && !name) { res.status(400).json({ error: "l'id ou le nom est requis" }); return; }
+    if(!name) name = '';
+    if(!id) id = '';
+
+    let cardsName = [];
+    for (let i = 0; i < cards.length; i++) {
+        if (cards[i][language].name.includes(name) && cards[i].id.includes(id)) {
+            cardsName.push(cards[i]);
+        }
+        if (cardsName.length === 10) {
+            break;
+        }
+    }
+    let cardsNameId = [];
+    for (let i = 0; i < cardsName.length; i++) {
+        cardsNameId.push({ id: cardsName[i].id, name: cardsName[i][language].name });
+    }
+    res.json(cardsNameId);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
 // 🔹 Récupérer tous les utilisateurs
 app.get('/users', async (req, res) => {
     try {
@@ -53,10 +85,13 @@ app.get('/users', async (req, res) => {
 // 🔹 Ajouter un utilisateur besoin en parametre de id et de la language
 app.post('/users', async (req, res) => {
     const { id, language } = req.body;
-    language = language.toLowerCase();
-    if (await checkUserExists(id)) { res.status(400).json({ error: 'Utilisateur déjà existant' }); return; }
+
     if (!id) { res.status(400).json({ error: "l'id est requis" }); return; }
     if (!language) { res.status(400).json({ error: 'la language est requise' }); return; }
+
+    if (await checkUserExists(id)) { res.status(400).json({ error: 'Utilisateur déjà existant' }); return; }
+
+    language = language.toLowerCase();
     if(language !== 'fr' && language !== 'en') { res.status(400).json({ error: 'la language doit être fr ou en' }); return; }
 
     try {
@@ -125,13 +160,9 @@ app.post('/users/:id/card_wanted/:card_id', async (req, res) => {
     let { amount } = req.body;
 
     if (!amount || amount === 0) amount = 1;
-
     if (!id) { res.status(400).json({ error: "l'id est requis" }); return; }
     if (!card_id) { res.status(400).json({ error: 'l\'id de la carte est requis' }); return; }
-
-    let id_bd = await getIdUserByDiscordId(id);
-    if (!id_bd) { res.status(404).json({ error: 'Utilisateur non trouvé' }); return; }
-
+    if (!await getIdUserByDiscordId(id)) { res.status(404).json({ error: 'Utilisateur non trouvé' }); return; }
     if ( !await checkCardExists(card_id)) { res.status(404).json({ error: 'Carte non trouvée' }); return; }
     
     try {
@@ -158,10 +189,7 @@ app.post('/users/:id/card_to_offer/:card_id', async (req, res) => {
 
     if (!id) { res.status(400).json({ error: "l'id est requis" }); return; }
     if (!card_id) { res.status(400).json({ error: 'l\'id de la carte est requis' }); return; }
-
-    let id_bd = await getIdUserByDiscordId(id);
-    if (!id_bd) { res.status(404).json({ error: 'Utilisateur non trouvé' }); return; }
-
+    if (!await getIdUserByDiscordId(id)) { res.status(404).json({ error: 'Utilisateur non trouvé' }); return; }
     if ( !await checkCardExists(card_id)) { res.status(404).json({ error: 'Carte non trouvée' }); return; }
     
     try {
