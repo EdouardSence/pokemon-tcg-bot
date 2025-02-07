@@ -40,6 +40,38 @@ async function checkCardExists(id) {
     return false;
 }
 
+
+// autocompletion pour trouver les cartes
+app.get('/cards/autocomplete', async (req, res) => {
+    let { id, name, language } = req.body;
+    try {
+    if (!language) { res.status(400).json({ error: "la langue est requise" }); return; }
+    language = language.toLowerCase();
+    if (language !== 'fr' && language !== 'en') { res.status(400).json({ error: "la langue doit être fr ou en" }); return; }
+
+    if (!id && !name) { res.status(400).json({ error: "l'id ou le nom est requis" }); return; }
+    if(!name) name = '';
+    if(!id) id = '';
+
+    let cardsName = [];
+    for (let i = 0; i < cards.length; i++) {
+        if (cards[i][language].name.includes(name) && cards[i].id.includes(id)) {
+            cardsName.push(cards[i]);
+        }
+        if (cardsName.length === 10) {
+            break;
+        }
+    }
+    let cardsNameId = [];
+    for (let i = 0; i < cardsName.length; i++) {
+        cardsNameId.push({ id: cardsName[i].id, name: cardsName[i][language].name });
+    }
+    res.json(cardsNameId);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
 // 🔹 Récupérer tous les utilisateurs
 app.get('/users', async (req, res) => {
     try {
@@ -50,19 +82,22 @@ app.get('/users', async (req, res) => {
     }
 });
 
-// 🔹 Ajouter un utilisateur besoin en parametre de id et de la langue
+// 🔹 Ajouter un utilisateur besoin en parametre de id et de la language
 app.post('/users', async (req, res) => {
-    const { id, langue } = req.body;
-    langue = langue.toLowerCase();
-    if (await checkUserExists(id)) { res.status(400).json({ error: 'Utilisateur déjà existant' }); return; }
+    const { id, language } = req.body;
+
     if (!id) { res.status(400).json({ error: "l'id est requis" }); return; }
-    if (!langue) { res.status(400).json({ error: 'la langue est requise' }); return; }
-    if(langue !== 'fr' && langue !== 'en') { res.status(400).json({ error: 'la langue doit être fr ou en' }); return; }
+    if (!language) { res.status(400).json({ error: 'la language est requise' }); return; }
+
+    if (await checkUserExists(id)) { res.status(400).json({ error: 'Utilisateur déjà existant' }); return; }
+
+    language = language.toLowerCase();
+    if(language !== 'fr' && language !== 'en') { res.status(400).json({ error: 'la language doit être fr ou en' }); return; }
 
     try {
         const user = await sql`
-            INSERT INTO "user" (id_discord, langue)
-            VALUES (${id}, ${langue})
+            INSERT INTO "user" (id_discord, language)
+            VALUES (${id}, ${language})
             RETURNING *`;
         res.status(201).json(user[0]);
     } catch (error) {
@@ -84,19 +119,19 @@ app.get('/users/:id', async (req, res) => {
         const users = await sql`
             SELECT 
                 u.id_discord, 
-                u.langue,
-                json_agg(DISTINCT gc.id_card) AS given_card,
-                json_agg(DISTINCT rc.id_card) AS receive_card
+                u.language,
+                json_agg(DISTINCT gc.card_id) AS cards_to_offer,
+                json_agg(DISTINCT rc.card_id) AS cards_wanted
             FROM 
                 "user" u
             LEFT JOIN 
-                given_card gc ON u.id = gc.id_user
+                cards_to_offer gc ON u.id = gc.id_user
             LEFT JOIN 
-                receive_card rc ON u.id = rc.id_user
+                cards_wanted rc ON u.id = rc.id_user
             WHERE 
                 u.id_discord = ${id} 
             GROUP BY 
-                u.id_discord, u.langue;
+                u.id_discord, u.language;
         `;
 
         // Vérification si l'utilisateur existe
@@ -108,9 +143,9 @@ app.get('/users/:id', async (req, res) => {
         // Renvoi des résultats sous le format JSON attendu
         var user = {
             id_discord: users[0].id_discord,
-            langue: users[0].langue,
-            given_card: users[0].given_card[0] === null ? [] : users[0].given_card,
-            receive_card: users[0].receive_card[0] === null ? [] : users[0].receive_card
+            language: users[0].language,
+            cards_to_offer: users[0].cards_to_offer[0] === null ? [] : users[0].cards_to_offer,
+            cards_wanted: users[0].cards_wanted[0] === null ? [] : users[0].cards_wanted
         }
         res.json(user);
     } catch (error) {
@@ -118,25 +153,22 @@ app.get('/users/:id', async (req, res) => {
     }
 });
 
-// 🔹 Ajouter une given_card à un utilisateur. il faut en parametres l'id de la carte et l'id discord
+// 🔹 Ajouter une cards_to_offer à un utilisateur. il faut en parametres l'id de la carte et l'id discord
 // on peut avoir une quantite, si celle-ci n'est pas renseignée, elle est à 1
-app.post('/users/:id/given_card/:id_card', async (req, res) => {
-    const { id,id_card } = req.params;
-    const { amount } = req.body;
+app.post('/users/:id/card_wanted/:card_id', async (req, res) => {
+    const { id,card_id } = req.params;
+    let { amount } = req.body;
 
+    if (!amount || amount === 0) amount = 1;
     if (!id) { res.status(400).json({ error: "l'id est requis" }); return; }
-    if (!id_card) { res.status(400).json({ error: 'l\'id de la carte est requis' }); return; }
-
-    let id_bd = await getIdUserByDiscordId(id);
-    if (!id_bd) { res.status(404).json({ error: 'Utilisateur non trouvé' }); return; }
-
-    console.log(checkCardExists(id_card))
-    if ( !await checkCardExists(id_card)) { res.status(404).json({ error: 'Carte non trouvée' }); return; }
+    if (!card_id) { res.status(400).json({ error: 'l\'id de la carte est requis' }); return; }
+    if (!await getIdUserByDiscordId(id)) { res.status(404).json({ error: 'Utilisateur non trouvé' }); return; }
+    if ( !await checkCardExists(card_id)) { res.status(404).json({ error: 'Carte non trouvée' }); return; }
     
     try {
         const user = await sql`
-            INSERT INTO given_card (id_user, id_card ${amount ? ', amount' : ''})
-            VALUES (${id_bd}, ${id_card} ${amount ? `, ${amount}` : ''})
+            INSERT INTO cards_to_offer (id_user, card_id, amount)
+            VALUES (${id_bd}, ${card_id}, ${amount})
             RETURNING *`;
         res.status(201).json(user[0]);
     } catch (error) {
@@ -146,25 +178,24 @@ app.post('/users/:id/given_card/:id_card', async (req, res) => {
 );
 
 
-// 🔹 Ajouter une receive_card à un utilisateur. il faut en parametres l'id de la carte et l'id discord
+// 🔹 Ajouter une cards_wanted à un utilisateur. il faut en parametres l'id de la carte et l'id discord
 // on peut avoir une quantite, si celle-ci n'est pas renseignée, elle est à 1
-app.post('/users/:id/receive_card/:id_card', async (req, res) => {
-    const { id,id_card } = req.params;
-    const { amount } = req.body;
+app.post('/users/:id/card_to_offer/:card_id', async (req, res) => {
+    const { id,card_id } = req.params;
+    let { amount } = req.body;
+
+    // if amount is null, not defined, or 0, set it to 1
+    if (!amount || amount === 0) amount = 1;
 
     if (!id) { res.status(400).json({ error: "l'id est requis" }); return; }
-    if (!id_card) { res.status(400).json({ error: 'l\'id de la carte est requis' }); return; }
-
-    let id_bd = await getIdUserByDiscordId(id);
-    if (!id_bd) { res.status(404).json({ error: 'Utilisateur non trouvé' }); return; }
-
-    console.log(checkCardExists(id_card))
-    if ( !await checkCardExists(id_card)) { res.status(404).json({ error: 'Carte non trouvée' }); return; }
+    if (!card_id) { res.status(400).json({ error: 'l\'id de la carte est requis' }); return; }
+    if (!await getIdUserByDiscordId(id)) { res.status(404).json({ error: 'Utilisateur non trouvé' }); return; }
+    if ( !await checkCardExists(card_id)) { res.status(404).json({ error: 'Carte non trouvée' }); return; }
     
     try {
         const user = await sql`
-            INSERT INTO receive_card (id_user, id_card ${amount ? ', amount' : ''})
-            VALUES (${id_bd}, ${id_card} ${amount ? `, ${amount}` : ''})
+            INSERT INTO cards_wanted (id_user, card_id, amount)
+            VALUES (${id_bd}, ${card_id}, ${amount})
             RETURNING *`;
         res.status(201).json(user[0]);
     } catch (error) {
