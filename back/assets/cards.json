@@ -6,7 +6,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-001.webp",
@@ -26,7 +26,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-002.webp",
@@ -46,7 +46,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-003.webp",
@@ -66,7 +66,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-004.webp",
@@ -86,7 +86,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-005.webp",
@@ -106,7 +106,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-006.webp",
@@ -126,7 +126,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-007.webp",
@@ -146,7 +146,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-008.webp",
@@ -166,7 +166,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-009.webp",
@@ -186,7 +186,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-010.webp",
@@ -206,7 +206,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-011.webp",
@@ -226,7 +226,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-012.webp",
@@ -246,7 +246,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-013.webp",
@@ -266,7 +266,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-014.webp",
@@ -286,7 +286,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-015.webp",
@@ -306,7 +306,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-016.webp",
@@ -326,7 +326,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-017.webp",
@@ -346,7 +346,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-018.webp",
@@ -366,7 +366,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-019.webp",
@@ -386,7 +386,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-020.webp",
@@ -406,7 +406,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-021.webp",
@@ -426,7 +426,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-022.webp",
@@ -446,7 +446,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-023.webp",
@@ -466,7 +466,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-024.webp",
@@ -486,7 +486,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-025.webp",
@@ -506,7 +506,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-026.webp",
@@ -526,7 +526,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-027.webp",
@@ -546,7 +546,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-028.webp",
@@ -566,7 +566,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-029.webp",
@@ -586,7 +586,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-030.webp",
@@ -606,7 +606,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-031.webp",
@@ -626,7 +626,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-032.webp",
@@ -646,7 +646,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-033.webp",
@@ -666,7 +666,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-034.webp",
@@ -686,7 +686,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-035.webp",
@@ -706,7 +706,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-036.webp",
@@ -726,7 +726,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-037.webp",
@@ -746,7 +746,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-038.webp",
@@ -766,7 +766,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-039.webp",
@@ -786,7 +786,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-040.webp",
@@ -806,7 +806,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-041.webp",
@@ -826,7 +826,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-042.webp",
@@ -846,7 +846,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-043.webp",
@@ -866,7 +866,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-044.webp",
@@ -886,7 +886,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-045.webp",
@@ -906,7 +906,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-046.webp",
@@ -926,7 +926,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-047.webp",
@@ -946,7 +946,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-048.webp",
@@ -966,7 +966,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-049.webp",
@@ -986,7 +986,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-050.webp",
@@ -1006,7 +1006,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-051.webp",
@@ -1026,7 +1026,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-052.webp",
@@ -1046,7 +1046,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-053.webp",
@@ -1066,7 +1066,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-054.webp",
@@ -1086,7 +1086,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-055.webp",
@@ -1106,7 +1106,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-056.webp",
@@ -1126,7 +1126,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-057.webp",
@@ -1146,7 +1146,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-058.webp",
@@ -1166,7 +1166,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-059.webp",
@@ -1186,7 +1186,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-060.webp",
@@ -1206,7 +1206,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-061.webp",
@@ -1226,7 +1226,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-062.webp",
@@ -1246,7 +1246,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-063.webp",
@@ -1266,7 +1266,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-064.webp",
@@ -1286,7 +1286,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-065.webp",
@@ -1306,7 +1306,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-066.webp",
@@ -1326,7 +1326,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-067.webp",
@@ -1346,7 +1346,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-068.webp",
@@ -1366,7 +1366,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-069.webp",
@@ -1386,7 +1386,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-070.webp",
@@ -1406,7 +1406,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-071.webp",
@@ -1426,7 +1426,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-072.webp",
@@ -1446,7 +1446,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-073.webp",
@@ -1466,7 +1466,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-074.webp",
@@ -1486,7 +1486,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-075.webp",
@@ -1506,7 +1506,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-076.webp",
@@ -1526,7 +1526,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-077.webp",
@@ -1546,7 +1546,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-078.webp",
@@ -1566,7 +1566,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-079.webp",
@@ -1586,7 +1586,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-080.webp",
@@ -1606,7 +1606,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-081.webp",
@@ -1626,7 +1626,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-082.webp",
@@ -1646,7 +1646,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-083.webp",
@@ -1666,7 +1666,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-084.webp",
@@ -1686,7 +1686,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-085.webp",
@@ -1706,7 +1706,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-086.webp",
@@ -1726,7 +1726,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-087.webp",
@@ -1746,7 +1746,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-088.webp",
@@ -1766,7 +1766,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-089.webp",
@@ -1786,7 +1786,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-090.webp",
@@ -1806,7 +1806,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-091.webp",
@@ -1826,7 +1826,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-092.webp",
@@ -1846,7 +1846,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-093.webp",
@@ -1866,7 +1866,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-094.webp",
@@ -1886,7 +1886,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-095.webp",
@@ -1906,7 +1906,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-096.webp",
@@ -1926,7 +1926,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-097.webp",
@@ -1946,7 +1946,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-098.webp",
@@ -1966,7 +1966,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-099.webp",
@@ -1986,7 +1986,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-100.webp",
@@ -2006,7 +2006,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-101.webp",
@@ -2026,7 +2026,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-102.webp",
@@ -2046,7 +2046,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-103.webp",
@@ -2066,7 +2066,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-104.webp",
@@ -2086,7 +2086,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-105.webp",
@@ -2106,7 +2106,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-106.webp",
@@ -2126,7 +2126,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-107.webp",
@@ -2146,7 +2146,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-108.webp",
@@ -2166,7 +2166,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-109.webp",
@@ -2186,7 +2186,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-110.webp",
@@ -2206,7 +2206,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-111.webp",
@@ -2226,7 +2226,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-112.webp",
@@ -2246,7 +2246,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-113.webp",
@@ -2266,7 +2266,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-114.webp",
@@ -2286,7 +2286,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-115.webp",
@@ -2306,7 +2306,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-116.webp",
@@ -2326,7 +2326,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-117.webp",
@@ -2346,7 +2346,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-118.webp",
@@ -2366,7 +2366,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-119.webp",
@@ -2386,7 +2386,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-120.webp",
@@ -2406,7 +2406,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-121.webp",
@@ -2426,7 +2426,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-122.webp",
@@ -2446,7 +2446,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-123.webp",
@@ -2466,7 +2466,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-124.webp",
@@ -2486,7 +2486,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-125.webp",
@@ -2506,7 +2506,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-126.webp",
@@ -2526,7 +2526,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-127.webp",
@@ -2546,7 +2546,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-128.webp",
@@ -2566,7 +2566,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-129.webp",
@@ -2586,7 +2586,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-130.webp",
@@ -2606,7 +2606,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-131.webp",
@@ -2626,7 +2626,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-132.webp",
@@ -2646,7 +2646,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-133.webp",
@@ -2666,7 +2666,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-134.webp",
@@ -2686,7 +2686,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-135.webp",
@@ -2706,7 +2706,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-136.webp",
@@ -2726,7 +2726,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-137.webp",
@@ -2746,7 +2746,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-138.webp",
@@ -2766,7 +2766,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-139.webp",
@@ -2786,7 +2786,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-140.webp",
@@ -2806,7 +2806,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-141.webp",
@@ -2826,7 +2826,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-142.webp",
@@ -2846,7 +2846,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-143.webp",
@@ -2866,7 +2866,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-144.webp",
@@ -2886,7 +2886,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-145.webp",
@@ -2906,7 +2906,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-146.webp",
@@ -2926,7 +2926,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-147.webp",
@@ -2946,7 +2946,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-148.webp",
@@ -2966,7 +2966,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-149.webp",
@@ -2986,7 +2986,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-150.webp",
@@ -3006,7 +3006,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-151.webp",
@@ -3026,7 +3026,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-152.webp",
@@ -3046,7 +3046,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-153.webp",
@@ -3066,7 +3066,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-154.webp",
@@ -3086,7 +3086,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-155.webp",
@@ -3106,7 +3106,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-156.webp",
@@ -3126,7 +3126,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-157.webp",
@@ -3146,7 +3146,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-158.webp",
@@ -3166,7 +3166,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-159.webp",
@@ -3186,7 +3186,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-160.webp",
@@ -3206,7 +3206,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-161.webp",
@@ -3226,7 +3226,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-162.webp",
@@ -3246,7 +3246,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-163.webp",
@@ -3266,7 +3266,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-164.webp",
@@ -3286,7 +3286,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-165.webp",
@@ -3306,7 +3306,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-166.webp",
@@ -3326,7 +3326,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-167.webp",
@@ -3346,7 +3346,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-168.webp",
@@ -3366,7 +3366,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-169.webp",
@@ -3386,7 +3386,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-170.webp",
@@ -3406,7 +3406,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-171.webp",
@@ -3426,7 +3426,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-172.webp",
@@ -3446,7 +3446,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-173.webp",
@@ -3466,7 +3466,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-174.webp",
@@ -3486,7 +3486,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-175.webp",
@@ -3506,7 +3506,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-176.webp",
@@ -3526,7 +3526,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-177.webp",
@@ -3546,7 +3546,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-178.webp",
@@ -3566,7 +3566,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-179.webp",
@@ -3586,7 +3586,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-180.webp",
@@ -3606,7 +3606,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-181.webp",
@@ -3626,7 +3626,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-182.webp",
@@ -3646,7 +3646,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-183.webp",
@@ -3666,7 +3666,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-184.webp",
@@ -3686,7 +3686,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-185.webp",
@@ -3706,7 +3706,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-186.webp",
@@ -3726,7 +3726,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-187.webp",
@@ -3746,7 +3746,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-188.webp",
@@ -3766,7 +3766,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-189.webp",
@@ -3786,7 +3786,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-190.webp",
@@ -3806,7 +3806,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-191.webp",
@@ -3826,7 +3826,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-192.webp",
@@ -3846,7 +3846,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-193.webp",
@@ -3866,7 +3866,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-194.webp",
@@ -3886,7 +3886,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-195.webp",
@@ -3906,7 +3906,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-196.webp",
@@ -3926,7 +3926,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-197.webp",
@@ -3946,7 +3946,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-198.webp",
@@ -3966,7 +3966,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-199.webp",
@@ -3986,7 +3986,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-200.webp",
@@ -4006,7 +4006,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-201.webp",
@@ -4026,7 +4026,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-202.webp",
@@ -4046,7 +4046,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-203.webp",
@@ -4066,7 +4066,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-204.webp",
@@ -4086,7 +4086,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-205.webp",
@@ -4106,7 +4106,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-206.webp",
@@ -4126,7 +4126,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-207.webp",
@@ -4146,7 +4146,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-208.webp",
@@ -4166,7 +4166,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-209.webp",
@@ -4186,7 +4186,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-210.webp",
@@ -4206,7 +4206,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-211.webp",
@@ -4226,7 +4226,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-212.webp",
@@ -4246,7 +4246,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-213.webp",
@@ -4266,7 +4266,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-214.webp",
@@ -4286,7 +4286,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-215.webp",
@@ -4306,7 +4306,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-216.webp",
@@ -4326,7 +4326,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-217.webp",
@@ -4346,7 +4346,7 @@
     "pack_point": null,
     "rarity": null,
     "trade_cost": null,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-218.webp",
@@ -4366,7 +4366,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-219.webp",
@@ -4386,7 +4386,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-220.webp",
@@ -4406,7 +4406,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-221.webp",
@@ -4426,7 +4426,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-222.webp",
@@ -4446,7 +4446,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-223.webp",
@@ -4466,7 +4466,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-224.webp",
@@ -4486,7 +4486,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-225.webp",
@@ -4506,7 +4506,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-226.webp",
@@ -4526,7 +4526,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-227.webp",
@@ -4546,7 +4546,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-228.webp",
@@ -4566,7 +4566,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-229.webp",
@@ -4586,7 +4586,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-230.webp",
@@ -4606,7 +4606,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-231.webp",
@@ -4626,7 +4626,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-232.webp",
@@ -4646,7 +4646,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-233.webp",
@@ -4666,7 +4666,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-234.webp",
@@ -4686,7 +4686,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-235.webp",
@@ -4706,7 +4706,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-236.webp",
@@ -4726,7 +4726,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-237.webp",
@@ -4746,7 +4746,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-238.webp",
@@ -4766,7 +4766,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-239.webp",
@@ -4786,7 +4786,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-240.webp",
@@ -4806,7 +4806,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-241.webp",
@@ -4826,7 +4826,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-242.webp",
@@ -4846,7 +4846,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-243.webp",
@@ -4866,7 +4866,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-244.webp",
@@ -4886,7 +4886,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-245.webp",
@@ -4906,7 +4906,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-246.webp",
@@ -4926,7 +4926,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-247.webp",
@@ -4946,7 +4946,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-248.webp",
@@ -4966,7 +4966,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-249.webp",
@@ -4986,7 +4986,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-250.webp",
@@ -5006,7 +5006,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-251.webp",
@@ -5026,7 +5026,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-252.webp",
@@ -5046,7 +5046,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-253.webp",
@@ -5066,7 +5066,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-254.webp",
@@ -5086,7 +5086,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-255.webp",
@@ -5106,7 +5106,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-256.webp",
@@ -5126,7 +5126,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-257.webp",
@@ -5146,7 +5146,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-258.webp",
@@ -5166,7 +5166,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-259.webp",
@@ -5186,7 +5186,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-260.webp",
@@ -5206,7 +5206,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-261.webp",
@@ -5226,7 +5226,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-262.webp",
@@ -5246,7 +5246,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-263.webp",
@@ -5266,7 +5266,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-264.webp",
@@ -5286,7 +5286,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-265.webp",
@@ -5306,7 +5306,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-266.webp",
@@ -5326,7 +5326,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-267.webp",
@@ -5346,7 +5346,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-268.webp",
@@ -5366,7 +5366,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-269.webp",
@@ -5386,7 +5386,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-270.webp",
@@ -5406,7 +5406,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-271.webp",
@@ -5426,7 +5426,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-272.webp",
@@ -5446,7 +5446,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-273.webp",
@@ -5466,7 +5466,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-274.webp",
@@ -5486,7 +5486,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-275.webp",
@@ -5506,7 +5506,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-276.webp",
@@ -5526,7 +5526,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-277.webp",
@@ -5546,7 +5546,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-278.webp",
@@ -5566,7 +5566,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-279.webp",
@@ -5586,7 +5586,7 @@
     "pack_point": 1500,
     "rarity": 7,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-280.webp",
@@ -5606,7 +5606,7 @@
     "pack_point": 1500,
     "rarity": 7,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-281.webp",
@@ -5626,7 +5626,7 @@
     "pack_point": 1500,
     "rarity": 7,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-282.webp",
@@ -5646,7 +5646,7 @@
     "pack_point": 1500,
     "rarity": 7,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-283.webp",
@@ -5666,7 +5666,7 @@
     "pack_point": 2500,
     "rarity": 8,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-284.webp",
@@ -5686,7 +5686,7 @@
     "pack_point": 2500,
     "rarity": 8,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-285.webp",
@@ -5706,7 +5706,7 @@
     "pack_point": 2500,
     "rarity": 8,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
       "image": "A1-286.webp",
@@ -5726,7 +5726,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-001.webp",
@@ -5746,7 +5746,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-002.webp",
@@ -5766,7 +5766,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-003.webp",
@@ -5786,7 +5786,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-004.webp",
@@ -5806,7 +5806,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-005.webp",
@@ -5826,7 +5826,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-006.webp",
@@ -5846,7 +5846,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-007.webp",
@@ -5866,7 +5866,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-008.webp",
@@ -5886,7 +5886,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-009.webp",
@@ -5906,7 +5906,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-010.webp",
@@ -5926,7 +5926,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-011.webp",
@@ -5946,7 +5946,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-012.webp",
@@ -5966,7 +5966,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-013.webp",
@@ -5986,7 +5986,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-014.webp",
@@ -6006,7 +6006,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-015.webp",
@@ -6026,7 +6026,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-016.webp",
@@ -6046,7 +6046,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-017.webp",
@@ -6066,7 +6066,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-018.webp",
@@ -6086,7 +6086,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-019.webp",
@@ -6106,7 +6106,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-020.webp",
@@ -6126,7 +6126,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-021.webp",
@@ -6146,7 +6146,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-022.webp",
@@ -6166,7 +6166,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-023.webp",
@@ -6186,7 +6186,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-024.webp",
@@ -6206,7 +6206,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-025.webp",
@@ -6226,7 +6226,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-026.webp",
@@ -6246,7 +6246,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-027.webp",
@@ -6266,7 +6266,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-028.webp",
@@ -6286,7 +6286,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-029.webp",
@@ -6306,7 +6306,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-030.webp",
@@ -6326,7 +6326,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-031.webp",
@@ -6346,7 +6346,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-032.webp",
@@ -6366,7 +6366,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-033.webp",
@@ -6386,7 +6386,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-034.webp",
@@ -6406,7 +6406,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-035.webp",
@@ -6426,7 +6426,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-036.webp",
@@ -6446,7 +6446,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-037.webp",
@@ -6466,7 +6466,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-038.webp",
@@ -6486,7 +6486,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-039.webp",
@@ -6506,7 +6506,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-040.webp",
@@ -6526,7 +6526,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Promo-A",
       "image": "PROMO-041.webp",
@@ -6546,7 +6546,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-001.webp",
@@ -6566,7 +6566,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-002.webp",
@@ -6586,7 +6586,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-003.webp",
@@ -6606,7 +6606,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-004.webp",
@@ -6626,7 +6626,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-005.webp",
@@ -6646,7 +6646,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-006.webp",
@@ -6666,7 +6666,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-007.webp",
@@ -6686,7 +6686,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-008.webp",
@@ -6706,7 +6706,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-009.webp",
@@ -6726,7 +6726,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-010.webp",
@@ -6746,7 +6746,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-011.webp",
@@ -6766,7 +6766,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-012.webp",
@@ -6786,7 +6786,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-013.webp",
@@ -6806,7 +6806,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-014.webp",
@@ -6826,7 +6826,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-015.webp",
@@ -6846,7 +6846,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-016.webp",
@@ -6866,7 +6866,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-017.webp",
@@ -6886,7 +6886,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-018.webp",
@@ -6906,7 +6906,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-019.webp",
@@ -6926,7 +6926,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-020.webp",
@@ -6946,7 +6946,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-021.webp",
@@ -6966,7 +6966,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-022.webp",
@@ -6986,7 +6986,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-023.webp",
@@ -7006,7 +7006,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-024.webp",
@@ -7026,7 +7026,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-025.webp",
@@ -7046,7 +7046,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-026.webp",
@@ -7066,7 +7066,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-027.webp",
@@ -7086,7 +7086,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-028.webp",
@@ -7106,7 +7106,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-029.webp",
@@ -7126,7 +7126,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-030.webp",
@@ -7146,7 +7146,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-031.webp",
@@ -7166,7 +7166,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-032.webp",
@@ -7186,7 +7186,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-033.webp",
@@ -7206,7 +7206,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-034.webp",
@@ -7226,7 +7226,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-035.webp",
@@ -7246,7 +7246,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-036.webp",
@@ -7266,7 +7266,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-037.webp",
@@ -7286,7 +7286,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-038.webp",
@@ -7306,7 +7306,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-039.webp",
@@ -7326,7 +7326,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-040.webp",
@@ -7346,7 +7346,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-041.webp",
@@ -7366,7 +7366,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-042.webp",
@@ -7386,7 +7386,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-043.webp",
@@ -7406,7 +7406,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-044.webp",
@@ -7426,7 +7426,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-045.webp",
@@ -7446,7 +7446,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-046.webp",
@@ -7466,7 +7466,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-047.webp",
@@ -7486,7 +7486,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-048.webp",
@@ -7506,7 +7506,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-049.webp",
@@ -7526,7 +7526,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-050.webp",
@@ -7546,7 +7546,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-051.webp",
@@ -7566,7 +7566,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-052.webp",
@@ -7586,7 +7586,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-053.webp",
@@ -7606,7 +7606,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-054.webp",
@@ -7626,7 +7626,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-055.webp",
@@ -7646,7 +7646,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-056.webp",
@@ -7666,7 +7666,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-057.webp",
@@ -7686,7 +7686,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-058.webp",
@@ -7706,7 +7706,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-059.webp",
@@ -7726,7 +7726,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-060.webp",
@@ -7746,7 +7746,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-061.webp",
@@ -7766,7 +7766,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-062.webp",
@@ -7786,7 +7786,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-063.webp",
@@ -7806,7 +7806,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-064.webp",
@@ -7826,7 +7826,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-065.webp",
@@ -7846,7 +7846,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-066.webp",
@@ -7866,7 +7866,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-067.webp",
@@ -7886,7 +7886,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-068.webp",
@@ -7906,7 +7906,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-069.webp",
@@ -7926,7 +7926,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-070.webp",
@@ -7946,7 +7946,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-071.webp",
@@ -7966,7 +7966,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-072.webp",
@@ -7986,7 +7986,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-073.webp",
@@ -8006,7 +8006,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-074.webp",
@@ -8026,7 +8026,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-075.webp",
@@ -8046,7 +8046,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-076.webp",
@@ -8066,7 +8066,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-077.webp",
@@ -8086,7 +8086,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-078.webp",
@@ -8106,7 +8106,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-079.webp",
@@ -8126,7 +8126,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-080.webp",
@@ -8146,7 +8146,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-081.webp",
@@ -8166,7 +8166,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-082.webp",
@@ -8186,7 +8186,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-083.webp",
@@ -8206,7 +8206,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-084.webp",
@@ -8226,7 +8226,7 @@
     "pack_point": 1500,
     "rarity": 7,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-085.webp",
@@ -8246,7 +8246,7 @@
     "pack_point": 2500,
     "rarity": 8,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
       "image": "A1a-086.webp",
@@ -8266,7 +8266,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-001.webp",
@@ -8286,7 +8286,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-002.webp",
@@ -8306,7 +8306,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-003.webp",
@@ -8326,7 +8326,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-004.webp",
@@ -8346,7 +8346,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-005.webp",
@@ -8366,7 +8366,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-006.webp",
@@ -8386,7 +8386,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-007.webp",
@@ -8406,7 +8406,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-008.webp",
@@ -8426,7 +8426,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-009.webp",
@@ -8446,7 +8446,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-010.webp",
@@ -8466,7 +8466,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-011.webp",
@@ -8486,7 +8486,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-012.webp",
@@ -8506,7 +8506,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-013.webp",
@@ -8526,7 +8526,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-014.webp",
@@ -8546,7 +8546,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-015.webp",
@@ -8566,7 +8566,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-016.webp",
@@ -8586,7 +8586,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-017.webp",
@@ -8606,7 +8606,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-018.webp",
@@ -8626,7 +8626,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-019.webp",
@@ -8646,7 +8646,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-020.webp",
@@ -8666,7 +8666,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-021.webp",
@@ -8686,7 +8686,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-022.webp",
@@ -8706,7 +8706,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-023.webp",
@@ -8726,7 +8726,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-024.webp",
@@ -8746,7 +8746,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-025.webp",
@@ -8766,7 +8766,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-026.webp",
@@ -8786,7 +8786,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-027.webp",
@@ -8806,7 +8806,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-028.webp",
@@ -8826,7 +8826,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-029.webp",
@@ -8846,7 +8846,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-030.webp",
@@ -8866,7 +8866,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-031.webp",
@@ -8886,7 +8886,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-032.webp",
@@ -8906,7 +8906,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-033.webp",
@@ -8926,7 +8926,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-034.webp",
@@ -8946,7 +8946,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-035.webp",
@@ -8966,7 +8966,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-036.webp",
@@ -8986,7 +8986,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-037.webp",
@@ -9006,7 +9006,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-038.webp",
@@ -9026,7 +9026,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-039.webp",
@@ -9046,7 +9046,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-040.webp",
@@ -9066,7 +9066,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-041.webp",
@@ -9086,7 +9086,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-042.webp",
@@ -9106,7 +9106,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-043.webp",
@@ -9126,7 +9126,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-044.webp",
@@ -9146,7 +9146,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-045.webp",
@@ -9166,7 +9166,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-046.webp",
@@ -9186,7 +9186,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-047.webp",
@@ -9206,7 +9206,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-048.webp",
@@ -9226,7 +9226,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-049.webp",
@@ -9246,7 +9246,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-050.webp",
@@ -9266,7 +9266,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-051.webp",
@@ -9286,7 +9286,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-052.webp",
@@ -9306,7 +9306,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-053.webp",
@@ -9326,7 +9326,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-054.webp",
@@ -9346,7 +9346,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-055.webp",
@@ -9366,7 +9366,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-056.webp",
@@ -9386,7 +9386,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-057.webp",
@@ -9406,7 +9406,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-058.webp",
@@ -9426,7 +9426,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-059.webp",
@@ -9446,7 +9446,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-060.webp",
@@ -9466,7 +9466,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-061.webp",
@@ -9486,7 +9486,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-062.webp",
@@ -9506,7 +9506,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-063.webp",
@@ -9526,7 +9526,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-064.webp",
@@ -9546,7 +9546,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-065.webp",
@@ -9566,7 +9566,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-066.webp",
@@ -9586,7 +9586,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-067.webp",
@@ -9606,7 +9606,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-068.webp",
@@ -9626,7 +9626,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-069.webp",
@@ -9646,7 +9646,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-070.webp",
@@ -9666,7 +9666,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-071.webp",
@@ -9686,7 +9686,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-072.webp",
@@ -9706,7 +9706,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-073.webp",
@@ -9726,7 +9726,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-074.webp",
@@ -9746,7 +9746,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-075.webp",
@@ -9766,7 +9766,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-076.webp",
@@ -9786,7 +9786,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-077.webp",
@@ -9806,7 +9806,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-078.webp",
@@ -9826,7 +9826,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-079.webp",
@@ -9846,7 +9846,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-080.webp",
@@ -9866,7 +9866,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-081.webp",
@@ -9886,7 +9886,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-082.webp",
@@ -9906,7 +9906,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-083.webp",
@@ -9926,7 +9926,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-084.webp",
@@ -9946,7 +9946,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-085.webp",
@@ -9966,7 +9966,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-086.webp",
@@ -9986,7 +9986,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-087.webp",
@@ -10006,7 +10006,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-088.webp",
@@ -10026,7 +10026,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-089.webp",
@@ -10046,7 +10046,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-090.webp",
@@ -10066,7 +10066,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-091.webp",
@@ -10086,7 +10086,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-092.webp",
@@ -10106,7 +10106,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-093.webp",
@@ -10126,7 +10126,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-094.webp",
@@ -10146,7 +10146,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-095.webp",
@@ -10166,7 +10166,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-096.webp",
@@ -10186,7 +10186,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-097.webp",
@@ -10206,7 +10206,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-098.webp",
@@ -10226,7 +10226,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-099.webp",
@@ -10246,7 +10246,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-100.webp",
@@ -10266,7 +10266,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-101.webp",
@@ -10286,7 +10286,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-102.webp",
@@ -10306,7 +10306,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-103.webp",
@@ -10326,7 +10326,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-104.webp",
@@ -10346,7 +10346,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-105.webp",
@@ -10366,7 +10366,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-106.webp",
@@ -10386,7 +10386,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-107.webp",
@@ -10406,7 +10406,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-108.webp",
@@ -10426,7 +10426,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-109.webp",
@@ -10446,7 +10446,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-110.webp",
@@ -10466,7 +10466,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-111.webp",
@@ -10486,7 +10486,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-112.webp",
@@ -10506,7 +10506,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-113.webp",
@@ -10526,7 +10526,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-114.webp",
@@ -10546,7 +10546,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-115.webp",
@@ -10566,7 +10566,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-116.webp",
@@ -10586,7 +10586,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-117.webp",
@@ -10606,7 +10606,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-118.webp",
@@ -10626,7 +10626,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-119.webp",
@@ -10646,7 +10646,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-120.webp",
@@ -10666,7 +10666,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-121.webp",
@@ -10686,7 +10686,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-122.webp",
@@ -10706,7 +10706,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-123.webp",
@@ -10726,7 +10726,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-124.webp",
@@ -10746,7 +10746,7 @@
     "pack_point": 500,
     "rarity": 4,
     "trade_cost": 500,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-125.webp",
@@ -10766,7 +10766,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-126.webp",
@@ -10786,7 +10786,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-127.webp",
@@ -10806,7 +10806,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-128.webp",
@@ -10826,7 +10826,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-129.webp",
@@ -10846,7 +10846,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-130.webp",
@@ -10866,7 +10866,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-131.webp",
@@ -10886,7 +10886,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-132.webp",
@@ -10906,7 +10906,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-133.webp",
@@ -10926,7 +10926,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-134.webp",
@@ -10946,7 +10946,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-135.webp",
@@ -10966,7 +10966,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-136.webp",
@@ -10986,7 +10986,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-137.webp",
@@ -11006,7 +11006,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-138.webp",
@@ -11026,7 +11026,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-139.webp",
@@ -11046,7 +11046,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-140.webp",
@@ -11066,7 +11066,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-141.webp",
@@ -11086,7 +11086,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-142.webp",
@@ -11106,7 +11106,7 @@
     "pack_point": 150,
     "rarity": 3,
     "trade_cost": 120,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-143.webp",
@@ -11126,7 +11126,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-144.webp",
@@ -11146,7 +11146,7 @@
     "pack_point": 35,
     "rarity": 1,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-145.webp",
@@ -11166,7 +11166,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-146.webp",
@@ -11186,7 +11186,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-147.webp",
@@ -11206,7 +11206,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-148.webp",
@@ -11226,7 +11226,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-149.webp",
@@ -11246,7 +11246,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-150.webp",
@@ -11266,7 +11266,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-151.webp",
@@ -11286,7 +11286,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-152.webp",
@@ -11306,7 +11306,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-153.webp",
@@ -11326,7 +11326,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-154.webp",
@@ -11346,7 +11346,7 @@
     "pack_point": 70,
     "rarity": 2,
     "trade_cost": 0,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-155.webp",
@@ -11366,7 +11366,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-156.webp",
@@ -11386,7 +11386,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-157.webp",
@@ -11406,7 +11406,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-158.webp",
@@ -11426,7 +11426,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-159.webp",
@@ -11446,7 +11446,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-160.webp",
@@ -11466,7 +11466,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-161.webp",
@@ -11486,7 +11486,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-162.webp",
@@ -11506,7 +11506,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-163.webp",
@@ -11526,7 +11526,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-164.webp",
@@ -11546,7 +11546,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-165.webp",
@@ -11566,7 +11566,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-166.webp",
@@ -11586,7 +11586,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-167.webp",
@@ -11606,7 +11606,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-168.webp",
@@ -11626,7 +11626,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-169.webp",
@@ -11646,7 +11646,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-170.webp",
@@ -11666,7 +11666,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-171.webp",
@@ -11686,7 +11686,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-172.webp",
@@ -11706,7 +11706,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-173.webp",
@@ -11726,7 +11726,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-174.webp",
@@ -11746,7 +11746,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-175.webp",
@@ -11766,7 +11766,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-176.webp",
@@ -11786,7 +11786,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-177.webp",
@@ -11806,7 +11806,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-178.webp",
@@ -11826,7 +11826,7 @@
     "pack_point": 400,
     "rarity": 5,
     "trade_cost": 400,
-    "tradable": true,
+    "isTradable": true,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-179.webp",
@@ -11846,7 +11846,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-180.webp",
@@ -11866,7 +11866,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-181.webp",
@@ -11886,7 +11886,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-182.webp",
@@ -11906,7 +11906,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-183.webp",
@@ -11926,7 +11926,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-184.webp",
@@ -11946,7 +11946,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-185.webp",
@@ -11966,7 +11966,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-186.webp",
@@ -11986,7 +11986,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-187.webp",
@@ -12006,7 +12006,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-188.webp",
@@ -12026,7 +12026,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-189.webp",
@@ -12046,7 +12046,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-190.webp",
@@ -12066,7 +12066,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-191.webp",
@@ -12086,7 +12086,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-192.webp",
@@ -12106,7 +12106,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-193.webp",
@@ -12126,7 +12126,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-194.webp",
@@ -12146,7 +12146,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-195.webp",
@@ -12166,7 +12166,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-196.webp",
@@ -12186,7 +12186,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-197.webp",
@@ -12206,7 +12206,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-198.webp",
@@ -12226,7 +12226,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-199.webp",
@@ -12246,7 +12246,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-200.webp",
@@ -12266,7 +12266,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-201.webp",
@@ -12286,7 +12286,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-202.webp",
@@ -12306,7 +12306,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-203.webp",
@@ -12326,7 +12326,7 @@
     "pack_point": 1500,
     "rarity": 7,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-204.webp",
@@ -12346,7 +12346,7 @@
     "pack_point": 1500,
     "rarity": 7,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-205.webp",
@@ -12366,7 +12366,7 @@
     "pack_point": 2500,
     "rarity": 8,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-206.webp",
@@ -12386,7 +12386,7 @@
     "pack_point": 2500,
     "rarity": 8,
     "trade_cost": null,
-    "tradable": false,
+    "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
       "image": "A2-207.webp",
