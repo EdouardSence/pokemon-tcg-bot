@@ -45,6 +45,7 @@ router.get("/:id", async (req, res) => {
 router.post("/:id/card_wanted/:card_id", async (req, res) => {
   try {
     const { id, card_id } = req.params;
+    console.log(id, card_id);
     let { amount } = req.body;
     amount = amount && amount > 0 ? amount : 1;
     const user = await getUserByDiscordId(id);
@@ -54,7 +55,6 @@ router.post("/:id/card_wanted/:card_id", async (req, res) => {
     if (!card) return res.status(404).json({ error: "Carte non trouvée" });
     if (!card.isTradable) return res.status(400).json({ error: "Carte non échangeable" });
     if (user.cards_to_offer.some(c => c.card_id === card_id)) {
-      console.log(user);
       return res.status(400).json({ error: "Tu ne peux pas vouloir une carte que tu veux donner" });
     }
 
@@ -82,7 +82,8 @@ router.post("/:id/card_to_offer/:card_id", async (req, res) => {
     const card = await getCard(card_id);
 
     if (!user) return res.status(404).json({ error: "Utilisateur non trouvé" });
-    if (!card) return res.status(404).json({ error: "Carte non trouvée" });
+    if (!card) return res.status(404).json({ error: "Carte non trouvée" })
+    
     if (!card.isTradable) return res.status(400).json({ error: "Carte non échangeable" });
     if (user.cards_wanted.some(c => c.card_id === card_id)) {
       console.log(user);

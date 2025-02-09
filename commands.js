@@ -15,16 +15,16 @@ function createCardListCommand(name, description, amountRequired) {
     for (let i = 1; i <= 5; i++) {
         command.addStringOption(option =>
             option
-                .setName(`id${i}`)
-                .setDescription(`ID de la carte ${i}`)
-                .setRequired(i === 1) // Seule la première carte est obligatoire
+                .setName(`search${i}`)
+                .setDescription(`Recherche de la carte ${i}`)
+                // L'option est obligatoire si c'est le premier "search"
+                .setRequired(i === 1)
                 .setAutocomplete(true)
         );
         command.addIntegerOption(option =>
             option
                 .setName(`amount${i}`)
                 .setDescription("Nombre d'exemplaires (par défaut: 1)")
-                .setRequired(i === 1)
         );
     }
 
@@ -65,7 +65,7 @@ const commands = [
         .setDescription("Affiche une carte de ta collection")
         .addStringOption(option =>
             option
-                .setName("id")
+                .setName("search")
                 .setDescription("L'ID de la carte")
                 .setRequired(true)
                 .setAutocomplete(true)

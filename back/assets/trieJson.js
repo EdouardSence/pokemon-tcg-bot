@@ -117,30 +117,44 @@ const fs = require('fs');
 
 // console.log('Mise à jour terminée !');
 
+// const data1 = JSON.parse(fs.readFileSync('cards.json', 'utf8'));
+// // Mettre à jour les valeurs de set_name_fr et image_fr
+
+// const updatedData = data1.map(pokemon => {
+//     return {
+//         ...pokemon,
+//         en: {
+//             ...pokemon.en,
+//              "set_name": pokemon.setId === "PROMO" ? "Promo-A" : pokemon.en.set_name,
+//         },
+//         fr: {
+//             ...pokemon.fr,
+//             "set_name": pokemon.setId === "PROMO" ? "promo-a" : pokemon.en.set_name,
+//             "image": pokemon.setId === "PROMO" ? `https://image.pokemonpocket.fr/promo-a/${pokemon.number}.png` : pokemon.fr.image
+//         }
+//     };
+// });
+
+// // Sauvegarder le fichier mis à jour
+// fs.writeFileSync('cards.json', JSON.stringify(updatedData, null, 2), 'utf8');
+
+// console.log('Transformation terminée !');
+
 const data1 = JSON.parse(fs.readFileSync('cards.json', 'utf8'));
-// Mettre à jour les valeurs de set_name_fr et image_fr
 
 const updatedData = data1.map(pokemon => {
     return {
         ...pokemon,
-        en: {
-            ...pokemon.en,
-             "set_name": pokemon.setId === "PROMO" ? "Promo-A" : pokemon.en.set_name,
-        },
         fr: {
             ...pokemon.fr,
-            "set_name": pokemon.setId === "PROMO" ? "promo-a" : pokemon.en.set_name,
-            "image": pokemon.setId === "PROMO" ? `https://image.pokemonpocket.fr/promo-a/${pokemon.number}.png` : pokemon.fr.image
-        }
+            "set_name": pokemon.en.set_name === "Fabulous Island" ? "L'île Fabuleuse" : pokemon.fr.set_name,
+        },
     };
-});
+}
+);
 
 // Sauvegarder le fichier mis à jour
 fs.writeFileSync('cards.json', JSON.stringify(updatedData, null, 2), 'utf8');
-
-console.log('Transformation terminée !');
-
-
 
 
 
