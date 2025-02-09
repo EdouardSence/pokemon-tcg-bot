@@ -17,7 +17,6 @@ function createCardListCommand(name, description, amountRequired) {
             option
                 .setName(`search${i}`)
                 .setDescription(`Recherche de la carte ${i}`)
-                // L'option est obligatoire si c'est le premier "search"
                 .setRequired(i === 1)
                 .setAutocomplete(true)
         );

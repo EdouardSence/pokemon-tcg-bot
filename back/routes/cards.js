@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { getCard, getAllCards } = require("../services/cardsService");
-const { getUserByDiscordId } = require("../services/usersService");
+const { getUserById } = require("../services/usersService");
 const errorHandler = require("../utils/errorHandler");
 
 // Récupérer toutes les cartes
@@ -19,7 +19,7 @@ router.get("/autocomplete", async (req, res) => {
     let { search, id_discord, isTradable } = req.query;
     if (!id_discord) return res.status(400).json({ error: "id_discord requis" });
 
-    const user = await getUserByDiscordId(id_discord);
+    const user = await getUserById(id_discord);
     if (!user) return res.status(404).json({ error: "Utilisateur non trouvé" });
 
     search = search || "";
@@ -55,7 +55,7 @@ router.get("/:id", async (req, res) => {
 
     if (!id_discord) return res.status(400).json({ error: "id_discord requis" });
 
-    const user = await getUserByDiscordId(id_discord);
+    const user = await getUserById(id_discord);
     if (!user) return res.status(404).json({ error: "Utilisateur non trouvé" });
 
     const card = await getCard(id);
@@ -64,6 +64,7 @@ router.get("/:id", async (req, res) => {
     res.json({
       id: card.id,
       name: card[user.language].name,
+      fullName: card[user.language].fullName,
       image: card[user.language].image,
     });
   } catch (error) {

@@ -1,8 +1,9 @@
 const sql = require("./db");
 
-// Récupère un utilisateur via son ID Discord
-const getUserByDiscordId = async (id_discord) => {
-        const users = await sql`
+// Récupère un utilisateur via son ID Discord ou son id en base de données
+// c pas propre de fou mais vsy on aura jamais 2^10 utilisateurs
+const getUserById = async (id) => {
+  const users = await sql`
         SELECT 
             u.id,
             u.id_discord, 
@@ -16,7 +17,7 @@ const getUserByDiscordId = async (id_discord) => {
         LEFT JOIN 
             cards_wanted rc ON u.id = rc.id_user
         WHERE 
-            u.id_discord = ${id_discord} 
+            u.id_discord = ${id} or u.id = ${id}
         GROUP BY 
             u.id, u.id_discord, u.language;
       `;
@@ -31,13 +32,13 @@ const getUserByDiscordId = async (id_discord) => {
     language: users[0].language.toLowerCase(),
     cards_to_offer: Array.isArray(users[0].cards_to_offer)
       ? users[0].cards_to_offer
-          .filter(c => c.card_id !== null) // Filtrer les entrées invalides
-          .map(c => ({ card_id: c.card_id, amount: c.amount || 1 })) // Assurer une structure correcte
+          .filter((c) => c.card_id !== null) // Filtrer les entrées invalides
+          .map((c) => ({ card_id: c.card_id, amount: c.amount || 1 })) // Assurer une structure correcte
       : [],
     cards_wanted: Array.isArray(users[0].cards_wanted)
       ? users[0].cards_wanted
-          .filter(c => c.card_id !== null)
-          .map(c => ({ card_id: c.card_id, amount: c.amount || 1 }))
+          .filter((c) => c.card_id !== null)
+          .map((c) => ({ card_id: c.card_id, amount: c.amount || 1 }))
       : [],
   };
 
@@ -46,7 +47,7 @@ const getUserByDiscordId = async (id_discord) => {
 
 // Vérifie si un utilisateur existe
 const userExists = async (id_discord) => {
-  const user = await getUserByDiscordId(id_discord);
+  const user = await getUserById(id_discord);
   return !!user;
 };
 
@@ -61,4 +62,4 @@ const createUser = async (id_discord, language, name) => {
       RETURNING *`;
 };
 
-module.exports = { getUserByDiscordId, userExists, createUser };
+module.exports = { getUserById, userExists, createUser };
