@@ -32,15 +32,15 @@ async function listenToDatabase(client) {
       if (user1 && user2) {
         await sendPrivateMessageForTrade(
           client,
-          user1.id_discord,
-          user2.id_discord,
+          user1,
+          user2,
           cardUser1.data,
           cardUser2.data
         );
         await sendPrivateMessageForTrade(
           client,
-          user2.id_discord,
-          user1.id_discord,
+          user2,
+          user1,
           cardUser2.data,
           cardUser1.data
         );

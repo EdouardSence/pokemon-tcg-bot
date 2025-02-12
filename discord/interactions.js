@@ -255,34 +255,62 @@ async function handleAutocomplete(interaction) {
 }
 
 // permet d'envoyer la notifcation de trade en message privé
-async function sendPrivateMessageForTrade(client,idUser1, idUser2, cardUser1, cardUser2) {
+async function sendPrivateMessageForTrade(client, user1, user2, cardUser1, cardUser2) {
   try {
-    const user1 = await client.users.fetch(idUser1);
-    const user2 = await client.users.fetch(idUser2);
+    const user1Discord = await client.users.fetch(user1.id_discord);
+    const user2Discord = await client.users.fetch(user2.id_discord);
+    const idFriend = 1213141516; // Remplacer par le vrai code ami
 
     const embedToSend = new EmbedBuilder()
       .setTitle("📤 Tu dois envoyer cette carte")
-      .setDescription(`Tu dois envoyer la carte ${cardUser1.fullName} à **${user2.username}**.`)
+      .setDescription(`Tu dois envoyer la carte ${cardUser1.fullName} à **${user2Discord.username}**.`)
       .setColor("#FF5555")
-      .setThumbnail(user1.displayAvatarURL({ dynamic: true }))
+      .setThumbnail(user1Discord.displayAvatarURL({ dynamic: true }))
       .setImage(cardUser1.image)
       .setFooter({ text: "Assure-toi de bien envoyer cette carte !" });
 
     const embedToReceive = new EmbedBuilder()
       .setTitle("📥 Tu vas recevoir cette carte")
-      .setDescription(`En échange, tu vas recevoir la carte ${cardUser2.fullName} de **${user2.username}**.`)
+      .setDescription(`En échange, tu vas recevoir la carte ${cardUser2.fullName} de **${user2Discord.username}**.`)
       .setColor("#55FF55")
-      .setThumbnail(user2.displayAvatarURL({ dynamic: true }))
+      .setThumbnail(user2Discord.displayAvatarURL({ dynamic: true }))
       .setImage(cardUser2.image)
       .setFooter({ text: "L'échange est en attente de confirmation." });
 
-    await user1.send({ embeds: [embedToSend] });
-    await user1.send({ embeds: [embedToReceive] });
+    const friendCodeMessage = `Le code ami de **${user2Discord.username}** est : \`${idFriend}\``;
+
+    const row = new ActionRowBuilder().addComponents(
+      new ButtonBuilder()
+        .setCustomId('copy_friend_code')
+        .setLabel('Copier le code ami')
+        .setStyle(ButtonStyle.Secondary)
+    );
+
+    await user1Discord.send({ embeds: [embedToSend] });
+    await user1Discord.send({ embeds: [embedToReceive] });
+
+    const messageWithButton = await user1Discord.send({
+      content: friendCodeMessage,
+      components: [row],
+    });
+
+    const collector = messageWithButton.createMessageComponentCollector({
+      filter: (i) => i.customId === 'copy_friend_code',
+      time: 60000, // 60 secondes
+    });
+
+    collector.on('collect', async (i) => {
+      await i.reply({ content: `Code ami copié : \`${idFriend}\``, ephemeral: true });
+
+      
+    });
 
   } catch (error) {
     console.error("Erreur lors de l'envoi du message d'échange :", error);
   }
 }
+
+
 
 // fonction principale pour gérer les interactions
 async function handleInteraction(client, interaction) {
