@@ -9,7 +9,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-001.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-001.webp",
       "name": "Bulbasaur",
       "fullName": "Bulbasaur A1-001"
     },
@@ -31,7 +31,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-002.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-002.webp",
       "name": "Ivysaur",
       "fullName": "Ivysaur A1-002"
     },
@@ -53,7 +53,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-003.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-003.webp",
       "name": "Venusaur",
       "fullName": "Venusaur A1-003"
     },
@@ -75,7 +75,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-004.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-004.webp",
       "name": "Venusaur ex",
       "fullName": "Venusaur ex A1-004"
     },
@@ -97,7 +97,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-005.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-005.webp",
       "name": "Caterpie",
       "fullName": "Caterpie A1-005"
     },
@@ -119,7 +119,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-006.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-006.webp",
       "name": "Metapod",
       "fullName": "Metapod A1-006"
     },
@@ -141,7 +141,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-007.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-007.webp",
       "name": "Butterfree",
       "fullName": "Butterfree A1-007"
     },
@@ -163,7 +163,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-008.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-008.webp",
       "name": "Weedle",
       "fullName": "Weedle A1-008"
     },
@@ -185,7 +185,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-009.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-009.webp",
       "name": "Kakuna",
       "fullName": "Kakuna A1-009"
     },
@@ -207,7 +207,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-010.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-010.webp",
       "name": "Beedrill",
       "fullName": "Beedrill A1-010"
     },
@@ -229,7 +229,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-011.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-011.webp",
       "name": "Oddish",
       "fullName": "Oddish A1-011"
     },
@@ -251,7 +251,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-012.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-012.webp",
       "name": "Gloom",
       "fullName": "Gloom A1-012"
     },
@@ -273,7 +273,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-013.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-013.webp",
       "name": "Vileplume",
       "fullName": "Vileplume A1-013"
     },
@@ -295,7 +295,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-014.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-014.webp",
       "name": "Paras",
       "fullName": "Paras A1-014"
     },
@@ -317,7 +317,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-015.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-015.webp",
       "name": "Parasect",
       "fullName": "Parasect A1-015"
     },
@@ -339,7 +339,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-016.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-016.webp",
       "name": "Venonat",
       "fullName": "Venonat A1-016"
     },
@@ -361,7 +361,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-017.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-017.webp",
       "name": "Venomoth",
       "fullName": "Venomoth A1-017"
     },
@@ -383,7 +383,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-018.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-018.webp",
       "name": "Bellsprout",
       "fullName": "Bellsprout A1-018"
     },
@@ -405,7 +405,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-019.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-019.webp",
       "name": "Weepinbell",
       "fullName": "Weepinbell A1-019"
     },
@@ -427,7 +427,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-020.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-020.webp",
       "name": "Victreebel",
       "fullName": "Victreebel A1-020"
     },
@@ -449,7 +449,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-021.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-021.webp",
       "name": "Exeggcute",
       "fullName": "Exeggcute A1-021"
     },
@@ -471,7 +471,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-022.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-022.webp",
       "name": "Exeggutor",
       "fullName": "Exeggutor A1-022"
     },
@@ -493,7 +493,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-023.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-023.webp",
       "name": "Exeggutor ex",
       "fullName": "Exeggutor ex A1-023"
     },
@@ -515,7 +515,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-024.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-024.webp",
       "name": "Tangela",
       "fullName": "Tangela A1-024"
     },
@@ -537,7 +537,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-025.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-025.webp",
       "name": "Scyther",
       "fullName": "Scyther A1-025"
     },
@@ -559,7 +559,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-026.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-026.webp",
       "name": "Pinsir",
       "fullName": "Pinsir A1-026"
     },
@@ -581,7 +581,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-027.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-027.webp",
       "name": "Cottonee",
       "fullName": "Cottonee A1-027"
     },
@@ -603,7 +603,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-028.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-028.webp",
       "name": "Whimsicott",
       "fullName": "Whimsicott A1-028"
     },
@@ -625,7 +625,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-029.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-029.webp",
       "name": "Petilil",
       "fullName": "Petilil A1-029"
     },
@@ -647,7 +647,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-030.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-030.webp",
       "name": "Lilligant",
       "fullName": "Lilligant A1-030"
     },
@@ -669,7 +669,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-031.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-031.webp",
       "name": "Skiddo",
       "fullName": "Skiddo A1-031"
     },
@@ -691,7 +691,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-032.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-032.webp",
       "name": "Gogoat",
       "fullName": "Gogoat A1-032"
     },
@@ -713,7 +713,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-033.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-033.webp",
       "name": "Charmander",
       "fullName": "Charmander A1-033"
     },
@@ -735,7 +735,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-034.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-034.webp",
       "name": "Charmeleon",
       "fullName": "Charmeleon A1-034"
     },
@@ -757,7 +757,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-035.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-035.webp",
       "name": "Charizard",
       "fullName": "Charizard A1-035"
     },
@@ -779,7 +779,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-036.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-036.webp",
       "name": "Charizard ex",
       "fullName": "Charizard ex A1-036"
     },
@@ -801,7 +801,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-037.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-037.webp",
       "name": "Vulpix",
       "fullName": "Vulpix A1-037"
     },
@@ -823,7 +823,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-038.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-038.webp",
       "name": "Ninetales",
       "fullName": "Ninetales A1-038"
     },
@@ -845,7 +845,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-039.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-039.webp",
       "name": "Growlithe",
       "fullName": "Growlithe A1-039"
     },
@@ -867,7 +867,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-040.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-040.webp",
       "name": "Arcanine",
       "fullName": "Arcanine A1-040"
     },
@@ -889,7 +889,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-041.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-041.webp",
       "name": "Arcanine ex",
       "fullName": "Arcanine ex A1-041"
     },
@@ -911,7 +911,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-042.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-042.webp",
       "name": "Ponyta",
       "fullName": "Ponyta A1-042"
     },
@@ -933,7 +933,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-043.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-043.webp",
       "name": "Rapidash",
       "fullName": "Rapidash A1-043"
     },
@@ -955,7 +955,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-044.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-044.webp",
       "name": "Magmar",
       "fullName": "Magmar A1-044"
     },
@@ -977,7 +977,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-045.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-045.webp",
       "name": "Flareon",
       "fullName": "Flareon A1-045"
     },
@@ -999,7 +999,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-046.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-046.webp",
       "name": "Moltres",
       "fullName": "Moltres A1-046"
     },
@@ -1021,7 +1021,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-047.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-047.webp",
       "name": "Moltres ex",
       "fullName": "Moltres ex A1-047"
     },
@@ -1043,7 +1043,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-048.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-048.webp",
       "name": "Heatmor",
       "fullName": "Heatmor A1-048"
     },
@@ -1065,7 +1065,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-049.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-049.webp",
       "name": "Salandit",
       "fullName": "Salandit A1-049"
     },
@@ -1087,7 +1087,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-050.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-050.webp",
       "name": "Salazzle",
       "fullName": "Salazzle A1-050"
     },
@@ -1109,7 +1109,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-051.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-051.webp",
       "name": "Sizzlipede",
       "fullName": "Sizzlipede A1-051"
     },
@@ -1131,7 +1131,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-052.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-052.webp",
       "name": "Centiskorch",
       "fullName": "Centiskorch A1-052"
     },
@@ -1153,7 +1153,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-053.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-053.webp",
       "name": "Squirtle",
       "fullName": "Squirtle A1-053"
     },
@@ -1175,7 +1175,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-054.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-054.webp",
       "name": "Wartortle",
       "fullName": "Wartortle A1-054"
     },
@@ -1197,7 +1197,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-055.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-055.webp",
       "name": "Blastoise",
       "fullName": "Blastoise A1-055"
     },
@@ -1219,7 +1219,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-056.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-056.webp",
       "name": "Blastoise ex",
       "fullName": "Blastoise ex A1-056"
     },
@@ -1241,7 +1241,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-057.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-057.webp",
       "name": "Psyduck",
       "fullName": "Psyduck A1-057"
     },
@@ -1263,7 +1263,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-058.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-058.webp",
       "name": "Golduck",
       "fullName": "Golduck A1-058"
     },
@@ -1285,7 +1285,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-059.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-059.webp",
       "name": "Poliwag",
       "fullName": "Poliwag A1-059"
     },
@@ -1307,7 +1307,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-060.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-060.webp",
       "name": "Poliwhirl",
       "fullName": "Poliwhirl A1-060"
     },
@@ -1329,7 +1329,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-061.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-061.webp",
       "name": "Poliwrath",
       "fullName": "Poliwrath A1-061"
     },
@@ -1351,7 +1351,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-062.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-062.webp",
       "name": "Tentacool",
       "fullName": "Tentacool A1-062"
     },
@@ -1373,7 +1373,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-063.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-063.webp",
       "name": "Tentacruel",
       "fullName": "Tentacruel A1-063"
     },
@@ -1395,7 +1395,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-064.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-064.webp",
       "name": "Seel",
       "fullName": "Seel A1-064"
     },
@@ -1417,7 +1417,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-065.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-065.webp",
       "name": "Dewgong",
       "fullName": "Dewgong A1-065"
     },
@@ -1439,7 +1439,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-066.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-066.webp",
       "name": "Shellder",
       "fullName": "Shellder A1-066"
     },
@@ -1461,7 +1461,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-067.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-067.webp",
       "name": "Cloyster",
       "fullName": "Cloyster A1-067"
     },
@@ -1483,7 +1483,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-068.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-068.webp",
       "name": "Krabby",
       "fullName": "Krabby A1-068"
     },
@@ -1505,7 +1505,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-069.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-069.webp",
       "name": "Kingler",
       "fullName": "Kingler A1-069"
     },
@@ -1527,7 +1527,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-070.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-070.webp",
       "name": "Horsea",
       "fullName": "Horsea A1-070"
     },
@@ -1549,7 +1549,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-071.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-071.webp",
       "name": "Seadra",
       "fullName": "Seadra A1-071"
     },
@@ -1571,7 +1571,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-072.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-072.webp",
       "name": "Goldeen",
       "fullName": "Goldeen A1-072"
     },
@@ -1593,7 +1593,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-073.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-073.webp",
       "name": "Seaking",
       "fullName": "Seaking A1-073"
     },
@@ -1615,7 +1615,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-074.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-074.webp",
       "name": "Staryu",
       "fullName": "Staryu A1-074"
     },
@@ -1637,7 +1637,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-075.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-075.webp",
       "name": "Starmie",
       "fullName": "Starmie A1-075"
     },
@@ -1659,7 +1659,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-076.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-076.webp",
       "name": "Starmie ex",
       "fullName": "Starmie ex A1-076"
     },
@@ -1681,7 +1681,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-077.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-077.webp",
       "name": "Magikarp",
       "fullName": "Magikarp A1-077"
     },
@@ -1703,7 +1703,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-078.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-078.webp",
       "name": "Gyarados",
       "fullName": "Gyarados A1-078"
     },
@@ -1725,7 +1725,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-079.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-079.webp",
       "name": "Lapras",
       "fullName": "Lapras A1-079"
     },
@@ -1747,7 +1747,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-080.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-080.webp",
       "name": "Vaporeon",
       "fullName": "Vaporeon A1-080"
     },
@@ -1769,7 +1769,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-081.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-081.webp",
       "name": "Omanyte",
       "fullName": "Omanyte A1-081"
     },
@@ -1791,7 +1791,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-082.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-082.webp",
       "name": "Omastar",
       "fullName": "Omastar A1-082"
     },
@@ -1813,7 +1813,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-083.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-083.webp",
       "name": "Articuno",
       "fullName": "Articuno A1-083"
     },
@@ -1835,7 +1835,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-084.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-084.webp",
       "name": "Articuno ex",
       "fullName": "Articuno ex A1-084"
     },
@@ -1857,7 +1857,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-085.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-085.webp",
       "name": "Ducklett",
       "fullName": "Ducklett A1-085"
     },
@@ -1879,7 +1879,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-086.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-086.webp",
       "name": "Swanna",
       "fullName": "Swanna A1-086"
     },
@@ -1901,7 +1901,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-087.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-087.webp",
       "name": "Froakie",
       "fullName": "Froakie A1-087"
     },
@@ -1923,7 +1923,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-088.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-088.webp",
       "name": "Frogadier",
       "fullName": "Frogadier A1-088"
     },
@@ -1945,7 +1945,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-089.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-089.webp",
       "name": "Greninja",
       "fullName": "Greninja A1-089"
     },
@@ -1967,7 +1967,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-090.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-090.webp",
       "name": "Pyukumuku",
       "fullName": "Pyukumuku A1-090"
     },
@@ -1989,7 +1989,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-091.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-091.webp",
       "name": "Bruxish",
       "fullName": "Bruxish A1-091"
     },
@@ -2011,7 +2011,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-092.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-092.webp",
       "name": "Snom",
       "fullName": "Snom A1-092"
     },
@@ -2033,7 +2033,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-093.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-093.webp",
       "name": "Frosmoth",
       "fullName": "Frosmoth A1-093"
     },
@@ -2055,7 +2055,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-094.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-094.webp",
       "name": "Pikachu",
       "fullName": "Pikachu A1-094"
     },
@@ -2077,7 +2077,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-095.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-095.webp",
       "name": "Raichu",
       "fullName": "Raichu A1-095"
     },
@@ -2099,7 +2099,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-096.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-096.webp",
       "name": "Pikachu ex",
       "fullName": "Pikachu ex A1-096"
     },
@@ -2121,7 +2121,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-097.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-097.webp",
       "name": "Magnemite",
       "fullName": "Magnemite A1-097"
     },
@@ -2143,7 +2143,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-098.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-098.webp",
       "name": "Magneton",
       "fullName": "Magneton A1-098"
     },
@@ -2165,7 +2165,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-099.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-099.webp",
       "name": "Voltorb",
       "fullName": "Voltorb A1-099"
     },
@@ -2187,7 +2187,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-100.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-100.webp",
       "name": "Electrode",
       "fullName": "Electrode A1-100"
     },
@@ -2209,7 +2209,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-101.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-101.webp",
       "name": "Electabuzz",
       "fullName": "Electabuzz A1-101"
     },
@@ -2231,7 +2231,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-102.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-102.webp",
       "name": "Jolteon",
       "fullName": "Jolteon A1-102"
     },
@@ -2253,7 +2253,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-103.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-103.webp",
       "name": "Zapdos",
       "fullName": "Zapdos A1-103"
     },
@@ -2275,7 +2275,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-104.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-104.webp",
       "name": "Zapdos ex",
       "fullName": "Zapdos ex A1-104"
     },
@@ -2297,7 +2297,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-105.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-105.webp",
       "name": "Blitzle",
       "fullName": "Blitzle A1-105"
     },
@@ -2319,7 +2319,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-106.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-106.webp",
       "name": "Zebstrika",
       "fullName": "Zebstrika A1-106"
     },
@@ -2341,7 +2341,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-107.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-107.webp",
       "name": "Tynamo",
       "fullName": "Tynamo A1-107"
     },
@@ -2363,7 +2363,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-108.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-108.webp",
       "name": "Eelektrik",
       "fullName": "Eelektrik A1-108"
     },
@@ -2385,7 +2385,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-109.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-109.webp",
       "name": "Eelektross",
       "fullName": "Eelektross A1-109"
     },
@@ -2407,7 +2407,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-110.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-110.webp",
       "name": "Helioptile",
       "fullName": "Helioptile A1-110"
     },
@@ -2429,7 +2429,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-111.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-111.webp",
       "name": "Heliolisk",
       "fullName": "Heliolisk A1-111"
     },
@@ -2451,7 +2451,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-112.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-112.webp",
       "name": "Pincurchin",
       "fullName": "Pincurchin A1-112"
     },
@@ -2473,7 +2473,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-113.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-113.webp",
       "name": "Clefairy",
       "fullName": "Clefairy A1-113"
     },
@@ -2495,7 +2495,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-114.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-114.webp",
       "name": "Clefable",
       "fullName": "Clefable A1-114"
     },
@@ -2517,7 +2517,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-115.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-115.webp",
       "name": "Abra",
       "fullName": "Abra A1-115"
     },
@@ -2539,7 +2539,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-116.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-116.webp",
       "name": "Kadabra",
       "fullName": "Kadabra A1-116"
     },
@@ -2561,7 +2561,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-117.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-117.webp",
       "name": "Alakazam",
       "fullName": "Alakazam A1-117"
     },
@@ -2583,7 +2583,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-118.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-118.webp",
       "name": "Slowpoke",
       "fullName": "Slowpoke A1-118"
     },
@@ -2605,7 +2605,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-119.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-119.webp",
       "name": "Slowbro",
       "fullName": "Slowbro A1-119"
     },
@@ -2627,7 +2627,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-120.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-120.webp",
       "name": "Gastly",
       "fullName": "Gastly A1-120"
     },
@@ -2649,7 +2649,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-121.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-121.webp",
       "name": "Haunter",
       "fullName": "Haunter A1-121"
     },
@@ -2671,7 +2671,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-122.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-122.webp",
       "name": "Gengar",
       "fullName": "Gengar A1-122"
     },
@@ -2693,7 +2693,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-123.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-123.webp",
       "name": "Gengar ex",
       "fullName": "Gengar ex A1-123"
     },
@@ -2715,7 +2715,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-124.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-124.webp",
       "name": "Drowzee",
       "fullName": "Drowzee A1-124"
     },
@@ -2737,7 +2737,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-125.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-125.webp",
       "name": "Hypno",
       "fullName": "Hypno A1-125"
     },
@@ -2759,7 +2759,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-126.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-126.webp",
       "name": "Mr. Mime",
       "fullName": "Mr. Mime A1-126"
     },
@@ -2781,7 +2781,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-127.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-127.webp",
       "name": "Jynx",
       "fullName": "Jynx A1-127"
     },
@@ -2803,7 +2803,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-128.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-128.webp",
       "name": "Mewtwo",
       "fullName": "Mewtwo A1-128"
     },
@@ -2825,7 +2825,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-129.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-129.webp",
       "name": "Mewtwo ex",
       "fullName": "Mewtwo ex A1-129"
     },
@@ -2847,7 +2847,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-130.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-130.webp",
       "name": "Ralts",
       "fullName": "Ralts A1-130"
     },
@@ -2869,7 +2869,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-131.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-131.webp",
       "name": "Kirlia",
       "fullName": "Kirlia A1-131"
     },
@@ -2891,7 +2891,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-132.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-132.webp",
       "name": "Gardevoir",
       "fullName": "Gardevoir A1-132"
     },
@@ -2913,7 +2913,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-133.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-133.webp",
       "name": "Woobat",
       "fullName": "Woobat A1-133"
     },
@@ -2935,7 +2935,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-134.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-134.webp",
       "name": "Swoobat",
       "fullName": "Swoobat A1-134"
     },
@@ -2957,7 +2957,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-135.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-135.webp",
       "name": "Golett",
       "fullName": "Golett A1-135"
     },
@@ -2979,7 +2979,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-136.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-136.webp",
       "name": "Golurk",
       "fullName": "Golurk A1-136"
     },
@@ -3001,7 +3001,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-137.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-137.webp",
       "name": "Sandshrew",
       "fullName": "Sandshrew A1-137"
     },
@@ -3023,7 +3023,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-138.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-138.webp",
       "name": "Sandslash",
       "fullName": "Sandslash A1-138"
     },
@@ -3045,7 +3045,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-139.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-139.webp",
       "name": "Diglett",
       "fullName": "Diglett A1-139"
     },
@@ -3067,7 +3067,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-140.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-140.webp",
       "name": "Dugtrio",
       "fullName": "Dugtrio A1-140"
     },
@@ -3089,7 +3089,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-141.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-141.webp",
       "name": "Mankey",
       "fullName": "Mankey A1-141"
     },
@@ -3111,7 +3111,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-142.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-142.webp",
       "name": "Primeape",
       "fullName": "Primeape A1-142"
     },
@@ -3133,7 +3133,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-143.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-143.webp",
       "name": "Machop",
       "fullName": "Machop A1-143"
     },
@@ -3155,7 +3155,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-144.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-144.webp",
       "name": "Machoke",
       "fullName": "Machoke A1-144"
     },
@@ -3177,7 +3177,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-145.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-145.webp",
       "name": "Machamp",
       "fullName": "Machamp A1-145"
     },
@@ -3199,7 +3199,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-146.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-146.webp",
       "name": "Machamp ex",
       "fullName": "Machamp ex A1-146"
     },
@@ -3221,7 +3221,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-147.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-147.webp",
       "name": "Geodude",
       "fullName": "Geodude A1-147"
     },
@@ -3243,7 +3243,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-148.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-148.webp",
       "name": "Graveler",
       "fullName": "Graveler A1-148"
     },
@@ -3265,7 +3265,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-149.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-149.webp",
       "name": "Golem",
       "fullName": "Golem A1-149"
     },
@@ -3287,7 +3287,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-150.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-150.webp",
       "name": "Onix",
       "fullName": "Onix A1-150"
     },
@@ -3309,7 +3309,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-151.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-151.webp",
       "name": "Cubone",
       "fullName": "Cubone A1-151"
     },
@@ -3331,7 +3331,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-152.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-152.webp",
       "name": "Marowak",
       "fullName": "Marowak A1-152"
     },
@@ -3353,7 +3353,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-153.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-153.webp",
       "name": "Marowak ex",
       "fullName": "Marowak ex A1-153"
     },
@@ -3375,7 +3375,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-154.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-154.webp",
       "name": "Hitmonlee",
       "fullName": "Hitmonlee A1-154"
     },
@@ -3397,7 +3397,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-155.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-155.webp",
       "name": "Hitmonchan",
       "fullName": "Hitmonchan A1-155"
     },
@@ -3419,7 +3419,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-156.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-156.webp",
       "name": "Rhyhorn",
       "fullName": "Rhyhorn A1-156"
     },
@@ -3441,7 +3441,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-157.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-157.webp",
       "name": "Rhydon",
       "fullName": "Rhydon A1-157"
     },
@@ -3463,7 +3463,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-158.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-158.webp",
       "name": "Kabuto",
       "fullName": "Kabuto A1-158"
     },
@@ -3485,7 +3485,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-159.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-159.webp",
       "name": "Kabutops",
       "fullName": "Kabutops A1-159"
     },
@@ -3507,7 +3507,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-160.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-160.webp",
       "name": "Mienfoo",
       "fullName": "Mienfoo A1-160"
     },
@@ -3529,7 +3529,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-161.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-161.webp",
       "name": "Mienshao",
       "fullName": "Mienshao A1-161"
     },
@@ -3551,7 +3551,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-162.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-162.webp",
       "name": "Clobbopus",
       "fullName": "Clobbopus A1-162"
     },
@@ -3573,7 +3573,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-163.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-163.webp",
       "name": "Grapploct",
       "fullName": "Grapploct A1-163"
     },
@@ -3595,7 +3595,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-164.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-164.webp",
       "name": "Ekans",
       "fullName": "Ekans A1-164"
     },
@@ -3617,7 +3617,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-165.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-165.webp",
       "name": "Arbok",
       "fullName": "Arbok A1-165"
     },
@@ -3639,7 +3639,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-166.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-166.webp",
       "name": "Nidoran♀",
       "fullName": "Nidoran♀ A1-166"
     },
@@ -3661,7 +3661,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-167.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-167.webp",
       "name": "Nidorina",
       "fullName": "Nidorina A1-167"
     },
@@ -3683,7 +3683,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-168.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-168.webp",
       "name": "Nidoqueen",
       "fullName": "Nidoqueen A1-168"
     },
@@ -3705,7 +3705,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-169.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-169.webp",
       "name": "Nidoran♂",
       "fullName": "Nidoran♂ A1-169"
     },
@@ -3727,7 +3727,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-170.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-170.webp",
       "name": "Nidorino",
       "fullName": "Nidorino A1-170"
     },
@@ -3749,7 +3749,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-171.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-171.webp",
       "name": "Nidoking",
       "fullName": "Nidoking A1-171"
     },
@@ -3771,7 +3771,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-172.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-172.webp",
       "name": "Zubat",
       "fullName": "Zubat A1-172"
     },
@@ -3793,7 +3793,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-173.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-173.webp",
       "name": "Golbat",
       "fullName": "Golbat A1-173"
     },
@@ -3815,7 +3815,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-174.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-174.webp",
       "name": "Grimer",
       "fullName": "Grimer A1-174"
     },
@@ -3837,7 +3837,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-175.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-175.webp",
       "name": "Muk",
       "fullName": "Muk A1-175"
     },
@@ -3859,7 +3859,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-176.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-176.webp",
       "name": "Koffing",
       "fullName": "Koffing A1-176"
     },
@@ -3881,7 +3881,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-177.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-177.webp",
       "name": "Weezing",
       "fullName": "Weezing A1-177"
     },
@@ -3903,7 +3903,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-178.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-178.webp",
       "name": "Mawile",
       "fullName": "Mawile A1-178"
     },
@@ -3925,7 +3925,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-179.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-179.webp",
       "name": "Pawniard",
       "fullName": "Pawniard A1-179"
     },
@@ -3947,7 +3947,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-180.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-180.webp",
       "name": "Bisharp",
       "fullName": "Bisharp A1-180"
     },
@@ -3969,7 +3969,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-181.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-181.webp",
       "name": "Meltan",
       "fullName": "Meltan A1-181"
     },
@@ -3991,7 +3991,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-182.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-182.webp",
       "name": "Melmetal",
       "fullName": "Melmetal A1-182"
     },
@@ -4013,7 +4013,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-183.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-183.webp",
       "name": "Dratini",
       "fullName": "Dratini A1-183"
     },
@@ -4035,7 +4035,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-184.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-184.webp",
       "name": "Dragonair",
       "fullName": "Dragonair A1-184"
     },
@@ -4057,7 +4057,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-185.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-185.webp",
       "name": "Dragonite",
       "fullName": "Dragonite A1-185"
     },
@@ -4079,7 +4079,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-186.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-186.webp",
       "name": "Pidgey",
       "fullName": "Pidgey A1-186"
     },
@@ -4101,7 +4101,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-187.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-187.webp",
       "name": "Pidgeotto",
       "fullName": "Pidgeotto A1-187"
     },
@@ -4123,7 +4123,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-188.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-188.webp",
       "name": "Pidgeot",
       "fullName": "Pidgeot A1-188"
     },
@@ -4145,7 +4145,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-189.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-189.webp",
       "name": "Rattata",
       "fullName": "Rattata A1-189"
     },
@@ -4167,7 +4167,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-190.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-190.webp",
       "name": "Raticate",
       "fullName": "Raticate A1-190"
     },
@@ -4189,7 +4189,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-191.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-191.webp",
       "name": "Spearow",
       "fullName": "Spearow A1-191"
     },
@@ -4211,7 +4211,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-192.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-192.webp",
       "name": "Fearow",
       "fullName": "Fearow A1-192"
     },
@@ -4233,7 +4233,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-193.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-193.webp",
       "name": "Jigglypuff",
       "fullName": "Jigglypuff A1-193"
     },
@@ -4255,7 +4255,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-194.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-194.webp",
       "name": "Wigglytuff",
       "fullName": "Wigglytuff A1-194"
     },
@@ -4277,7 +4277,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-195.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-195.webp",
       "name": "Wigglytuff ex",
       "fullName": "Wigglytuff ex A1-195"
     },
@@ -4299,7 +4299,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-196.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-196.webp",
       "name": "Meowth",
       "fullName": "Meowth A1-196"
     },
@@ -4321,7 +4321,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-197.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-197.webp",
       "name": "Persian",
       "fullName": "Persian A1-197"
     },
@@ -4343,7 +4343,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-198.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-198.webp",
       "name": "Farfetch'd",
       "fullName": "Farfetch'd A1-198"
     },
@@ -4365,7 +4365,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-199.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-199.webp",
       "name": "Doduo",
       "fullName": "Doduo A1-199"
     },
@@ -4387,7 +4387,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-200.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-200.webp",
       "name": "Dodrio",
       "fullName": "Dodrio A1-200"
     },
@@ -4409,7 +4409,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-201.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-201.webp",
       "name": "Lickitung",
       "fullName": "Lickitung A1-201"
     },
@@ -4431,7 +4431,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-202.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-202.webp",
       "name": "Chansey",
       "fullName": "Chansey A1-202"
     },
@@ -4453,7 +4453,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-203.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-203.webp",
       "name": "Kangaskhan",
       "fullName": "Kangaskhan A1-203"
     },
@@ -4475,7 +4475,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-204.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-204.webp",
       "name": "Tauros",
       "fullName": "Tauros A1-204"
     },
@@ -4497,7 +4497,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-205.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-205.webp",
       "name": "Ditto",
       "fullName": "Ditto A1-205"
     },
@@ -4519,7 +4519,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-206.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-206.webp",
       "name": "Eevee",
       "fullName": "Eevee A1-206"
     },
@@ -4541,7 +4541,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-207.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-207.webp",
       "name": "Eevee",
       "fullName": "Eevee A1-207"
     },
@@ -4563,7 +4563,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-208.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-208.webp",
       "name": "Eevee",
       "fullName": "Eevee A1-208"
     },
@@ -4585,7 +4585,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-209.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-209.webp",
       "name": "Porygon",
       "fullName": "Porygon A1-209"
     },
@@ -4607,7 +4607,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-210.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-210.webp",
       "name": "Aerodactyl",
       "fullName": "Aerodactyl A1-210"
     },
@@ -4629,7 +4629,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-211.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-211.webp",
       "name": "Snorlax",
       "fullName": "Snorlax A1-211"
     },
@@ -4651,7 +4651,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-212.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-212.webp",
       "name": "Minccino",
       "fullName": "Minccino A1-212"
     },
@@ -4673,7 +4673,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-213.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-213.webp",
       "name": "Cinccino",
       "fullName": "Cinccino A1-213"
     },
@@ -4695,7 +4695,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-214.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-214.webp",
       "name": "Wooloo",
       "fullName": "Wooloo A1-214"
     },
@@ -4717,7 +4717,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-215.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-215.webp",
       "name": "Dubwool",
       "fullName": "Dubwool A1-215"
     },
@@ -4739,7 +4739,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-216.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-216.webp",
       "name": "Helix Fossil",
       "fullName": "Helix Fossil A1-216"
     },
@@ -4761,7 +4761,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-217.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-217.webp",
       "name": "Dome Fossil",
       "fullName": "Dome Fossil A1-217"
     },
@@ -4783,7 +4783,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-218.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-218.webp",
       "name": "Old Amber",
       "fullName": "Old Amber A1-218"
     },
@@ -4805,7 +4805,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-219.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-219.webp",
       "name": "Erika",
       "fullName": "Erika A1-219"
     },
@@ -4827,7 +4827,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-220.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-220.webp",
       "name": "Misty",
       "fullName": "Misty A1-220"
     },
@@ -4849,7 +4849,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-221.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-221.webp",
       "name": "Blaine",
       "fullName": "Blaine A1-221"
     },
@@ -4871,7 +4871,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-222.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-222.webp",
       "name": "Koga",
       "fullName": "Koga A1-222"
     },
@@ -4893,7 +4893,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-223.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-223.webp",
       "name": "Giovanni",
       "fullName": "Giovanni A1-223"
     },
@@ -4915,7 +4915,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-224.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-224.webp",
       "name": "Brock",
       "fullName": "Brock A1-224"
     },
@@ -4937,7 +4937,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-225.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-225.webp",
       "name": "Sabrina",
       "fullName": "Sabrina A1-225"
     },
@@ -4959,7 +4959,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-226.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-226.webp",
       "name": "Lt. Surge",
       "fullName": "Lt. Surge A1-226"
     },
@@ -4981,7 +4981,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-227.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-227.webp",
       "name": "Bulbasaur",
       "fullName": "Bulbasaur A1-227"
     },
@@ -5003,7 +5003,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-228.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-228.webp",
       "name": "Gloom",
       "fullName": "Gloom A1-228"
     },
@@ -5025,7 +5025,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-229.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-229.webp",
       "name": "Pinsir",
       "fullName": "Pinsir A1-229"
     },
@@ -5047,7 +5047,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-230.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-230.webp",
       "name": "Charmander",
       "fullName": "Charmander A1-230"
     },
@@ -5069,7 +5069,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-231.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-231.webp",
       "name": "Rapidash",
       "fullName": "Rapidash A1-231"
     },
@@ -5091,7 +5091,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-232.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-232.webp",
       "name": "Squirtle",
       "fullName": "Squirtle A1-232"
     },
@@ -5113,7 +5113,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-233.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-233.webp",
       "name": "Gyarados",
       "fullName": "Gyarados A1-233"
     },
@@ -5135,7 +5135,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-234.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-234.webp",
       "name": "Lapras",
       "fullName": "Lapras A1-234"
     },
@@ -5157,7 +5157,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-235.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-235.webp",
       "name": "Electrode",
       "fullName": "Electrode A1-235"
     },
@@ -5179,7 +5179,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-236.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-236.webp",
       "name": "Alakazam",
       "fullName": "Alakazam A1-236"
     },
@@ -5201,7 +5201,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-237.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-237.webp",
       "name": "Slowpoke",
       "fullName": "Slowpoke A1-237"
     },
@@ -5223,7 +5223,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-238.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-238.webp",
       "name": "Diglett",
       "fullName": "Diglett A1-238"
     },
@@ -5245,7 +5245,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-239.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-239.webp",
       "name": "Cubone",
       "fullName": "Cubone A1-239"
     },
@@ -5267,7 +5267,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-240.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-240.webp",
       "name": "Nidoqueen",
       "fullName": "Nidoqueen A1-240"
     },
@@ -5289,7 +5289,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-241.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-241.webp",
       "name": "Nidoking",
       "fullName": "Nidoking A1-241"
     },
@@ -5311,7 +5311,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-242.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-242.webp",
       "name": "Golbat",
       "fullName": "Golbat A1-242"
     },
@@ -5333,7 +5333,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-243.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-243.webp",
       "name": "Weezing",
       "fullName": "Weezing A1-243"
     },
@@ -5355,7 +5355,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-244.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-244.webp",
       "name": "Dragonite",
       "fullName": "Dragonite A1-244"
     },
@@ -5377,7 +5377,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-245.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-245.webp",
       "name": "Pidgeot",
       "fullName": "Pidgeot A1-245"
     },
@@ -5399,7 +5399,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-246.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-246.webp",
       "name": "Meowth",
       "fullName": "Meowth A1-246"
     },
@@ -5421,7 +5421,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-247.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-247.webp",
       "name": "Ditto",
       "fullName": "Ditto A1-247"
     },
@@ -5443,7 +5443,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-248.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-248.webp",
       "name": "Eevee",
       "fullName": "Eevee A1-248"
     },
@@ -5465,7 +5465,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-249.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-249.webp",
       "name": "Porygon",
       "fullName": "Porygon A1-249"
     },
@@ -5487,7 +5487,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-250.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-250.webp",
       "name": "Snorlax",
       "fullName": "Snorlax A1-250"
     },
@@ -5509,7 +5509,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-251.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-251.webp",
       "name": "Venusaur ex",
       "fullName": "Venusaur ex A1-251"
     },
@@ -5531,7 +5531,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-252.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-252.webp",
       "name": "Exeggutor ex",
       "fullName": "Exeggutor ex A1-252"
     },
@@ -5553,7 +5553,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-253.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-253.webp",
       "name": "Charizard ex",
       "fullName": "Charizard ex A1-253"
     },
@@ -5575,7 +5575,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-254.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-254.webp",
       "name": "Arcanine ex",
       "fullName": "Arcanine ex A1-254"
     },
@@ -5597,7 +5597,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-255.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-255.webp",
       "name": "Moltres ex",
       "fullName": "Moltres ex A1-255"
     },
@@ -5619,7 +5619,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-256.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-256.webp",
       "name": "Blastoise ex",
       "fullName": "Blastoise ex A1-256"
     },
@@ -5641,7 +5641,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-257.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-257.webp",
       "name": "Starmie ex",
       "fullName": "Starmie ex A1-257"
     },
@@ -5663,7 +5663,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-258.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-258.webp",
       "name": "Articuno ex",
       "fullName": "Articuno ex A1-258"
     },
@@ -5685,7 +5685,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-259.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-259.webp",
       "name": "Pikachu ex",
       "fullName": "Pikachu ex A1-259"
     },
@@ -5707,7 +5707,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-260.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-260.webp",
       "name": "Zapdos ex",
       "fullName": "Zapdos ex A1-260"
     },
@@ -5729,7 +5729,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-261.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-261.webp",
       "name": "Gengar ex",
       "fullName": "Gengar ex A1-261"
     },
@@ -5751,7 +5751,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-262.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-262.webp",
       "name": "Mewtwo ex",
       "fullName": "Mewtwo ex A1-262"
     },
@@ -5773,7 +5773,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-263.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-263.webp",
       "name": "Machamp ex",
       "fullName": "Machamp ex A1-263"
     },
@@ -5795,7 +5795,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-264.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-264.webp",
       "name": "Marowak ex",
       "fullName": "Marowak ex A1-264"
     },
@@ -5817,7 +5817,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-265.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-265.webp",
       "name": "Wigglytuff ex",
       "fullName": "Wigglytuff ex A1-265"
     },
@@ -5839,7 +5839,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-266.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-266.webp",
       "name": "Erika",
       "fullName": "Erika A1-266"
     },
@@ -5861,7 +5861,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-267.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-267.webp",
       "name": "Misty",
       "fullName": "Misty A1-267"
     },
@@ -5883,7 +5883,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-268.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-268.webp",
       "name": "Blaine",
       "fullName": "Blaine A1-268"
     },
@@ -5905,7 +5905,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-269.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-269.webp",
       "name": "Koga",
       "fullName": "Koga A1-269"
     },
@@ -5927,7 +5927,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-270.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-270.webp",
       "name": "Giovanni",
       "fullName": "Giovanni A1-270"
     },
@@ -5949,7 +5949,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-271.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-271.webp",
       "name": "Brock",
       "fullName": "Brock A1-271"
     },
@@ -5971,7 +5971,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-272.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-272.webp",
       "name": "Sabrina",
       "fullName": "Sabrina A1-272"
     },
@@ -5993,7 +5993,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-273.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-273.webp",
       "name": "Lt. Surge",
       "fullName": "Lt. Surge A1-273"
     },
@@ -6015,7 +6015,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-274.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-274.webp",
       "name": "Moltres ex",
       "fullName": "Moltres ex A1-274"
     },
@@ -6037,7 +6037,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-275.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-275.webp",
       "name": "Articuno ex",
       "fullName": "Articuno ex A1-275"
     },
@@ -6059,7 +6059,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-276.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-276.webp",
       "name": "Zapdos ex",
       "fullName": "Zapdos ex A1-276"
     },
@@ -6081,7 +6081,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-277.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-277.webp",
       "name": "Gengar ex",
       "fullName": "Gengar ex A1-277"
     },
@@ -6103,7 +6103,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-278.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-278.webp",
       "name": "Machamp ex",
       "fullName": "Machamp ex A1-278"
     },
@@ -6125,7 +6125,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-279.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-279.webp",
       "name": "Wigglytuff ex",
       "fullName": "Wigglytuff ex A1-279"
     },
@@ -6147,7 +6147,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-280.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-280.webp",
       "name": "Charizard ex",
       "fullName": "Charizard ex A1-280"
     },
@@ -6169,7 +6169,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-281.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-281.webp",
       "name": "Pikachu ex",
       "fullName": "Pikachu ex A1-281"
     },
@@ -6191,7 +6191,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-282.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-282.webp",
       "name": "Mewtwo ex",
       "fullName": "Mewtwo ex A1-282"
     },
@@ -6213,7 +6213,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-283.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-283.webp",
       "name": "Mew",
       "fullName": "Mew A1-283"
     },
@@ -6235,7 +6235,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-284.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-284.webp",
       "name": "Charizard ex",
       "fullName": "Charizard ex A1-284"
     },
@@ -6257,7 +6257,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-285.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-285.webp",
       "name": "Pikachu ex",
       "fullName": "Pikachu ex A1-285"
     },
@@ -6279,7 +6279,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Genetic Apex",
-      "image": "A1-286.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1-286.webp",
       "name": "Mewtwo ex",
       "fullName": "Mewtwo ex A1-286"
     },
@@ -6301,7 +6301,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-001.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-001.webp",
       "name": "Potion",
       "fullName": "Potion PROMO-001"
     },
@@ -6323,7 +6323,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-002.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-002.webp",
       "name": "X Speed",
       "fullName": "X Speed PROMO-002"
     },
@@ -6345,7 +6345,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-003.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-003.webp",
       "name": "Hand Scope",
       "fullName": "Hand Scope PROMO-003"
     },
@@ -6367,7 +6367,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-004.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-004.webp",
       "name": "Pokédex",
       "fullName": "Pokédex PROMO-004"
     },
@@ -6389,7 +6389,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-005.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-005.webp",
       "name": "Poké Ball",
       "fullName": "Poké Ball PROMO-005"
     },
@@ -6411,7 +6411,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-006.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-006.webp",
       "name": "Red Card",
       "fullName": "Red Card PROMO-006"
     },
@@ -6433,7 +6433,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-007.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-007.webp",
       "name": "Professor's Research",
       "fullName": "Professor's Research PROMO-007"
     },
@@ -6455,7 +6455,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-008.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-008.webp",
       "name": "Pokédex",
       "fullName": "Pokédex PROMO-008"
     },
@@ -6477,7 +6477,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-009.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-009.webp",
       "name": "Pikachu",
       "fullName": "Pikachu PROMO-009"
     },
@@ -6499,7 +6499,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-010.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-010.webp",
       "name": "Mewtwo",
       "fullName": "Mewtwo PROMO-010"
     },
@@ -6521,7 +6521,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-011.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-011.webp",
       "name": "Chansey",
       "fullName": "Chansey PROMO-011"
     },
@@ -6543,7 +6543,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-012.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-012.webp",
       "name": "Meowth",
       "fullName": "Meowth PROMO-012"
     },
@@ -6565,7 +6565,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-013.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-013.webp",
       "name": "Butterfree",
       "fullName": "Butterfree PROMO-013"
     },
@@ -6587,7 +6587,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-014.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-014.webp",
       "name": "Lapras ex",
       "fullName": "Lapras ex PROMO-014"
     },
@@ -6609,7 +6609,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-015.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-015.webp",
       "name": "Pikachu",
       "fullName": "Pikachu PROMO-015"
     },
@@ -6631,7 +6631,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-016.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-016.webp",
       "name": "Clefairy",
       "fullName": "Clefairy PROMO-016"
     },
@@ -6653,7 +6653,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-017.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-017.webp",
       "name": "Mankey",
       "fullName": "Mankey PROMO-017"
     },
@@ -6675,7 +6675,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-018.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-018.webp",
       "name": "Venusaur",
       "fullName": "Venusaur PROMO-018"
     },
@@ -6697,7 +6697,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-019.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-019.webp",
       "name": "Greninja",
       "fullName": "Greninja PROMO-019"
     },
@@ -6719,7 +6719,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-020.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-020.webp",
       "name": "Haunter",
       "fullName": "Haunter PROMO-020"
     },
@@ -6741,7 +6741,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-021.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-021.webp",
       "name": "Onix",
       "fullName": "Onix PROMO-021"
     },
@@ -6763,7 +6763,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-022.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-022.webp",
       "name": "Jigglypuff",
       "fullName": "Jigglypuff PROMO-022"
     },
@@ -6785,7 +6785,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-023.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-023.webp",
       "name": "Bulbasaur",
       "fullName": "Bulbasaur PROMO-023"
     },
@@ -6807,7 +6807,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-024.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-024.webp",
       "name": "Magnemite",
       "fullName": "Magnemite PROMO-024"
     },
@@ -6829,7 +6829,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-025.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-025.webp",
       "name": "Moltres ex",
       "fullName": "Moltres ex PROMO-025"
     },
@@ -6851,7 +6851,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-026.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-026.webp",
       "name": "Pikachu",
       "fullName": "Pikachu PROMO-026"
     },
@@ -6873,7 +6873,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-027.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-027.webp",
       "name": "Snivy",
       "fullName": "Snivy PROMO-027"
     },
@@ -6895,7 +6895,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-028.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-028.webp",
       "name": "Volcarona",
       "fullName": "Volcarona PROMO-028"
     },
@@ -6917,7 +6917,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-029.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-029.webp",
       "name": "Blastoise",
       "fullName": "Blastoise PROMO-029"
     },
@@ -6939,7 +6939,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-030.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-030.webp",
       "name": "Eevee",
       "fullName": "Eevee PROMO-030"
     },
@@ -6961,7 +6961,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-031.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-031.webp",
       "name": "Cinccino",
       "fullName": "Cinccino PROMO-031"
     },
@@ -6983,7 +6983,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-032.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-032.webp",
       "name": "Charmander",
       "fullName": "Charmander PROMO-032"
     },
@@ -7005,7 +7005,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-033.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-033.webp",
       "name": "Squirtle",
       "fullName": "Squirtle PROMO-033"
     },
@@ -7027,7 +7027,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-034.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-034.webp",
       "name": "Piplup",
       "fullName": "Piplup PROMO-034"
     },
@@ -7049,7 +7049,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-035.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-035.webp",
       "name": "Turtwig",
       "fullName": "Turtwig PROMO-035"
     },
@@ -7071,7 +7071,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-036.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-036.webp",
       "name": "Electivire",
       "fullName": "Electivire PROMO-036"
     },
@@ -7093,7 +7093,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-037.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-037.webp",
       "name": "Cresselia ex",
       "fullName": "Cresselia ex PROMO-037"
     },
@@ -7115,7 +7115,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-038.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-038.webp",
       "name": "Misdreavus",
       "fullName": "Misdreavus PROMO-038"
     },
@@ -7137,7 +7137,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-039.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-039.webp",
       "name": "Skarmory",
       "fullName": "Skarmory PROMO-039"
     },
@@ -7159,7 +7159,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-040.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-040.webp",
       "name": "Chimchar",
       "fullName": "Chimchar PROMO-040"
     },
@@ -7181,7 +7181,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Promo-A",
-      "image": "PROMO-041.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/PROMO-041.webp",
       "name": "Togepi",
       "fullName": "Togepi PROMO-041"
     },
@@ -7203,7 +7203,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-001.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-001.webp",
       "name": "Exeggcute",
       "fullName": "Exeggcute A1a-001"
     },
@@ -7225,7 +7225,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-002.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-002.webp",
       "name": "Exeggutor",
       "fullName": "Exeggutor A1a-002"
     },
@@ -7247,7 +7247,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-003.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-003.webp",
       "name": "Celebi ex",
       "fullName": "Celebi ex A1a-003"
     },
@@ -7269,7 +7269,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-004.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-004.webp",
       "name": "Snivy",
       "fullName": "Snivy A1a-004"
     },
@@ -7291,7 +7291,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-005.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-005.webp",
       "name": "Servine",
       "fullName": "Servine A1a-005"
     },
@@ -7313,7 +7313,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-006.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-006.webp",
       "name": "Serperior",
       "fullName": "Serperior A1a-006"
     },
@@ -7335,7 +7335,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-007.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-007.webp",
       "name": "Morelull",
       "fullName": "Morelull A1a-007"
     },
@@ -7357,7 +7357,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-008.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-008.webp",
       "name": "Shiinotic",
       "fullName": "Shiinotic A1a-008"
     },
@@ -7379,7 +7379,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-009.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-009.webp",
       "name": "Dhelmise",
       "fullName": "Dhelmise A1a-009"
     },
@@ -7401,7 +7401,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-010.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-010.webp",
       "name": "Ponyta",
       "fullName": "Ponyta A1a-010"
     },
@@ -7423,7 +7423,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-011.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-011.webp",
       "name": "Rapidash",
       "fullName": "Rapidash A1a-011"
     },
@@ -7445,7 +7445,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-012.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-012.webp",
       "name": "Magmar",
       "fullName": "Magmar A1a-012"
     },
@@ -7467,7 +7467,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-013.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-013.webp",
       "name": "Larvesta",
       "fullName": "Larvesta A1a-013"
     },
@@ -7489,7 +7489,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-014.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-014.webp",
       "name": "Volcarona",
       "fullName": "Volcarona A1a-014"
     },
@@ -7511,7 +7511,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-015.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-015.webp",
       "name": "Salandit",
       "fullName": "Salandit A1a-015"
     },
@@ -7533,7 +7533,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-016.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-016.webp",
       "name": "Salazzle",
       "fullName": "Salazzle A1a-016"
     },
@@ -7555,7 +7555,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-017.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-017.webp",
       "name": "Magikarp",
       "fullName": "Magikarp A1a-017"
     },
@@ -7577,7 +7577,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-018.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-018.webp",
       "name": "Gyarados ex",
       "fullName": "Gyarados ex A1a-018"
     },
@@ -7599,7 +7599,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-019.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-019.webp",
       "name": "Vaporeon",
       "fullName": "Vaporeon A1a-019"
     },
@@ -7621,7 +7621,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-020.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-020.webp",
       "name": "Finneon",
       "fullName": "Finneon A1a-020"
     },
@@ -7643,7 +7643,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-021.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-021.webp",
       "name": "Lumineon",
       "fullName": "Lumineon A1a-021"
     },
@@ -7665,7 +7665,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-022.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-022.webp",
       "name": "Chewtle",
       "fullName": "Chewtle A1a-022"
     },
@@ -7687,7 +7687,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-023.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-023.webp",
       "name": "Drednaw",
       "fullName": "Drednaw A1a-023"
     },
@@ -7709,7 +7709,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-024.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-024.webp",
       "name": "Cramorant",
       "fullName": "Cramorant A1a-024"
     },
@@ -7731,7 +7731,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-025.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-025.webp",
       "name": "Pikachu",
       "fullName": "Pikachu A1a-025"
     },
@@ -7753,7 +7753,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-026.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-026.webp",
       "name": "Raichu",
       "fullName": "Raichu A1a-026"
     },
@@ -7775,7 +7775,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-027.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-027.webp",
       "name": "Electabuzz",
       "fullName": "Electabuzz A1a-027"
     },
@@ -7797,7 +7797,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-028.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-028.webp",
       "name": "Joltik",
       "fullName": "Joltik A1a-028"
     },
@@ -7819,7 +7819,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-029.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-029.webp",
       "name": "Galvantula",
       "fullName": "Galvantula A1a-029"
     },
@@ -7841,7 +7841,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-030.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-030.webp",
       "name": "Dedenne",
       "fullName": "Dedenne A1a-030"
     },
@@ -7863,7 +7863,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-031.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-031.webp",
       "name": "Mew",
       "fullName": "Mew A1a-031"
     },
@@ -7885,7 +7885,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-032.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-032.webp",
       "name": "Mew ex",
       "fullName": "Mew ex A1a-032"
     },
@@ -7907,7 +7907,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-033.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-033.webp",
       "name": "Sigilyph",
       "fullName": "Sigilyph A1a-033"
     },
@@ -7929,7 +7929,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-034.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-034.webp",
       "name": "Elgyem",
       "fullName": "Elgyem A1a-034"
     },
@@ -7951,7 +7951,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-035.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-035.webp",
       "name": "Beheeyem",
       "fullName": "Beheeyem A1a-035"
     },
@@ -7973,7 +7973,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-036.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-036.webp",
       "name": "Flabébé",
       "fullName": "Flabébé A1a-036"
     },
@@ -7995,7 +7995,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-037.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-037.webp",
       "name": "Floette",
       "fullName": "Floette A1a-037"
     },
@@ -8017,7 +8017,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-038.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-038.webp",
       "name": "Florges",
       "fullName": "Florges A1a-038"
     },
@@ -8039,7 +8039,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-039.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-039.webp",
       "name": "Swirlix",
       "fullName": "Swirlix A1a-039"
     },
@@ -8061,7 +8061,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-040.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-040.webp",
       "name": "Slurpuff",
       "fullName": "Slurpuff A1a-040"
     },
@@ -8083,7 +8083,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-041.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-041.webp",
       "name": "Mankey",
       "fullName": "Mankey A1a-041"
     },
@@ -8105,7 +8105,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-042.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-042.webp",
       "name": "Primeape",
       "fullName": "Primeape A1a-042"
     },
@@ -8127,7 +8127,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-043.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-043.webp",
       "name": "Geodude",
       "fullName": "Geodude A1a-043"
     },
@@ -8149,7 +8149,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-044.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-044.webp",
       "name": "Graveler",
       "fullName": "Graveler A1a-044"
     },
@@ -8171,7 +8171,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-045.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-045.webp",
       "name": "Golem",
       "fullName": "Golem A1a-045"
     },
@@ -8193,7 +8193,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-046.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-046.webp",
       "name": "Aerodactyl ex",
       "fullName": "Aerodactyl ex A1a-046"
     },
@@ -8215,7 +8215,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-047.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-047.webp",
       "name": "Marshadow",
       "fullName": "Marshadow A1a-047"
     },
@@ -8237,7 +8237,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-048.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-048.webp",
       "name": "Stonjourner",
       "fullName": "Stonjourner A1a-048"
     },
@@ -8259,7 +8259,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-049.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-049.webp",
       "name": "Koffing",
       "fullName": "Koffing A1a-049"
     },
@@ -8281,7 +8281,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-050.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-050.webp",
       "name": "Weezing",
       "fullName": "Weezing A1a-050"
     },
@@ -8303,7 +8303,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-051.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-051.webp",
       "name": "Purrloin",
       "fullName": "Purrloin A1a-051"
     },
@@ -8325,7 +8325,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-052.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-052.webp",
       "name": "Liepard",
       "fullName": "Liepard A1a-052"
     },
@@ -8347,7 +8347,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-053.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-053.webp",
       "name": "Venipede",
       "fullName": "Venipede A1a-053"
     },
@@ -8369,7 +8369,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-054.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-054.webp",
       "name": "Whirlipede",
       "fullName": "Whirlipede A1a-054"
     },
@@ -8391,7 +8391,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-055.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-055.webp",
       "name": "Scolipede",
       "fullName": "Scolipede A1a-055"
     },
@@ -8413,7 +8413,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-056.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-056.webp",
       "name": "Druddigon",
       "fullName": "Druddigon A1a-056"
     },
@@ -8435,7 +8435,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-057.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-057.webp",
       "name": "Pidgey",
       "fullName": "Pidgey A1a-057"
     },
@@ -8457,7 +8457,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-058.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-058.webp",
       "name": "Pidgeotto",
       "fullName": "Pidgeotto A1a-058"
     },
@@ -8479,7 +8479,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-059.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-059.webp",
       "name": "Pidgeot ex",
       "fullName": "Pidgeot ex A1a-059"
     },
@@ -8501,7 +8501,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-060.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-060.webp",
       "name": "Tauros",
       "fullName": "Tauros A1a-060"
     },
@@ -8523,7 +8523,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-061.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-061.webp",
       "name": "Eevee",
       "fullName": "Eevee A1a-061"
     },
@@ -8545,7 +8545,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-062.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-062.webp",
       "name": "Chatot",
       "fullName": "Chatot A1a-062"
     },
@@ -8567,7 +8567,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-063.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-063.webp",
       "name": "Old Amber",
       "fullName": "Old Amber A1a-063"
     },
@@ -8589,7 +8589,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-064.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-064.webp",
       "name": "Pokémon Flute",
       "fullName": "Pokémon Flute A1a-064"
     },
@@ -8611,7 +8611,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-065.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-065.webp",
       "name": "Mythical Slab",
       "fullName": "Mythical Slab A1a-065"
     },
@@ -8633,7 +8633,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-066.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-066.webp",
       "name": "Budding Expeditioner",
       "fullName": "Budding Expeditioner A1a-066"
     },
@@ -8655,7 +8655,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-067.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-067.webp",
       "name": "Blue",
       "fullName": "Blue A1a-067"
     },
@@ -8677,7 +8677,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-068.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-068.webp",
       "name": "Leaf",
       "fullName": "Leaf A1a-068"
     },
@@ -8699,7 +8699,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-069.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-069.webp",
       "name": "Exeggutor",
       "fullName": "Exeggutor A1a-069"
     },
@@ -8721,7 +8721,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-070.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-070.webp",
       "name": "Serperior",
       "fullName": "Serperior A1a-070"
     },
@@ -8743,7 +8743,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-071.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-071.webp",
       "name": "Salandit",
       "fullName": "Salandit A1a-071"
     },
@@ -8765,7 +8765,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-072.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-072.webp",
       "name": "Vaporeon",
       "fullName": "Vaporeon A1a-072"
     },
@@ -8787,7 +8787,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-073.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-073.webp",
       "name": "Dedenne",
       "fullName": "Dedenne A1a-073"
     },
@@ -8809,7 +8809,7 @@
     "isTradable": true,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-074.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-074.webp",
       "name": "Marshadow",
       "fullName": "Marshadow A1a-074"
     },
@@ -8831,7 +8831,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-075.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-075.webp",
       "name": "Celebi ex",
       "fullName": "Celebi ex A1a-075"
     },
@@ -8853,7 +8853,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-076.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-076.webp",
       "name": "Gyarados ex",
       "fullName": "Gyarados ex A1a-076"
     },
@@ -8875,7 +8875,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-077.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-077.webp",
       "name": "Mew ex",
       "fullName": "Mew ex A1a-077"
     },
@@ -8897,7 +8897,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-078.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-078.webp",
       "name": "Aerodactyl ex",
       "fullName": "Aerodactyl ex A1a-078"
     },
@@ -8919,7 +8919,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-079.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-079.webp",
       "name": "Pidgeot ex",
       "fullName": "Pidgeot ex A1a-079"
     },
@@ -8941,7 +8941,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-080.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-080.webp",
       "name": "Budding Expeditioner",
       "fullName": "Budding Expeditioner A1a-080"
     },
@@ -8963,7 +8963,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-081.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-081.webp",
       "name": "Blue",
       "fullName": "Blue A1a-081"
     },
@@ -8985,7 +8985,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-082.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-082.webp",
       "name": "Leaf",
       "fullName": "Leaf A1a-082"
     },
@@ -9007,7 +9007,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-083.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-083.webp",
       "name": "Mew ex",
       "fullName": "Mew ex A1a-083"
     },
@@ -9029,7 +9029,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-084.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-084.webp",
       "name": "Aerodactyl ex",
       "fullName": "Aerodactyl ex A1a-084"
     },
@@ -9051,7 +9051,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-085.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-085.webp",
       "name": "Celebi ex",
       "fullName": "Celebi ex A1a-085"
     },
@@ -9073,7 +9073,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Fabulous Island",
-      "image": "A1a-086.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A1a-086.webp",
       "name": "Mew ex",
       "fullName": "Mew ex A1a-086"
     },
@@ -9095,7 +9095,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-001.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-001.webp",
       "name": "Oddish",
       "fullName": "Oddish A2-001"
     },
@@ -9117,7 +9117,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-002.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-002.webp",
       "name": "Gloom",
       "fullName": "Gloom A2-002"
     },
@@ -9139,7 +9139,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-003.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-003.webp",
       "name": "Bellossom",
       "fullName": "Bellossom A2-003"
     },
@@ -9161,7 +9161,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-004.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-004.webp",
       "name": "Tangela",
       "fullName": "Tangela A2-004"
     },
@@ -9183,7 +9183,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-005.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-005.webp",
       "name": "Tangrowth",
       "fullName": "Tangrowth A2-005"
     },
@@ -9205,7 +9205,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-006.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-006.webp",
       "name": "Yanma",
       "fullName": "Yanma A2-006"
     },
@@ -9227,7 +9227,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-007.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-007.webp",
       "name": "Yanmega ex",
       "fullName": "Yanmega ex A2-007"
     },
@@ -9249,7 +9249,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-008.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-008.webp",
       "name": "Roselia",
       "fullName": "Roselia A2-008"
     },
@@ -9271,7 +9271,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-009.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-009.webp",
       "name": "Roserade",
       "fullName": "Roserade A2-009"
     },
@@ -9293,7 +9293,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-010.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-010.webp",
       "name": "Turtwig",
       "fullName": "Turtwig A2-010"
     },
@@ -9315,7 +9315,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-011.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-011.webp",
       "name": "Grotle",
       "fullName": "Grotle A2-011"
     },
@@ -9337,7 +9337,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-012.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-012.webp",
       "name": "Torterra",
       "fullName": "Torterra A2-012"
     },
@@ -9359,7 +9359,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-013.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-013.webp",
       "name": "Kricketot",
       "fullName": "Kricketot A2-013"
     },
@@ -9381,7 +9381,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-014.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-014.webp",
       "name": "Kricketune",
       "fullName": "Kricketune A2-014"
     },
@@ -9403,7 +9403,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-015.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-015.webp",
       "name": "Burmy",
       "fullName": "Burmy A2-015"
     },
@@ -9425,7 +9425,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-016.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-016.webp",
       "name": "Wormadam",
       "fullName": "Wormadam A2-016"
     },
@@ -9447,7 +9447,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-017.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-017.webp",
       "name": "Combee",
       "fullName": "Combee A2-017"
     },
@@ -9469,7 +9469,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-018.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-018.webp",
       "name": "Vespiquen",
       "fullName": "Vespiquen A2-018"
     },
@@ -9491,7 +9491,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-019.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-019.webp",
       "name": "Carnivine",
       "fullName": "Carnivine A2-019"
     },
@@ -9513,7 +9513,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-020.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-020.webp",
       "name": "Leafeon",
       "fullName": "Leafeon A2-020"
     },
@@ -9535,7 +9535,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-021.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-021.webp",
       "name": "Mow Rotom",
       "fullName": "Mow Rotom A2-021"
     },
@@ -9557,7 +9557,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-022.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-022.webp",
       "name": "Shaymin",
       "fullName": "Shaymin A2-022"
     },
@@ -9579,7 +9579,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-023.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-023.webp",
       "name": "Magmar",
       "fullName": "Magmar A2-023"
     },
@@ -9601,7 +9601,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-024.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-024.webp",
       "name": "Magmortar",
       "fullName": "Magmortar A2-024"
     },
@@ -9623,7 +9623,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-025.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-025.webp",
       "name": "Slugma",
       "fullName": "Slugma A2-025"
     },
@@ -9645,7 +9645,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-026.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-026.webp",
       "name": "Magcargo",
       "fullName": "Magcargo A2-026"
     },
@@ -9667,7 +9667,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-027.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-027.webp",
       "name": "Chimchar",
       "fullName": "Chimchar A2-027"
     },
@@ -9689,7 +9689,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-028.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-028.webp",
       "name": "Monferno",
       "fullName": "Monferno A2-028"
     },
@@ -9711,7 +9711,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-029.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-029.webp",
       "name": "Infernape ex",
       "fullName": "Infernape ex A2-029"
     },
@@ -9733,7 +9733,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-030.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-030.webp",
       "name": "Heat Rotom",
       "fullName": "Heat Rotom A2-030"
     },
@@ -9755,7 +9755,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-031.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-031.webp",
       "name": "Swinub",
       "fullName": "Swinub A2-031"
     },
@@ -9777,7 +9777,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-032.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-032.webp",
       "name": "Piloswine",
       "fullName": "Piloswine A2-032"
     },
@@ -9799,7 +9799,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-033.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-033.webp",
       "name": "Mamoswine",
       "fullName": "Mamoswine A2-033"
     },
@@ -9821,7 +9821,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-034.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-034.webp",
       "name": "Regice",
       "fullName": "Regice A2-034"
     },
@@ -9843,7 +9843,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-035.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-035.webp",
       "name": "Piplup",
       "fullName": "Piplup A2-035"
     },
@@ -9865,7 +9865,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-036.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-036.webp",
       "name": "Prinplup",
       "fullName": "Prinplup A2-036"
     },
@@ -9887,7 +9887,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-037.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-037.webp",
       "name": "Empoleon",
       "fullName": "Empoleon A2-037"
     },
@@ -9909,7 +9909,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-038.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-038.webp",
       "name": "Buizel",
       "fullName": "Buizel A2-038"
     },
@@ -9931,7 +9931,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-039.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-039.webp",
       "name": "Floatzel",
       "fullName": "Floatzel A2-039"
     },
@@ -9953,7 +9953,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-040.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-040.webp",
       "name": "Shellos",
       "fullName": "Shellos A2-040"
     },
@@ -9975,7 +9975,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-041.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-041.webp",
       "name": "Gastrodon",
       "fullName": "Gastrodon A2-041"
     },
@@ -9997,7 +9997,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-042.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-042.webp",
       "name": "Finneon",
       "fullName": "Finneon A2-042"
     },
@@ -10019,7 +10019,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-043.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-043.webp",
       "name": "Lumineon",
       "fullName": "Lumineon A2-043"
     },
@@ -10041,7 +10041,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-044.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-044.webp",
       "name": "Snover",
       "fullName": "Snover A2-044"
     },
@@ -10063,7 +10063,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-045.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-045.webp",
       "name": "Abomasnow",
       "fullName": "Abomasnow A2-045"
     },
@@ -10085,7 +10085,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-046.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-046.webp",
       "name": "Glaceon",
       "fullName": "Glaceon A2-046"
     },
@@ -10107,7 +10107,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-047.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-047.webp",
       "name": "Wash Rotom",
       "fullName": "Wash Rotom A2-047"
     },
@@ -10129,7 +10129,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-048.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-048.webp",
       "name": "Frost Rotom",
       "fullName": "Frost Rotom A2-048"
     },
@@ -10151,7 +10151,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-049.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-049.webp",
       "name": "Palkia ex",
       "fullName": "Palkia ex A2-049"
     },
@@ -10173,7 +10173,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-050.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-050.webp",
       "name": "Manaphy",
       "fullName": "Manaphy A2-050"
     },
@@ -10195,7 +10195,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-051.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-051.webp",
       "name": "Magnemite",
       "fullName": "Magnemite A2-051"
     },
@@ -10217,7 +10217,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-052.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-052.webp",
       "name": "Magneton",
       "fullName": "Magneton A2-052"
     },
@@ -10239,7 +10239,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-053.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-053.webp",
       "name": "Magnezone",
       "fullName": "Magnezone A2-053"
     },
@@ -10261,7 +10261,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-054.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-054.webp",
       "name": "Voltorb",
       "fullName": "Voltorb A2-054"
     },
@@ -10283,7 +10283,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-055.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-055.webp",
       "name": "Electrode",
       "fullName": "Electrode A2-055"
     },
@@ -10305,7 +10305,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-056.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-056.webp",
       "name": "Electabuzz",
       "fullName": "Electabuzz A2-056"
     },
@@ -10327,7 +10327,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-057.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-057.webp",
       "name": "Electivire",
       "fullName": "Electivire A2-057"
     },
@@ -10349,7 +10349,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-058.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-058.webp",
       "name": "Shinx",
       "fullName": "Shinx A2-058"
     },
@@ -10371,7 +10371,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-059.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-059.webp",
       "name": "Luxio",
       "fullName": "Luxio A2-059"
     },
@@ -10393,7 +10393,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-060.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-060.webp",
       "name": "Luxray",
       "fullName": "Luxray A2-060"
     },
@@ -10415,7 +10415,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-061.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-061.webp",
       "name": "Pachirisu ex",
       "fullName": "Pachirisu ex A2-061"
     },
@@ -10437,7 +10437,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-062.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-062.webp",
       "name": "Rotom",
       "fullName": "Rotom A2-062"
     },
@@ -10459,7 +10459,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-063.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-063.webp",
       "name": "Togepi",
       "fullName": "Togepi A2-063"
     },
@@ -10481,7 +10481,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-064.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-064.webp",
       "name": "Togetic",
       "fullName": "Togetic A2-064"
     },
@@ -10503,7 +10503,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-065.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-065.webp",
       "name": "Togekiss",
       "fullName": "Togekiss A2-065"
     },
@@ -10525,7 +10525,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-066.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-066.webp",
       "name": "Misdreavus",
       "fullName": "Misdreavus A2-066"
     },
@@ -10547,7 +10547,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-067.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-067.webp",
       "name": "Mismagius ex",
       "fullName": "Mismagius ex A2-067"
     },
@@ -10569,7 +10569,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-068.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-068.webp",
       "name": "Ralts",
       "fullName": "Ralts A2-068"
     },
@@ -10591,7 +10591,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-069.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-069.webp",
       "name": "Kirlia",
       "fullName": "Kirlia A2-069"
     },
@@ -10613,7 +10613,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-070.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-070.webp",
       "name": "Duskull",
       "fullName": "Duskull A2-070"
     },
@@ -10635,7 +10635,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-071.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-071.webp",
       "name": "Dusclops",
       "fullName": "Dusclops A2-071"
     },
@@ -10657,7 +10657,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-072.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-072.webp",
       "name": "Dusknoir",
       "fullName": "Dusknoir A2-072"
     },
@@ -10679,7 +10679,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-073.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-073.webp",
       "name": "Drifloon",
       "fullName": "Drifloon A2-073"
     },
@@ -10701,7 +10701,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-074.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-074.webp",
       "name": "Drifblim",
       "fullName": "Drifblim A2-074"
     },
@@ -10723,7 +10723,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-075.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-075.webp",
       "name": "Uxie",
       "fullName": "Uxie A2-075"
     },
@@ -10745,7 +10745,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-076.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-076.webp",
       "name": "Mesprit",
       "fullName": "Mesprit A2-076"
     },
@@ -10767,7 +10767,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-077.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-077.webp",
       "name": "Azelf",
       "fullName": "Azelf A2-077"
     },
@@ -10789,7 +10789,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-078.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-078.webp",
       "name": "Giratina",
       "fullName": "Giratina A2-078"
     },
@@ -10811,7 +10811,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-079.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-079.webp",
       "name": "Cresselia",
       "fullName": "Cresselia A2-079"
     },
@@ -10833,7 +10833,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-080.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-080.webp",
       "name": "Rhyhorn",
       "fullName": "Rhyhorn A2-080"
     },
@@ -10855,7 +10855,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-081.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-081.webp",
       "name": "Rhydon",
       "fullName": "Rhydon A2-081"
     },
@@ -10877,7 +10877,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-082.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-082.webp",
       "name": "Rhyperior",
       "fullName": "Rhyperior A2-082"
     },
@@ -10899,7 +10899,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-083.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-083.webp",
       "name": "Gligar",
       "fullName": "Gligar A2-083"
     },
@@ -10921,7 +10921,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-084.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-084.webp",
       "name": "Gliscor",
       "fullName": "Gliscor A2-084"
     },
@@ -10943,7 +10943,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-085.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-085.webp",
       "name": "Hitmontop",
       "fullName": "Hitmontop A2-085"
     },
@@ -10965,7 +10965,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-086.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-086.webp",
       "name": "Nosepass",
       "fullName": "Nosepass A2-086"
     },
@@ -10987,7 +10987,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-087.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-087.webp",
       "name": "Regirock",
       "fullName": "Regirock A2-087"
     },
@@ -11009,7 +11009,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-088.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-088.webp",
       "name": "Cranidos",
       "fullName": "Cranidos A2-088"
     },
@@ -11031,7 +11031,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-089.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-089.webp",
       "name": "Rampardos",
       "fullName": "Rampardos A2-089"
     },
@@ -11053,7 +11053,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-090.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-090.webp",
       "name": "Wormadam",
       "fullName": "Wormadam A2-090"
     },
@@ -11075,7 +11075,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-091.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-091.webp",
       "name": "Riolu",
       "fullName": "Riolu A2-091"
     },
@@ -11097,7 +11097,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-092.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-092.webp",
       "name": "Lucario",
       "fullName": "Lucario A2-092"
     },
@@ -11119,7 +11119,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-093.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-093.webp",
       "name": "Hippopotas",
       "fullName": "Hippopotas A2-093"
     },
@@ -11141,7 +11141,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-094.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-094.webp",
       "name": "Hippowdon",
       "fullName": "Hippowdon A2-094"
     },
@@ -11163,7 +11163,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-095.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-095.webp",
       "name": "Gallade ex",
       "fullName": "Gallade ex A2-095"
     },
@@ -11185,7 +11185,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-096.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-096.webp",
       "name": "Murkrow",
       "fullName": "Murkrow A2-096"
     },
@@ -11207,7 +11207,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-097.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-097.webp",
       "name": "Honchkrow",
       "fullName": "Honchkrow A2-097"
     },
@@ -11229,7 +11229,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-098.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-098.webp",
       "name": "Sneasel",
       "fullName": "Sneasel A2-098"
     },
@@ -11251,7 +11251,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-099.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-099.webp",
       "name": "Weavile ex",
       "fullName": "Weavile ex A2-099"
     },
@@ -11273,7 +11273,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-100.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-100.webp",
       "name": "Poochyena",
       "fullName": "Poochyena A2-100"
     },
@@ -11295,7 +11295,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-101.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-101.webp",
       "name": "Mightyena",
       "fullName": "Mightyena A2-101"
     },
@@ -11317,7 +11317,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-102.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-102.webp",
       "name": "Stunky",
       "fullName": "Stunky A2-102"
     },
@@ -11339,7 +11339,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-103.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-103.webp",
       "name": "Skuntank",
       "fullName": "Skuntank A2-103"
     },
@@ -11361,7 +11361,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-104.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-104.webp",
       "name": "Spiritomb",
       "fullName": "Spiritomb A2-104"
     },
@@ -11383,7 +11383,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-105.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-105.webp",
       "name": "Skorupi",
       "fullName": "Skorupi A2-105"
     },
@@ -11405,7 +11405,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-106.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-106.webp",
       "name": "Drapion",
       "fullName": "Drapion A2-106"
     },
@@ -11427,7 +11427,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-107.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-107.webp",
       "name": "Croagunk",
       "fullName": "Croagunk A2-107"
     },
@@ -11449,7 +11449,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-108.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-108.webp",
       "name": "Toxicroak",
       "fullName": "Toxicroak A2-108"
     },
@@ -11471,7 +11471,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-109.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-109.webp",
       "name": "Darkrai",
       "fullName": "Darkrai A2-109"
     },
@@ -11493,7 +11493,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-110.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-110.webp",
       "name": "Darkrai ex",
       "fullName": "Darkrai ex A2-110"
     },
@@ -11515,7 +11515,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-111.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-111.webp",
       "name": "Skarmory",
       "fullName": "Skarmory A2-111"
     },
@@ -11537,7 +11537,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-112.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-112.webp",
       "name": "Registeel",
       "fullName": "Registeel A2-112"
     },
@@ -11559,7 +11559,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-113.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-113.webp",
       "name": "Shieldon",
       "fullName": "Shieldon A2-113"
     },
@@ -11581,7 +11581,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-114.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-114.webp",
       "name": "Bastiodon",
       "fullName": "Bastiodon A2-114"
     },
@@ -11603,7 +11603,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-115.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-115.webp",
       "name": "Wormadam",
       "fullName": "Wormadam A2-115"
     },
@@ -11625,7 +11625,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-116.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-116.webp",
       "name": "Bronzor",
       "fullName": "Bronzor A2-116"
     },
@@ -11647,7 +11647,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-117.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-117.webp",
       "name": "Bronzong",
       "fullName": "Bronzong A2-117"
     },
@@ -11669,7 +11669,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-118.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-118.webp",
       "name": "Probopass",
       "fullName": "Probopass A2-118"
     },
@@ -11691,7 +11691,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-119.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-119.webp",
       "name": "Dialga ex",
       "fullName": "Dialga ex A2-119"
     },
@@ -11713,7 +11713,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-120.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-120.webp",
       "name": "Heatran",
       "fullName": "Heatran A2-120"
     },
@@ -11735,7 +11735,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-121.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-121.webp",
       "name": "Gible",
       "fullName": "Gible A2-121"
     },
@@ -11757,7 +11757,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-122.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-122.webp",
       "name": "Gabite",
       "fullName": "Gabite A2-122"
     },
@@ -11779,7 +11779,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-123.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-123.webp",
       "name": "Garchomp",
       "fullName": "Garchomp A2-123"
     },
@@ -11801,7 +11801,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-124.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-124.webp",
       "name": "Lickitung",
       "fullName": "Lickitung A2-124"
     },
@@ -11823,7 +11823,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-125.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-125.webp",
       "name": "Lickilicky ex",
       "fullName": "Lickilicky ex A2-125"
     },
@@ -11845,7 +11845,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-126.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-126.webp",
       "name": "Eevee",
       "fullName": "Eevee A2-126"
     },
@@ -11867,7 +11867,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-127.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-127.webp",
       "name": "Porygon",
       "fullName": "Porygon A2-127"
     },
@@ -11889,7 +11889,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-128.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-128.webp",
       "name": "Porygon2",
       "fullName": "Porygon2 A2-128"
     },
@@ -11911,7 +11911,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-129.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-129.webp",
       "name": "Porygon-Z",
       "fullName": "Porygon-Z A2-129"
     },
@@ -11933,7 +11933,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-130.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-130.webp",
       "name": "Aipom",
       "fullName": "Aipom A2-130"
     },
@@ -11955,7 +11955,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-131.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-131.webp",
       "name": "Ambipom",
       "fullName": "Ambipom A2-131"
     },
@@ -11977,7 +11977,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-132.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-132.webp",
       "name": "Starly",
       "fullName": "Starly A2-132"
     },
@@ -11999,7 +11999,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-133.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-133.webp",
       "name": "Staravia",
       "fullName": "Staravia A2-133"
     },
@@ -12021,7 +12021,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-134.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-134.webp",
       "name": "Staraptor",
       "fullName": "Staraptor A2-134"
     },
@@ -12043,7 +12043,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-135.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-135.webp",
       "name": "Bidoof",
       "fullName": "Bidoof A2-135"
     },
@@ -12065,7 +12065,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-136.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-136.webp",
       "name": "Bibarel",
       "fullName": "Bibarel A2-136"
     },
@@ -12087,7 +12087,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-137.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-137.webp",
       "name": "Buneary",
       "fullName": "Buneary A2-137"
     },
@@ -12109,7 +12109,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-138.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-138.webp",
       "name": "Lopunny",
       "fullName": "Lopunny A2-138"
     },
@@ -12131,7 +12131,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-139.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-139.webp",
       "name": "Glameow",
       "fullName": "Glameow A2-139"
     },
@@ -12153,7 +12153,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-140.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-140.webp",
       "name": "Purugly",
       "fullName": "Purugly A2-140"
     },
@@ -12175,7 +12175,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-141.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-141.webp",
       "name": "Chatot",
       "fullName": "Chatot A2-141"
     },
@@ -12197,7 +12197,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-142.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-142.webp",
       "name": "Fan Rotom",
       "fullName": "Fan Rotom A2-142"
     },
@@ -12219,7 +12219,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-143.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-143.webp",
       "name": "Regigigas",
       "fullName": "Regigigas A2-143"
     },
@@ -12241,7 +12241,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-144.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-144.webp",
       "name": "Skull Fossil",
       "fullName": "Skull Fossil A2-144"
     },
@@ -12263,7 +12263,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-145.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-145.webp",
       "name": "Armor Fossil",
       "fullName": "Armor Fossil A2-145"
     },
@@ -12285,7 +12285,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-146.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-146.webp",
       "name": "Pokémon Communication",
       "fullName": "Pokémon Communication A2-146"
     },
@@ -12307,7 +12307,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-147.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-147.webp",
       "name": "Giant Cape",
       "fullName": "Giant Cape A2-147"
     },
@@ -12329,7 +12329,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-148.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-148.webp",
       "name": "Rocky Helmet",
       "fullName": "Rocky Helmet A2-148"
     },
@@ -12351,7 +12351,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-149.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-149.webp",
       "name": "Lum Berry",
       "fullName": "Lum Berry A2-149"
     },
@@ -12373,7 +12373,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-150.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-150.webp",
       "name": "Cyrus",
       "fullName": "Cyrus A2-150"
     },
@@ -12395,7 +12395,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-151.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-151.webp",
       "name": "Team Galactic Grunt",
       "fullName": "Team Galactic Grunt A2-151"
     },
@@ -12417,7 +12417,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-152.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-152.webp",
       "name": "Cynthia",
       "fullName": "Cynthia A2-152"
     },
@@ -12439,7 +12439,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-153.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-153.webp",
       "name": "Volkner",
       "fullName": "Volkner A2-153"
     },
@@ -12461,7 +12461,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-154.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-154.webp",
       "name": "Dawn",
       "fullName": "Dawn A2-154"
     },
@@ -12483,7 +12483,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-155.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-155.webp",
       "name": "Mars",
       "fullName": "Mars A2-155"
     },
@@ -12505,7 +12505,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-156.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-156.webp",
       "name": "Tangrowth",
       "fullName": "Tangrowth A2-156"
     },
@@ -12527,7 +12527,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-157.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-157.webp",
       "name": "Combee",
       "fullName": "Combee A2-157"
     },
@@ -12549,7 +12549,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-158.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-158.webp",
       "name": "Carnivine",
       "fullName": "Carnivine A2-158"
     },
@@ -12571,7 +12571,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-159.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-159.webp",
       "name": "Shaymin",
       "fullName": "Shaymin A2-159"
     },
@@ -12593,7 +12593,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-160.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-160.webp",
       "name": "Mamoswine",
       "fullName": "Mamoswine A2-160"
     },
@@ -12615,7 +12615,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-161.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-161.webp",
       "name": "Gastrodon",
       "fullName": "Gastrodon A2-161"
     },
@@ -12637,7 +12637,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-162.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-162.webp",
       "name": "Manaphy",
       "fullName": "Manaphy A2-162"
     },
@@ -12659,7 +12659,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-163.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-163.webp",
       "name": "Shinx",
       "fullName": "Shinx A2-163"
     },
@@ -12681,7 +12681,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-164.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-164.webp",
       "name": "Rotom",
       "fullName": "Rotom A2-164"
     },
@@ -12703,7 +12703,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-165.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-165.webp",
       "name": "Drifloon",
       "fullName": "Drifloon A2-165"
     },
@@ -12725,7 +12725,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-166.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-166.webp",
       "name": "Mesprit",
       "fullName": "Mesprit A2-166"
     },
@@ -12747,7 +12747,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-167.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-167.webp",
       "name": "Giratina",
       "fullName": "Giratina A2-167"
     },
@@ -12769,7 +12769,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-168.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-168.webp",
       "name": "Cresselia",
       "fullName": "Cresselia A2-168"
     },
@@ -12791,7 +12791,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-169.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-169.webp",
       "name": "Rhyperior",
       "fullName": "Rhyperior A2-169"
     },
@@ -12813,7 +12813,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-170.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-170.webp",
       "name": "Lucario",
       "fullName": "Lucario A2-170"
     },
@@ -12835,7 +12835,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-171.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-171.webp",
       "name": "Hippopotas",
       "fullName": "Hippopotas A2-171"
     },
@@ -12857,7 +12857,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-172.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-172.webp",
       "name": "Spiritomb",
       "fullName": "Spiritomb A2-172"
     },
@@ -12879,7 +12879,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-173.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-173.webp",
       "name": "Croagunk",
       "fullName": "Croagunk A2-173"
     },
@@ -12901,7 +12901,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-174.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-174.webp",
       "name": "Heatran",
       "fullName": "Heatran A2-174"
     },
@@ -12923,7 +12923,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-175.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-175.webp",
       "name": "Garchomp",
       "fullName": "Garchomp A2-175"
     },
@@ -12945,7 +12945,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-176.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-176.webp",
       "name": "Staraptor",
       "fullName": "Staraptor A2-176"
     },
@@ -12967,7 +12967,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-177.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-177.webp",
       "name": "Bidoof",
       "fullName": "Bidoof A2-177"
     },
@@ -12989,7 +12989,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-178.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-178.webp",
       "name": "Glameow",
       "fullName": "Glameow A2-178"
     },
@@ -13011,7 +13011,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-179.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-179.webp",
       "name": "Regigigas",
       "fullName": "Regigigas A2-179"
     },
@@ -13033,7 +13033,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-180.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-180.webp",
       "name": "Yanmega ex",
       "fullName": "Yanmega ex A2-180"
     },
@@ -13055,7 +13055,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-181.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-181.webp",
       "name": "Infernape ex",
       "fullName": "Infernape ex A2-181"
     },
@@ -13077,7 +13077,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-182.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-182.webp",
       "name": "Palkia ex",
       "fullName": "Palkia ex A2-182"
     },
@@ -13099,7 +13099,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-183.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-183.webp",
       "name": "Pachirisu ex",
       "fullName": "Pachirisu ex A2-183"
     },
@@ -13121,7 +13121,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-184.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-184.webp",
       "name": "Mismagius ex",
       "fullName": "Mismagius ex A2-184"
     },
@@ -13143,7 +13143,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-185.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-185.webp",
       "name": "Gallade ex",
       "fullName": "Gallade ex A2-185"
     },
@@ -13165,7 +13165,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-186.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-186.webp",
       "name": "Weavile ex",
       "fullName": "Weavile ex A2-186"
     },
@@ -13187,7 +13187,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-187.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-187.webp",
       "name": "Darkrai ex",
       "fullName": "Darkrai ex A2-187"
     },
@@ -13209,7 +13209,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-188.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-188.webp",
       "name": "Dialga ex",
       "fullName": "Dialga ex A2-188"
     },
@@ -13231,7 +13231,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-189.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-189.webp",
       "name": "Lickilicky ex",
       "fullName": "Lickilicky ex A2-189"
     },
@@ -13253,7 +13253,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-190.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-190.webp",
       "name": "Cyrus",
       "fullName": "Cyrus A2-190"
     },
@@ -13275,7 +13275,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-191.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-191.webp",
       "name": "Team Galactic Grunt",
       "fullName": "Team Galactic Grunt A2-191"
     },
@@ -13297,7 +13297,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-192.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-192.webp",
       "name": "Cynthia",
       "fullName": "Cynthia A2-192"
     },
@@ -13319,7 +13319,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-193.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-193.webp",
       "name": "Volkner",
       "fullName": "Volkner A2-193"
     },
@@ -13341,7 +13341,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-194.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-194.webp",
       "name": "Dawn",
       "fullName": "Dawn A2-194"
     },
@@ -13363,7 +13363,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-195.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-195.webp",
       "name": "Mars",
       "fullName": "Mars A2-195"
     },
@@ -13385,7 +13385,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-196.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-196.webp",
       "name": "Yanmega ex",
       "fullName": "Yanmega ex A2-196"
     },
@@ -13407,7 +13407,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-197.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-197.webp",
       "name": "Infernape ex",
       "fullName": "Infernape ex A2-197"
     },
@@ -13429,7 +13429,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-198.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-198.webp",
       "name": "Pachirisu ex",
       "fullName": "Pachirisu ex A2-198"
     },
@@ -13451,7 +13451,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-199.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-199.webp",
       "name": "Mismagius ex",
       "fullName": "Mismagius ex A2-199"
     },
@@ -13473,7 +13473,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-200.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-200.webp",
       "name": "Gallade ex",
       "fullName": "Gallade ex A2-200"
     },
@@ -13495,7 +13495,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-201.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-201.webp",
       "name": "Weavile ex",
       "fullName": "Weavile ex A2-201"
     },
@@ -13517,7 +13517,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-202.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-202.webp",
       "name": "Darkrai ex",
       "fullName": "Darkrai ex A2-202"
     },
@@ -13539,7 +13539,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-203.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-203.webp",
       "name": "Lickilicky ex",
       "fullName": "Lickilicky ex A2-203"
     },
@@ -13561,7 +13561,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-204.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-204.webp",
       "name": "Palkia ex",
       "fullName": "Palkia ex A2-204"
     },
@@ -13583,7 +13583,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-205.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-205.webp",
       "name": "Dialga ex",
       "fullName": "Dialga ex A2-205"
     },
@@ -13605,7 +13605,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-206.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-206.webp",
       "name": "Palkia ex",
       "fullName": "Palkia ex A2-206"
     },
@@ -13627,7 +13627,7 @@
     "isTradable": false,
     "en": {
       "set_name": "Space-Time Smackdown",
-      "image": "A2-207.webp",
+      "image": "https://static.dotgg.gg/pokepocket/card/A2-207.webp",
       "name": "Dialga ex",
       "fullName": "Dialga ex A2-207"
     },

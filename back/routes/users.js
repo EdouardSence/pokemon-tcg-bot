@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { getUserById, createUser } = require("../services/usersService");
+const { getUserByDiscordId,getUserByIdBd, createUser } = require("../services/usersService");
 const { getCard, getAllCards } = require("../services/cardsService");
 const errorHandler = require("../utils/errorHandler");
 const sql = require("../services/db");
@@ -33,7 +33,12 @@ router.post("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
   try {
     if (!req.params.id) return res.status(400).json({ error: "l'id est requis" });
-    const user = await getUserById(req.params.id);
+    let user;
+    if(req.params.id.length <= 4){
+      user = await getUserByIdBd(req.params.id);
+    }else{
+      user = await getUserByDiscordId(req.params.id);
+    }
     res.json(user);
   } catch (error) {
     errorHandler(res, error);
@@ -48,8 +53,13 @@ router.post("/:id/card_wanted/:card_id", async (req, res) => {
     console.log(id, card_id);
     let { amount } = req.body;
     amount = amount && amount > 0 ? amount : 1;
-    const user = await getUserById(id);
-    const card = await getCard(card_id);
+
+    let user;
+    if(id.length <= 4){
+      user = await getUserByIdBd(id);
+    }else{
+      user = await getUserByDiscordId(id);
+    }
 
     if (!user) return res.status(404).json({ error: "Utilisateur non trouvé" });
     if (!card) return res.status(404).json({ error: "Carte non trouvée" });
@@ -77,7 +87,14 @@ router.post("/:id/card_to_offer/:card_id", async (req, res) => {
     const { id, card_id } = req.params;
     let { amount } = req.body;
     amount = amount && amount > 0 ? amount : 1;
-    const user = await getUserById(id);
+    
+    let user;
+    if(id.length <= 4){
+      user = await getUserByIdBd(id);
+    }
+    else{
+      user = await getUserByDiscordId(id);
+    }
     const card = await getCard(card_id);
 
     if (!user) return res.status(404).json({ error: "Utilisateur non trouvé" });
