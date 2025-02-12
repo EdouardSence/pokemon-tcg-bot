@@ -145,9 +145,9 @@ const data1 = JSON.parse(fs.readFileSync('cards.json', 'utf8'));
 const updatedData = data1.map(pokemon => {
     return {
         ...pokemon,
-        fr: {
-            ...pokemon.fr,
-            "set_name": pokemon.en.set_name === "Fabulous Island" ? "L'île Fabuleuse" : pokemon.fr.set_name,
+        en: {
+            ...pokemon.en,
+            "image": `https://static.dotgg.gg/pokepocket/card/${pokemon.id}.webp`
         },
     };
 }

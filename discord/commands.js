@@ -41,9 +41,6 @@ const commands = [
         .setName("show_cards_wanted")
         .setDescription("Affiche la liste des cartes recherchées"),
     new SlashCommandBuilder()
-        .setName("init")
-        .setDescription("Initialise ta collection de cartes"),
-    new SlashCommandBuilder()
         .setName("listcards")
         .setDescription("Affiche la liste de tes cartes"),
     new SlashCommandBuilder()

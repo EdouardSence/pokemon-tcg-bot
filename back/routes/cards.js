@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { getCard, getAllCards } = require("../services/cardsService");
-const { getUserById } = require("../services/usersService");
+const { getUserByDiscordId,getUserByIdBd } = require("../services/usersService");
 const errorHandler = require("../utils/errorHandler");
 
 // Récupérer toutes les cartes
@@ -19,7 +19,13 @@ router.get("/autocomplete", async (req, res) => {
     let { search, id_discord, isTradable } = req.query;
     if (!id_discord) return res.status(400).json({ error: "id_discord requis" });
 
-    const user = await getUserById(id_discord);
+
+    let user;
+    if(id_discord.length > 4){
+      user = await getUserByDiscordId(id_discord);
+    }else{
+      user = await getUserByIdBd(id_discord);
+    }
     if (!user) return res.status(404).json({ error: "Utilisateur non trouvé" });
 
     search = search || "";
@@ -41,6 +47,8 @@ router.get("/autocomplete", async (req, res) => {
       id: card.id,
       name: card[user.language].name,
       fullName: card[user.language].fullName,
+      rarity: card.rarity,
+      setName: card[user.language].set_name,
     })));
   } catch (error) {
     errorHandler(res, error);
@@ -55,16 +63,23 @@ router.get("/:id", async (req, res) => {
 
     if (!id_discord) return res.status(400).json({ error: "id_discord requis" });
 
-    const user = await getUserById(id_discord);
+    let user;
+    if(id_discord.length > 4){
+      user = await getUserByDiscordId(id_discord);
+    }
+    else{
+      user = await getUserByIdBd(id_discord);
+    }
     if (!user) return res.status(404).json({ error: "Utilisateur non trouvé" });
 
     const card = await getCard(id);
     if (!card) return res.status(404).json({ error: "Carte non trouvée" });
-
     res.json({
       id: card.id,
       name: card[user.language].name,
       fullName: card[user.language].fullName,
+      rarity: card.rarity,
+      setName: card[user.language].set_name,
       image: card[user.language].image,
     });
   } catch (error) {
