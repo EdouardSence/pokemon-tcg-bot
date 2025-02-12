@@ -102,13 +102,10 @@ const userExists = async (id_discord) => {
 };
 
 // Ajoute un utilisateur
-const createUser = async (id_discord, language, name) => {
-  if (await userExists(id_discord)) {
-    throw new Error("Utilisateur déjà existant");
-  }
+const createUser = async (id_discord, language, name,id_friend) => {
   return await sql`
-      INSERT INTO "user" (id_discord, language, name)
-      VALUES (${id_discord}, ${language.toLowerCase()}, ${name})
+      INSERT INTO "user" (id_discord, language, name, id_friend)
+      VALUES (${id_discord}, ${language.toLowerCase()}, ${name}, ${id_friend})
       RETURNING *`;
 };
 

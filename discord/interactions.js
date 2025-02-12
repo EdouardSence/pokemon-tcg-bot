@@ -17,17 +17,17 @@ async function getUserFromDb(userId) {
   }
 }
 
-    // Fonction pour convertir la rareté en symboles
-  const getRaritySymbols = (rarity) => {
-      if (rarity >= 1 && rarity <= 4) {
-        return "♦".repeat(rarity); // Losange
-      } else if (rarity >= 5 && rarity <= 7) {
-        return "★".repeat(rarity - 3); // Étoile
-      } else if (rarity === 8) {
-        return "👑"; // Couronne
-      }
-      return "";
-    };
+// Fonction pour convertir la rareté en symboles
+const getRaritySymbols = (rarity) => {
+  if (rarity >= 1 && rarity <= 4) {
+    return "♦".repeat(rarity); // Losange
+  } else if (rarity >= 5 && rarity <= 7) {
+    return "★".repeat(rarity - 4); // Étoile
+  } else if (rarity === 8) {
+    return "👑"; // Couronne
+  }
+  return "";
+};
 
 // commande pour ajouter des cartes à offrir  
 async function handleAddCardsToOffer(interaction, options, userId) {
@@ -170,6 +170,85 @@ async function handleShowCardToOffer(client, interaction, userId) {
   }
 }
 
+async function handleShowCardWanted(client, interaction, userId) {
+  try {
+    await interaction.deferReply({ ephemeral: false }); // On peut désactiver ephemeral pour que tout le monde voie
+
+    const user = await client.users.fetch(userId);
+    const response = await axios.get(`${API_URL}users/${userId}`);
+    const cards_wanted = response.data.cards_wanted;
+
+    if (!cards_wanted || cards_wanted.length === 0) {
+      return await interaction.editReply("Tu n'as pas demandé de carte.");
+    }
+
+    const cards = await Promise.all(
+      cards_wanted.map(async (card) => {
+        const res = await axios.get(`${API_URL}cards/${card.card_id}`, { params: { id_discord: userId } });
+        return res.data;
+      })
+    );
+
+    let index = 0;
+
+    // Fonction pour créer l'embed et les boutons
+    const createMessagePayload = () => {
+      const card = cards[index];
+      const raritySymbols = getRaritySymbols(card.rarity);
+
+      const embed = new EmbedBuilder()
+        .setTitle("Cartes voulues")
+        .setDescription(`Voici la liste des cartes que ${user.username} veut.`)
+        .setColor("#FF5555")
+        .setThumbnail(user.displayAvatarURL({ dynamic: true }))
+        .addFields(
+          { name: "Name", value: `${card.fullName} x${cards_wanted[index].amount} ${raritySymbols}`, inline: true },
+        )
+        .setImage(card.image)
+        .setFooter({ text: `Carte ${index + 1}/${cards.length} - ${card.setName}` });
+
+      const row = new ActionRowBuilder().addComponents(
+        new ButtonBuilder()
+          .setCustomId(`prev_${interaction.id}`) // ID unique pour éviter les conflits
+          .setLabel("⬅️")
+          .setStyle(ButtonStyle.Primary)
+          .setDisabled(index === 0),
+        new ButtonBuilder()
+          .setCustomId(`next_${interaction.id}`)
+          .setLabel("➡️")
+          .setStyle(ButtonStyle.Primary)
+          .setDisabled(index === cards.length - 1)
+      );
+
+      return { embeds: [embed], components: [row] };
+    };
+
+    // Envoyer un nouveau message pour chaque interaction
+    const message = await interaction.followUp(createMessagePayload());
+
+    // Création d'un collecteur pour interagir avec les boutons
+    const collector = message.createMessageComponentCollector({
+      filter: (i) => i.customId.startsWith("prev_") || i.customId.startsWith("next_"),
+      time: 60000, // 60 secondes
+    });
+
+    collector.on("collect", async (i) => {
+      if (i.customId === `prev_${interaction.id}` && index > 0) index--;
+      if (i.customId === `next_${interaction.id}` && index < cards.length - 1) index++;
+
+      await i.update(createMessagePayload()); // Moins de latence que editReply()
+    });
+
+    collector.on("end", async () => {
+      await message.edit({ components: [] }); // Désactiver les boutons après expiration
+    });
+
+  } catch (error) {
+    console.error(error);
+    await interaction.editReply("Erreur lors de la récupération des cartes à offrir.");
+  }
+}
+
 
 
 // commande pour afficher une carte
@@ -204,24 +283,84 @@ async function handleUsersList(interaction) {
 
 // se declenche si l'utilisateur n'est pas enregistré
 async function handleUserNotRegistered(interaction) {
-  // reply pas implémenté
+  try {
+    const createMessagePayload = () => {
+      const embed = new EmbedBuilder()
+        .setTitle("🌍 Choisis ta langue")
+        .setDescription("Tu n'es pas enregistré dans la base de données. Choisis ta langue pour continuer.")
+        .setColor("#FF5555");
 
-  console.log("pas implétementé");
+      const row = new ActionRowBuilder().addComponents(
+        new ButtonBuilder()
+          .setCustomId("lang_fr")
+          .setLabel("🇫🇷 Français")
+          .setStyle(ButtonStyle.Primary),
+        new ButtonBuilder()
+          .setCustomId("lang_en")
+          .setLabel("🇬🇧 English")
+          .setStyle(ButtonStyle.Primary)
+      );
 
-  // const row = new ActionRowBuilder().addComponents(
-  //   new ButtonBuilder().setCustomId("lang_fr").setLabel("Français").setStyle(ButtonStyle.Primary),
-  //   new ButtonBuilder().setCustomId("lang_en").setLabel("English").setStyle(ButtonStyle.Primary)
-  // );
+      return { embeds: [embed], components: [row] };
+    };
 
-  // try {
-  //   await interaction.reply("Vous n'êtes pas enregistré dans la base de données. Veuillez choisir votre langue.");
-  //   const dmChannel = await interaction.user.createDM();
-  //   await dmChannel.send({ content: "Choisissez votre langue :", components: [row] });
-  // } catch (error) {
-  //   console.error("Impossible d'envoyer un MP :", error);
-  //   await interaction.reply({ content: "Je ne peux pas t'envoyer de message privé. Vérifie tes paramètres de confidentialité.", ephemeral: true });
-  // }
+    // Envoie le message et récupère la référence du message
+    const sentMessage = await interaction.reply({ ...createMessagePayload(), fetchReply: true, ephemeral: true });
+
+    // Création du collector sur le message envoyé
+    const collector = sentMessage.createMessageComponentCollector({
+      filter: (i) => i.customId === "lang_fr" || i.customId === "lang_en",
+      time: 60000, // 60 secondes
+    });
+
+    collector.on("collect", async (i) => {
+      if (i.customId === "lang_fr") {
+        await i.reply({ content: "Tu as choisi le français.\n\n📩 Envoie-moi ton code ami pour t'enregistrer !", ephemeral: true });
+      } else {
+        await i.reply({ content: "You chose English.\n\n📩 Send me your friend code to register!", ephemeral: true });
+      }
+
+      // Création d'un collecteur pour capturer la réponse de l'utilisateur
+      const filter = (response) => response.author.id === i.user.id; // Filtrer pour ne prendre que la réponse de l'utilisateur
+      const messageCollector = i.channel.createMessageCollector({ filter, time: 60000, max: 1 });
+
+      messageCollector.on("collect", async (message) => {
+        // if it's not the user who sent the message, return
+        if (message.author.id !== i.user.id) return;
+        const friendCode = message.content.replace(/-/g, "");
+
+        if (!/^\d{16}$/.test(friendCode)) {
+          return await message.reply({ content: "❌ Le code ami doit contenir 16 chiffres.", ephemeral: true });
+        }
+
+        const response = await axios.post(`${API_URL}users`, {
+          id_discord: message.author.id,
+          name: message.author.username,
+          id_friend: message.content,
+          language: i.customId === "lang_fr" ? "fr" : "en",
+        });
+
+        if (response.data.error) {
+          await message.react("❌");
+          return await message.reply({ content: "❌ Une erreur est survenue lors de l'enregistrement.", ephemeral: true });
+        }
+
+        // met une réaction pour confirmer l'enregistrement sur le message de l'utilisateur
+        await message.react("✅");
+        // puis on supprime le message au bout de 2 secondes
+        setTimeout(() => message.delete(), 2000);
+      });
+
+      // Ici tu peux appeler la fonction d'enregistrement de l'utilisateur
+    });
+
+
+  } catch (error) {
+    console.error(error);
+    await interaction.reply("Erreur lors de la récupération des utilisateurs.");
+  }
 }
+
 
 // permet de faire une autocomplétion sur la recherche de carte
 async function handleAutocomplete(interaction) {
@@ -302,7 +441,7 @@ async function sendPrivateMessageForTrade(client, user1, user2, cardUser1, cardU
     collector.on('collect', async (i) => {
       await i.reply({ content: `Code ami copié : \`${idFriend}\``, ephemeral: true });
 
-      
+
     });
 
   } catch (error) {
@@ -341,7 +480,11 @@ async function handleInteraction(client, interaction) {
         break;
 
       case "show_cards_to_offer":
-        await handleShowCardToOffer(client,interaction, userId);
+        await handleShowCardToOffer(client, interaction, userId);
+        break;
+
+      case "show_cards_wanted":
+        await handleShowCardWanted(client, interaction, userId);
         break;
 
       case "init":
