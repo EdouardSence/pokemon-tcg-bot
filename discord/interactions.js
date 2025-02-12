@@ -1,12 +1,10 @@
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder } = require('discord.js');
 const axios = require('axios');
-const path = require('path');
 const dotenv = require('dotenv');
 
 dotenv.config();
 
 const API_URL = process.env.API_URL;
-const currentRepository = __dirname;
 
 
 async function getUserFromDb(userId) {
@@ -18,6 +16,18 @@ async function getUserFromDb(userId) {
     throw new Error("Impossible de récupérer les utilisateurs");
   }
 }
+
+    // Fonction pour convertir la rareté en symboles
+  const getRaritySymbols = (rarity) => {
+      if (rarity >= 1 && rarity <= 4) {
+        return "♦".repeat(rarity); // Losange
+      } else if (rarity >= 5 && rarity <= 7) {
+        return "★".repeat(rarity - 3); // Étoile
+      } else if (rarity === 8) {
+        return "👑"; // Couronne
+      }
+      return "";
+    };
 
 // commande pour ajouter des cartes à offrir  
 async function handleAddCardsToOffer(interaction, options, userId) {
@@ -81,6 +91,87 @@ async function handleAddCardsWanted(interaction, options, userId) {
   }
 }
 
+async function handleShowCardToOffer(client, interaction, userId) {
+  try {
+    await interaction.deferReply({ ephemeral: false }); // On peut désactiver ephemeral pour que tout le monde voie
+
+    const user = await client.users.fetch(userId);
+    const response = await axios.get(`${API_URL}users/${userId}`);
+    const cards_to_offer = response.data.cards_to_offer;
+
+    if (!cards_to_offer || cards_to_offer.length === 0) {
+      return await interaction.editReply("Tu n'as aucune carte à offrir.");
+    }
+
+    const cards = await Promise.all(
+      cards_to_offer.map(async (card) => {
+        const res = await axios.get(`${API_URL}cards/${card.card_id}`, { params: { id_discord: userId } });
+        return res.data;
+      })
+    );
+
+    let index = 0;
+
+    // Fonction pour créer l'embed et les boutons
+    const createMessagePayload = () => {
+      const card = cards[index];
+      const raritySymbols = getRaritySymbols(card.rarity);
+
+      const embed = new EmbedBuilder()
+        .setTitle("Cartes à offrir")
+        .setDescription(`Voici la liste des cartes que ${user.username} a à offrir.`)
+        .setColor("#FF5555")
+        .setThumbnail(user.displayAvatarURL({ dynamic: true }))
+        .addFields(
+          { name: "Name", value: `${card.fullName} x${cards_to_offer[index].amount} ${raritySymbols}`, inline: true },
+        )
+        .setImage(card.image)
+        .setFooter({ text: `Carte ${index + 1}/${cards.length} - ${card.setName}` });
+
+      const row = new ActionRowBuilder().addComponents(
+        new ButtonBuilder()
+          .setCustomId(`prev_${interaction.id}`) // ID unique pour éviter les conflits
+          .setLabel("⬅️")
+          .setStyle(ButtonStyle.Primary)
+          .setDisabled(index === 0),
+        new ButtonBuilder()
+          .setCustomId(`next_${interaction.id}`)
+          .setLabel("➡️")
+          .setStyle(ButtonStyle.Primary)
+          .setDisabled(index === cards.length - 1)
+      );
+
+      return { embeds: [embed], components: [row] };
+    };
+
+    // Envoyer un nouveau message pour chaque interaction
+    const message = await interaction.followUp(createMessagePayload());
+
+    // Création d'un collecteur pour interagir avec les boutons
+    const collector = message.createMessageComponentCollector({
+      filter: (i) => i.customId.startsWith("prev_") || i.customId.startsWith("next_"),
+      time: 60000, // 60 secondes
+    });
+
+    collector.on("collect", async (i) => {
+      if (i.customId === `prev_${interaction.id}` && index > 0) index--;
+      if (i.customId === `next_${interaction.id}` && index < cards.length - 1) index++;
+
+      await i.update(createMessagePayload()); // Moins de latence que editReply()
+    });
+
+    collector.on("end", async () => {
+      await message.edit({ components: [] }); // Désactiver les boutons après expiration
+    });
+
+  } catch (error) {
+    console.error(error);
+    await interaction.editReply("Erreur lors de la récupération des cartes à offrir.");
+  }
+}
+
+
+
 // commande pour afficher une carte
 async function handleShowCard(interaction, options) {
   const showCardId = options.getString("search");
@@ -92,8 +183,7 @@ async function handleShowCard(interaction, options) {
       throw new Error("Carte introuvable");
     }
 
-    const imageUrl = card.image.startsWith("http") ? card.image : path.join(currentRepository, "assets", "cards", card.image);
-    await interaction.reply({ files: [imageUrl] });
+    await interaction.reply({ files: [card.image] });
   } catch (error) {
     console.error(error);
     await interaction.reply(error.response?.data?.error || "Erreur lors de la récupération de la carte.");
@@ -114,19 +204,23 @@ async function handleUsersList(interaction) {
 
 // se declenche si l'utilisateur n'est pas enregistré
 async function handleUserNotRegistered(interaction) {
-  const row = new ActionRowBuilder().addComponents(
-    new ButtonBuilder().setCustomId("lang_fr").setLabel("Français").setStyle(ButtonStyle.Primary),
-    new ButtonBuilder().setCustomId("lang_en").setLabel("English").setStyle(ButtonStyle.Primary)
-  );
+  // reply pas implémenté
 
-  try {
-    await interaction.reply("Vous n'êtes pas enregistré dans la base de données. Veuillez choisir votre langue.");
-    const dmChannel = await interaction.user.createDM();
-    await dmChannel.send({ content: "Choisissez votre langue :", components: [row] });
-  } catch (error) {
-    console.error("Impossible d'envoyer un MP :", error);
-    await interaction.reply({ content: "Je ne peux pas t'envoyer de message privé. Vérifie tes paramètres de confidentialité.", ephemeral: true });
-  }
+  console.log("pas implétementé");
+
+  // const row = new ActionRowBuilder().addComponents(
+  //   new ButtonBuilder().setCustomId("lang_fr").setLabel("Français").setStyle(ButtonStyle.Primary),
+  //   new ButtonBuilder().setCustomId("lang_en").setLabel("English").setStyle(ButtonStyle.Primary)
+  // );
+
+  // try {
+  //   await interaction.reply("Vous n'êtes pas enregistré dans la base de données. Veuillez choisir votre langue.");
+  //   const dmChannel = await interaction.user.createDM();
+  //   await dmChannel.send({ content: "Choisissez votre langue :", components: [row] });
+  // } catch (error) {
+  //   console.error("Impossible d'envoyer un MP :", error);
+  //   await interaction.reply({ content: "Je ne peux pas t'envoyer de message privé. Vérifie tes paramètres de confidentialité.", ephemeral: true });
+  // }
 }
 
 // permet de faire une autocomplétion sur la recherche de carte
@@ -148,10 +242,9 @@ async function handleAutocomplete(interaction) {
       const response = await axios.get(`${API_URL}cards/autocomplete`, {
         params: { search: value, id_discord: interaction.user.id, isTradable }
       });
-
       await interaction.respond(
         response.data.map(card => ({
-          name: card.fullName,
+          name: card.fullName + " " + getRaritySymbols(card.rarity),
           value: card.id,
         }))
       );
@@ -167,15 +260,12 @@ async function sendPrivateMessageForTrade(client,idUser1, idUser2, cardUser1, ca
     const user1 = await client.users.fetch(idUser1);
     const user2 = await client.users.fetch(idUser2);
 
-    const imageUrl1 = cardUser1.image.startsWith("http") ? cardUser1.image : `${API_URL}assets/${cardUser1.image}`;
-    const imageUrl2 = cardUser2.image.startsWith("http") ? cardUser2.image : `${API_URL}assets/${cardUser2.image}`;
-
     const embedToSend = new EmbedBuilder()
       .setTitle("📤 Tu dois envoyer cette carte")
       .setDescription(`Tu dois envoyer la carte ${cardUser1.fullName} à **${user2.username}**.`)
       .setColor("#FF5555")
       .setThumbnail(user1.displayAvatarURL({ dynamic: true }))
-      .setImage(imageUrl1)
+      .setImage(cardUser1.image)
       .setFooter({ text: "Assure-toi de bien envoyer cette carte !" });
 
     const embedToReceive = new EmbedBuilder()
@@ -183,7 +273,7 @@ async function sendPrivateMessageForTrade(client,idUser1, idUser2, cardUser1, ca
       .setDescription(`En échange, tu vas recevoir la carte ${cardUser2.fullName} de **${user2.username}**.`)
       .setColor("#55FF55")
       .setThumbnail(user2.displayAvatarURL({ dynamic: true }))
-      .setImage(imageUrl2)
+      .setImage(cardUser2.image)
       .setFooter({ text: "L'échange est en attente de confirmation." });
 
     await user1.send({ embeds: [embedToSend] });
@@ -223,7 +313,7 @@ async function handleInteraction(client, interaction) {
         break;
 
       case "show_cards_to_offer":
-        await interaction.reply("Not implemented yet");
+        await handleShowCardToOffer(client,interaction, userId);
         break;
 
       case "init":
