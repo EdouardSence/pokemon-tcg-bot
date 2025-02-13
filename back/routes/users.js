@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { getUserByDiscordId, getUserByIdBd, createUser } = require("../services/usersService");
+const { getUserByDiscordId, getUserByIdBd, createUser,getAllUsers } = require("../services/usersService");
 const { getCard, getAllCards } = require("../services/cardsService");
 const errorHandler = require("../utils/errorHandler");
 const sql = require("../services/db");
@@ -8,7 +8,7 @@ const sql = require("../services/db");
 // Récupérer tous les utilisateurs
 router.get("/", async (req, res) => {
   try {
-    const users = await sql`SELECT * FROM "user"`;
+    const users = getAllUsers();
     res.json(users);
   } catch (error) {
     errorHandler(res, error);
@@ -31,6 +31,24 @@ router.post("/", async (req, res) => {
 
     const user = await createUser(id_discord, language, name, id_friend);
     res.status(201).json(user[0]);
+  } catch (error) {
+    errorHandler(res, error);
+  }
+});
+
+router.get("/autocomplete", async (req, res) => {
+  try {
+    let { name } = req.query;
+
+    let users = await getAllUsers();
+
+    const filteredUsers = users.filter(user => {
+      // Vérifier si la recherche correspond à une partie du nom ou de l'id
+      const matchesSearch = user.name.toLowerCase().includes(name.toLowerCase())
+      // Retourne la carte si elle correspond à la recherche et, le cas échéant, si elle est tradable
+      return matchesSearch;
+    }).slice(0, 10); // Limite à 10 résultats
+    res.json(filteredUsers);
   } catch (error) {
     errorHandler(res, error);
   }

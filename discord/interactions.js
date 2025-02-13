@@ -1,11 +1,15 @@
-const { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder } = require('discord.js');
-const axios = require('axios');
-const dotenv = require('dotenv');
+const {
+  ActionRowBuilder,
+  ButtonBuilder,
+  ButtonStyle,
+  EmbedBuilder,
+} = require("discord.js");
+const axios = require("axios");
+const dotenv = require("dotenv");
 
 dotenv.config();
 
 const API_URL = process.env.API_URL;
-
 
 async function getUserFromDb(userId) {
   try {
@@ -29,8 +33,8 @@ const getRaritySymbols = (rarity) => {
   return "";
 };
 
-// commande pour ajouter des cartes à offrir  
-async function handleAddCardsToOffer(interaction, options, userId) {
+// commande pour ajouter des cartes à offrir
+async function handleAddCardsToOffer(interaction, options, authorCommandId) {
   await interaction.deferReply({ ephemeral: true });
 
   const cardsList = [];
@@ -48,20 +52,26 @@ async function handleAddCardsToOffer(interaction, options, userId) {
 
   try {
     const requests = cardsList.map(({ id, amount }) =>
-      axios.post(`${API_URL}users/${userId}/card_to_offer/${id}`, { amount })
+      axios.post(`${API_URL}users/${authorCommandId}/card_to_offer/${id}`, { amount })
     );
     await Promise.all(requests);
 
-    const addedCards = cardsList.map(({ id, amount }) => `- Carte ${id} (x${amount ? amount : 1})`).join("\n");
-    await interaction.editReply(`Cartes ajoutées à ta collection :\n${addedCards}`);
+    const addedCards = cardsList
+      .map(({ id, amount }) => `- Carte ${id} (x${amount ? amount : 1})`)
+      .join("\n");
+    await interaction.editReply(
+      `Cartes ajoutées à ta collection :\n${addedCards}`
+    );
   } catch (error) {
     console.error(error);
-    await interaction.editReply(error.response?.data?.error || "Erreur lors de l'ajout des cartes.");
+    await interaction.editReply(
+      error.response?.data?.error || "Erreur lors de l'ajout des cartes."
+    );
   }
 }
 
 // commande pour ajouter des cartes recherchées
-async function handleAddCardsWanted(interaction, options, userId) {
+async function handleAddCardsWanted(interaction, options, authorCommandId) {
   await interaction.deferReply({ ephemeral: true });
 
   const cardsList = [];
@@ -79,25 +89,42 @@ async function handleAddCardsWanted(interaction, options, userId) {
 
   try {
     const requests = cardsList.map(({ id, amount }) =>
-      axios.post(`${API_URL}users/${userId}/card_wanted/${id}`, { amount })
+      axios.post(`${API_URL}users/${authorCommandId}/card_wanted/${id}`, { amount })
     );
     await Promise.all(requests);
 
-    const addedCards = cardsList.map(({ id, amount }) => `- Carte ${id} (x${amount ? amount : 1})`).join("\n");
-    await interaction.editReply(`Cartes ajoutées à ta collection :\n${addedCards}`);
+    const addedCards = cardsList
+      .map(({ id, amount }) => `- Carte ${id} (x${amount ? amount : 1})`)
+      .join("\n");
+    await interaction.editReply(
+      `Cartes ajoutées à ta collection :\n${addedCards}`
+    );
   } catch (error) {
     console.error(error);
-    await interaction.editReply(error.response?.data?.error || "Erreur lors de l'ajout des cartes.");
+    await interaction.editReply(
+      error.response?.data?.error || "Erreur lors de l'ajout des cartes."
+    );
   }
 }
 
-async function handleShowCardToOffer(client, interaction, userId) {
+async function handleShowCardToOffer(client, interaction, options, authorCommandId) {
   try {
+    // get the discord_id by the interaction
     await interaction.deferReply({ ephemeral: false }); // On peut désactiver ephemeral pour que tout le monde voie
+    const username = options.getString("username");
 
-    const user = await client.users.fetch(userId);
-    const response = await axios.get(`${API_URL}users/${userId}`);
-    const cards_to_offer = response.data.cards_to_offer;
+    let response;
+    let user;
+
+    // SI il n'y a pas d'arugement
+    if (username === null) {
+      user = await client.users.fetch(authorCommandId);
+      response = await getUserFromDb(authorCommandId);
+    } else {
+      response = await getUserFromDb(username);
+      user = await client.users.fetch(response.id_discord);
+    }
+    const cards_to_offer = response.cards_to_offer;
 
     if (!cards_to_offer || cards_to_offer.length === 0) {
       return await interaction.editReply("Tu n'as aucune carte à offrir.");
@@ -105,7 +132,9 @@ async function handleShowCardToOffer(client, interaction, userId) {
 
     const cards = await Promise.all(
       cards_to_offer.map(async (card) => {
-        const res = await axios.get(`${API_URL}cards/${card.card_id}`, { params: { id_discord: userId } });
+        const res = await axios.get(`${API_URL}cards/${card.card_id}`, {
+          params: { id_discord: authorCommandId },
+        });
         return res.data;
       })
     );
@@ -119,14 +148,20 @@ async function handleShowCardToOffer(client, interaction, userId) {
 
       const embed = new EmbedBuilder()
         .setTitle("Cartes à offrir")
-        .setDescription(`Voici la liste des cartes que ${user.username} a à offrir.`)
+        .setDescription(
+          `Voici la liste des cartes que ${user.username} a à offrir.`
+        )
         .setColor("#FF5555")
         .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-        .addFields(
-          { name: "Name", value: `${card.fullName} x${cards_to_offer[index].amount} ${raritySymbols}`, inline: true },
-        )
+        .addFields({
+          name: "Name",
+          value: `${card.fullName} x${cards_to_offer[index].amount} ${raritySymbols}`,
+          inline: true,
+        })
         .setImage(card.image)
-        .setFooter({ text: `Carte ${index + 1}/${cards.length} - ${card.setName}` });
+        .setFooter({
+          text: `Carte ${index + 1}/${cards.length} - ${card.setName}`,
+        });
 
       const row = new ActionRowBuilder().addComponents(
         new ButtonBuilder()
@@ -149,13 +184,15 @@ async function handleShowCardToOffer(client, interaction, userId) {
 
     // Création d'un collecteur pour interagir avec les boutons
     const collector = message.createMessageComponentCollector({
-      filter: (i) => i.customId.startsWith("prev_") || i.customId.startsWith("next_"),
+      filter: (i) =>
+        i.customId.startsWith("prev_") || i.customId.startsWith("next_"),
       time: 60000, // 60 secondes
     });
 
     collector.on("collect", async (i) => {
       if (i.customId === `prev_${interaction.id}` && index > 0) index--;
-      if (i.customId === `next_${interaction.id}` && index < cards.length - 1) index++;
+      if (i.customId === `next_${interaction.id}` && index < cards.length - 1)
+        index++;
 
       await i.update(createMessagePayload()); // Moins de latence que editReply()
     });
@@ -163,20 +200,34 @@ async function handleShowCardToOffer(client, interaction, userId) {
     collector.on("end", async () => {
       await message.edit({ components: [] }); // Désactiver les boutons après expiration
     });
-
   } catch (error) {
     console.error(error);
-    await interaction.editReply("Erreur lors de la récupération des cartes à offrir.");
+    await interaction.editReply(
+      "Erreur lors de la récupération des cartes à offrir."
+    );
   }
 }
 
-async function handleShowCardWanted(client, interaction, userId) {
+async function handleShowCardWanted(client, interaction, options, authorCommandId) {
   try {
     await interaction.deferReply({ ephemeral: false }); // On peut désactiver ephemeral pour que tout le monde voie
+    const username = options.getString("username");
 
-    const user = await client.users.fetch(userId);
-    const response = await axios.get(`${API_URL}users/${userId}`);
-    const cards_wanted = response.data.cards_wanted;
+    let response;
+    let user;
+    if (username === null) {
+      // SI il n'y a pas d'arugement :
+      // dans ce cas on recupere toutes les infos du mec qui fait la commande SI il n'y a pas de parametre
+      user = await client.users.fetch(authorCommandId);
+      // on va prendre ses cartes à offrir
+      response = await getUserFromDb(authorCommandId);
+    } else {
+      // SINON SI il cherche les cartes de quelqu'un d'autre,
+      // on recupere les infos de la personne recherchée
+      response = await getUserFromDb(username);
+      user = await client.users.fetch(response.id_discord);
+    }
+  const cards_wanted = response.cards_wanted;
 
     if (!cards_wanted || cards_wanted.length === 0) {
       return await interaction.editReply("Tu n'as pas demandé de carte.");
@@ -184,7 +235,9 @@ async function handleShowCardWanted(client, interaction, userId) {
 
     const cards = await Promise.all(
       cards_wanted.map(async (card) => {
-        const res = await axios.get(`${API_URL}cards/${card.card_id}`, { params: { id_discord: userId } });
+        const res = await axios.get(`${API_URL}cards/${card.card_id}`, {
+          params: { id_discord: authorCommandId },
+        });
         return res.data;
       })
     );
@@ -201,11 +254,15 @@ async function handleShowCardWanted(client, interaction, userId) {
         .setDescription(`Voici la liste des cartes que ${user.username} veut.`)
         .setColor("#FF5555")
         .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-        .addFields(
-          { name: "Name", value: `${card.fullName} x${cards_wanted[index].amount} ${raritySymbols}`, inline: true },
-        )
+        .addFields({
+          name: "Name",
+          value: `${card.fullName} x${cards_wanted[index].amount} ${raritySymbols}`,
+          inline: true,
+        })
         .setImage(card.image)
-        .setFooter({ text: `Carte ${index + 1}/${cards.length} - ${card.setName}` });
+        .setFooter({
+          text: `Carte ${index + 1}/${cards.length} - ${card.setName}`,
+        });
 
       const row = new ActionRowBuilder().addComponents(
         new ButtonBuilder()
@@ -228,13 +285,15 @@ async function handleShowCardWanted(client, interaction, userId) {
 
     // Création d'un collecteur pour interagir avec les boutons
     const collector = message.createMessageComponentCollector({
-      filter: (i) => i.customId.startsWith("prev_") || i.customId.startsWith("next_"),
+      filter: (i) =>
+        i.customId.startsWith("prev_") || i.customId.startsWith("next_"),
       time: 60000, // 60 secondes
     });
 
     collector.on("collect", async (i) => {
       if (i.customId === `prev_${interaction.id}` && index > 0) index--;
-      if (i.customId === `next_${interaction.id}` && index < cards.length - 1) index++;
+      if (i.customId === `next_${interaction.id}` && index < cards.length - 1)
+        index++;
 
       await i.update(createMessagePayload()); // Moins de latence que editReply()
     });
@@ -242,20 +301,21 @@ async function handleShowCardWanted(client, interaction, userId) {
     collector.on("end", async () => {
       await message.edit({ components: [] }); // Désactiver les boutons après expiration
     });
-
   } catch (error) {
     console.error(error);
-    await interaction.editReply("Erreur lors de la récupération des cartes à offrir.");
+    await interaction.editReply(
+      "Erreur lors de la récupération des cartes demandées."
+    );
   }
 }
-
-
 
 // commande pour afficher une carte
 async function handleShowCard(interaction, options) {
   const showCardId = options.getString("search");
   try {
-    const response = await axios.get(`${API_URL}cards/${showCardId}`, { params: { id_discord: interaction.user.id } });
+    const response = await axios.get(`${API_URL}cards/${showCardId}`, {
+      params: { id_discord: interaction.user.id },
+    });
     const card = response.data;
 
     if (!card) {
@@ -265,7 +325,10 @@ async function handleShowCard(interaction, options) {
     await interaction.reply({ files: [card.image] });
   } catch (error) {
     console.error(error);
-    await interaction.reply(error.response?.data?.error || "Erreur lors de la récupération de la carte.");
+    await interaction.reply(
+      error.response?.data?.error ||
+        "Erreur lors de la récupération de la carte."
+    );
   }
 }
 
@@ -274,10 +337,15 @@ async function handleUsersList(interaction) {
   try {
     const response = await axios.get(`${API_URL}users`);
     const users = response.data;
-    await interaction.reply(`Liste des utilisateurs : ${users.map(user => user.name).join(", ")}`);
+    await interaction.reply(
+      `Liste des utilisateurs : ${users.map((user) => user.name).join(", ")}`
+    );
   } catch (error) {
     console.error(error);
-    await interaction.reply(error.response?.data?.error || "Erreur lors de la récupération des utilisateurs.");
+    await interaction.reply(
+      error.response?.data?.error ||
+        "Erreur lors de la récupération des utilisateurs."
+    );
   }
 }
 
@@ -287,7 +355,9 @@ async function handleUserNotRegistered(interaction) {
     const createMessagePayload = () => {
       const embed = new EmbedBuilder()
         .setTitle("🌍 Choisis ta langue")
-        .setDescription("Tu n'es pas enregistré dans la base de données. Choisis ta langue pour continuer.")
+        .setDescription(
+          "Tu n'es pas enregistré dans la base de données. Choisis ta langue pour continuer."
+        )
         .setColor("#FF5555");
 
       const row = new ActionRowBuilder().addComponents(
@@ -305,7 +375,11 @@ async function handleUserNotRegistered(interaction) {
     };
 
     // Envoie le message et récupère la référence du message
-    const sentMessage = await interaction.reply({ ...createMessagePayload(), fetchReply: true, ephemeral: true });
+    const sentMessage = await interaction.reply({
+      ...createMessagePayload(),
+      fetchReply: true,
+      ephemeral: true,
+    });
 
     // Création du collector sur le message envoyé
     const collector = sentMessage.createMessageComponentCollector({
@@ -315,14 +389,26 @@ async function handleUserNotRegistered(interaction) {
 
     collector.on("collect", async (i) => {
       if (i.customId === "lang_fr") {
-        await i.reply({ content: "Tu as choisi le français.\n\n📩 Envoie-moi ton code ami pour t'enregistrer !", ephemeral: true });
+        await i.reply({
+          content:
+            "Tu as choisi le français.\n\n📩 Envoie-moi ton code ami pour t'enregistrer !",
+          ephemeral: true,
+        });
       } else {
-        await i.reply({ content: "You chose English.\n\n📩 Send me your friend code to register!", ephemeral: true });
+        await i.reply({
+          content:
+            "You chose English.\n\n📩 Send me your friend code to register!",
+          ephemeral: true,
+        });
       }
 
       // Création d'un collecteur pour capturer la réponse de l'utilisateur
       const filter = (response) => response.author.id === i.user.id; // Filtrer pour ne prendre que la réponse de l'utilisateur
-      const messageCollector = i.channel.createMessageCollector({ filter, time: 60000, max: 1 });
+      const messageCollector = i.channel.createMessageCollector({
+        filter,
+        time: 60000,
+        max: 1,
+      });
 
       messageCollector.on("collect", async (message) => {
         // if it's not the user who sent the message, return
@@ -330,7 +416,10 @@ async function handleUserNotRegistered(interaction) {
         const friendCode = message.content.replace(/-/g, "");
 
         if (!/^\d{16}$/.test(friendCode)) {
-          return await message.reply({ content: "❌ Le code ami doit contenir 16 chiffres.", ephemeral: true });
+          return await message.reply({
+            content: "❌ Le code ami doit contenir 16 chiffres.",
+            ephemeral: true,
+          });
         }
 
         const response = await axios.post(`${API_URL}users`, {
@@ -342,7 +431,10 @@ async function handleUserNotRegistered(interaction) {
 
         if (response.data.error) {
           await message.react("❌");
-          return await message.reply({ content: "❌ Une erreur est survenue lors de l'enregistrement.", ephemeral: true });
+          return await message.reply({
+            content: "❌ Une erreur est survenue lors de l'enregistrement.",
+            ephemeral: true,
+          });
         }
 
         // met une réaction pour confirmer l'enregistrement sur le message de l'utilisateur
@@ -353,38 +445,60 @@ async function handleUserNotRegistered(interaction) {
 
       // Ici tu peux appeler la fonction d'enregistrement de l'utilisateur
     });
-
-
   } catch (error) {
     console.error(error);
     await interaction.reply("Erreur lors de la récupération des utilisateurs.");
   }
 }
 
+// permet de faire une autocomplétion sur la recherche de carte
+async function handleAutocompleteCard(interaction) {
+  try {
+    const focusedOption = interaction.options.getFocused(true);
+    const { name, value } = focusedOption;
+
+    let isTradable = false;
+    const commandName = interaction.commandName;
+
+    if (
+      commandName === "add_cards_to_offer" ||
+      commandName === "add_cards_wanted"
+    ) {
+      isTradable = true;
+    } else if (commandName === "showcard") {
+      isTradable = false;
+    }
+
+    if (name.startsWith("search")) {
+      const response = await axios.get(`${API_URL}cards/autocomplete`, {
+        params: { search: value, id_discord: interaction.user.id, isTradable },
+      });
+      await interaction.respond(
+        response.data.map((card) => ({
+          name: card.fullName + " " + getRaritySymbols(card.rarity),
+          value: card.id,
+        }))
+      );
+    }
+  } catch (error) {
+    console.error("Erreur lors de l'autocomplétion :", error);
+  }
+}
 
 // permet de faire une autocomplétion sur la recherche de carte
-async function handleAutocomplete(interaction) {
+async function handleAutocompleteUser(interaction) {
   const focusedOption = interaction.options.getFocused(true);
   const { name, value } = focusedOption;
 
-  let isTradable = false;
-  const commandName = interaction.commandName;
-
-  if (commandName === "add_cards_to_offer" || commandName === "add_cards_wanted") {
-    isTradable = true;
-  } else if (commandName === "showcard") {
-    isTradable = false;
-  }
-
-  if (name.startsWith("search")) {
+  if (name.startsWith("username")) {
     try {
-      const response = await axios.get(`${API_URL}cards/autocomplete`, {
-        params: { search: value, id_discord: interaction.user.id, isTradable }
+      const response = await axios.get(`${API_URL}users/autocomplete`, {
+        params: { name: value },
       });
       await interaction.respond(
-        response.data.map(card => ({
-          name: card.fullName + " " + getRaritySymbols(card.rarity),
-          value: card.id,
+        response.data.map((user) => ({
+          name: user.name,
+          value: user.id.toString(),
         }))
       );
     } catch (error) {
@@ -394,7 +508,13 @@ async function handleAutocomplete(interaction) {
 }
 
 // permet d'envoyer la notifcation de trade en message privé
-async function sendPrivateMessageForTrade(client, user1, user2, cardUser1, cardUser2) {
+async function sendPrivateMessageForTrade(
+  client,
+  user1,
+  user2,
+  cardUser1,
+  cardUser2
+) {
   try {
     const user1Discord = await client.users.fetch(user1.id_discord);
     const user2Discord = await client.users.fetch(user2.id_discord);
@@ -402,7 +522,9 @@ async function sendPrivateMessageForTrade(client, user1, user2, cardUser1, cardU
 
     const embedToSend = new EmbedBuilder()
       .setTitle("📤 Tu dois envoyer cette carte")
-      .setDescription(`Tu dois envoyer la carte ${cardUser1.fullName} à **${user2Discord.username}**.`)
+      .setDescription(
+        `Tu dois envoyer la carte ${cardUser1.fullName} à **${user2Discord.username}**.`
+      )
       .setColor("#FF5555")
       .setThumbnail(user1Discord.displayAvatarURL({ dynamic: true }))
       .setImage(cardUser1.image)
@@ -410,7 +532,9 @@ async function sendPrivateMessageForTrade(client, user1, user2, cardUser1, cardU
 
     const embedToReceive = new EmbedBuilder()
       .setTitle("📥 Tu vas recevoir cette carte")
-      .setDescription(`En échange, tu vas recevoir la carte ${cardUser2.fullName} de **${user2Discord.username}**.`)
+      .setDescription(
+        `En échange, tu vas recevoir la carte ${cardUser2.fullName} de **${user2Discord.username}**.`
+      )
       .setColor("#55FF55")
       .setThumbnail(user2Discord.displayAvatarURL({ dynamic: true }))
       .setImage(cardUser2.image)
@@ -420,8 +544,8 @@ async function sendPrivateMessageForTrade(client, user1, user2, cardUser1, cardU
 
     const row = new ActionRowBuilder().addComponents(
       new ButtonBuilder()
-        .setCustomId('copy_friend_code')
-        .setLabel('Copier le code ami')
+        .setCustomId("copy_friend_code")
+        .setLabel("Copier le code ami")
         .setStyle(ButtonStyle.Secondary)
     );
 
@@ -434,62 +558,89 @@ async function sendPrivateMessageForTrade(client, user1, user2, cardUser1, cardU
     });
 
     const collector = messageWithButton.createMessageComponentCollector({
-      filter: (i) => i.customId === 'copy_friend_code',
+      filter: (i) => i.customId === "copy_friend_code",
       time: 60000, // 60 secondes
     });
 
-    collector.on('collect', async (i) => {
-      await i.reply({ content: `Code ami copié : \`${idFriend}\``, ephemeral: true });
-
-
+    collector.on("collect", async (i) => {
+      await i.reply({
+        content: `Code ami copié : \`${idFriend}\``,
+        ephemeral: true,
+      });
     });
-
   } catch (error) {
     console.error("Erreur lors de l'envoi du message d'échange :", error);
   }
 }
 
-
-
 // fonction principale pour gérer les interactions
 async function handleInteraction(client, interaction) {
   if (!interaction.isCommand() && !interaction.isAutocomplete()) return;
 
-  const userId = interaction.user.id;
+  const authorCommandId = interaction.user.id;
 
   try {
-    const user = await getUserFromDb(userId);
+    const user = await getUserFromDb(authorCommandId);
     if (!user) {
       return handleUserNotRegistered(interaction);
     }
 
+    // ✅ Gérer les interactions d'autocomplétion
     if (interaction.isAutocomplete()) {
-      await handleAutocomplete(interaction);
-      return;
+      const commandName = interaction.commandName;
+
+      switch (commandName) {
+        case "removecard":
+        case "add_cards_to_offer":
+          await handleAutocompleteCard(interaction);
+        case "add_cards_wanted":
+          await handleAutocompleteCard(interaction);
+        case "showcard":
+          await handleAutocompleteCard(interaction);
+          break;
+        case "show_cards_to_offer":
+          await handleAutocompleteUser(interaction);
+          break;
+        case "show_cards_wanted":
+          await handleAutocompleteUser(interaction);
+          break;
+
+        default:
+          console.warn(
+            `Aucune autocomplétion définie pour la commande: ${commandName}`
+          );
+          break;
+      }
+      return; // On s'arrête ici pour les autocomplétions, PAS pour les commandes
     }
 
+    // ✅ Gérer les commandes normales
     const { commandName, options } = interaction;
 
     switch (commandName) {
       case "add_cards_to_offer":
-        await handleAddCardsToOffer(interaction, options, userId);
+        await handleAddCardsToOffer(interaction, options, authorCommandId);
         break;
 
       case "add_cards_wanted":
-        await handleAddCardsWanted(interaction, options, userId);
+        await handleAddCardsWanted(interaction, options, authorCommandId);
         break;
 
       case "show_cards_to_offer":
-        await handleShowCardToOffer(client, interaction, userId);
+        await handleShowCardToOffer(client, interaction, options, authorCommandId);
         break;
 
       case "show_cards_wanted":
-        await handleShowCardWanted(client, interaction, userId);
+        await handleShowCardWanted(client, interaction, options, authorCommandId);
         break;
 
       case "init":
       case "reset":
-        await interaction.reply(`${commandName.charAt(0).toUpperCase() + commandName.slice(1)} de ta collection en cours...`);
+        await interaction.reply(
+          `${
+            commandName.charAt(0).toUpperCase() + commandName.slice(1)
+          } de ta collection en cours...`
+        );
         break;
 
       case "listcards":
@@ -498,7 +649,9 @@ async function handleInteraction(client, interaction) {
 
       case "removecard":
         const removeCardId = options.getString("id");
-        await interaction.reply(`Carte ${removeCardId} retirée de ta collection !`);
+        await interaction.reply(
+          `Carte ${removeCardId} retirée de ta collection !`
+        );
         break;
 
       case "showcard":

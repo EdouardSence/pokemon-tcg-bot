@@ -89,6 +89,23 @@ const getUserByIdBd = async (id_bd) => {
   return user;
 };
 
+// recupere une liste de User par le name
+const getUsersByName = async (name) => {
+  const users = await sql`
+        SELECT * FROM "user" WHERE name LIKE ${name};
+      `;
+  return users;
+};
+
+// recupere tous les users
+const getAllUsers = async () => {
+  const users = await sql`
+        SELECT * FROM "user";
+      `;
+  return users;
+};
+
+
 // Vérifie si un utilisateur existe
 const userExists = async (id_discord) => {
   let user;
@@ -109,4 +126,4 @@ const createUser = async (id_discord, language, name,id_friend) => {
       RETURNING *`;
 };
 
-module.exports = { getUserByDiscordId,getUserByIdBd, userExists, createUser };
+module.exports = { getUserByDiscordId,getUserByIdBd, userExists, createUser, getUsersByName, getAllUsers};

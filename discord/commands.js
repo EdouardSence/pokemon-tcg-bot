@@ -36,10 +36,24 @@ const commands = [
     createCardListCommand("add_cards_wanted", "Ajoute une liste de cartes recherchées", false),
     new SlashCommandBuilder()
         .setName("show_cards_to_offer")
-        .setDescription("Affiche la liste des cartes à donner"),
+        .setDescription("Affiche la liste des cartes à donner")
+        .addStringOption(option =>
+            option
+                .setName("username")
+                .setDescription("Nom d'utilisateur")
+                .setAutocomplete(true)
+        ),
+
     new SlashCommandBuilder()
         .setName("show_cards_wanted")
-        .setDescription("Affiche la liste des cartes recherchées"),
+        .setDescription("Affiche la liste des cartes recherchées")
+        .addStringOption(option =>
+            option
+                .setName("username")
+                .setDescription("Nom d'utilisateur")
+                .setAutocomplete(true)
+        ),
+
     new SlashCommandBuilder()
         .setName("listcards")
         .setDescription("Affiche la liste de tes cartes"),
@@ -68,6 +82,9 @@ const commands = [
         ),
     new SlashCommandBuilder()
         .setName("users")
+        .setDescription("Récupère la liste des utilisateurs"),
+    new SlashCommandBuilder()
+        .setName("user_serveur")
         .setDescription("Récupère la liste des utilisateurs"),
 ];
 
