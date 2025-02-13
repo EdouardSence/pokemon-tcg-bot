@@ -227,7 +227,7 @@ async function handleShowCardWanted(client, interaction, options, authorCommandI
       response = await getUserFromDb(username);
       user = await client.users.fetch(response.id_discord);
     }
-  const cards_wanted = response.cards_wanted;
+    const cards_wanted = response.cards_wanted;
 
     if (!cards_wanted || cards_wanted.length === 0) {
       return await interaction.editReply("Tu n'as pas demandé de carte.");
@@ -327,7 +327,7 @@ async function handleShowCard(interaction, options) {
     console.error(error);
     await interaction.reply(
       error.response?.data?.error ||
-        "Erreur lors de la récupération de la carte."
+      "Erreur lors de la récupération de la carte."
     );
   }
 }
@@ -344,7 +344,7 @@ async function handleUsersList(interaction) {
     console.error(error);
     await interaction.reply(
       error.response?.data?.error ||
-        "Erreur lors de la récupération des utilisateurs."
+      "Erreur lors de la récupération des utilisateurs."
     );
   }
 }
@@ -637,14 +637,85 @@ async function handleInteraction(client, interaction) {
       case "init":
       case "reset":
         await interaction.reply(
-          `${
-            commandName.charAt(0).toUpperCase() + commandName.slice(1)
+          `${commandName.charAt(0).toUpperCase() + commandName.slice(1)
           } de ta collection en cours...`
         );
         break;
 
       case "listcards":
-        await interaction.reply("Affichage de ta collection en cours...");
+        // get wanted cards and cards to offer
+        const response = await getUserFromDb(authorCommandId);
+        let cardsToOffer = response.cards_to_offer;
+        let cardsWanted = response.cards_wanted;
+        // get card names and rarity from the database
+        const cardsToOfferDetails = await Promise.all(
+          cardsToOffer.map(async (card) => {
+            const res = await axios.get(`${API_URL}cards/${card.card_id}`, {
+              params: { id_discord: authorCommandId },
+            });
+            return res.data;
+          })
+        );
+
+        const cardsWantedDetails = await Promise.all(
+          cardsWanted.map(async (card) => {
+            const res = await axios.get(`${API_URL}cards/${card.card_id}`, {
+              params: { id_discord: authorCommandId },
+            });
+            return res.data;
+          })
+        );
+
+        // replace the card_id with the card name and rarity
+        cardsToOffer = cardsToOffer.map((card, index) => ({
+          ...card,
+          ...cardsToOfferDetails[index],
+        }));
+        cardsWanted = cardsWanted.map((card, index) => ({
+          ...card,
+          ...cardsWantedDetails[index],
+        }));
+
+        // create one embed that will contain all the cards, separated by a field
+        const embed = new EmbedBuilder()
+          .setTitle("Liste de tes cartes")
+          .setColor("#FF5555")
+          .setThumbnail(interaction.user.displayAvatarURL({ dynamic: true }))
+          .setTimestamp()
+          .setFooter({ text: "Collection Pokémon TCGP", iconURL: interaction.client.user.displayAvatarURL({ dynamic: true }) })
+          .addFields([
+            {
+              name: "Cartes à offrir",
+              value: cardsToOffer.length
+                ? cardsToOffer
+                  .map(card =>
+                    `**${card.name}**\n` +
+                    `ID: \`${card.card_id}\` x${card.amount || 1} ${getRaritySymbols(card.rarity)}`
+                  )
+                  .join("\n\n")
+                : "Aucune carte à offrir.",
+              inline: false,
+            },
+            {
+              name: "----------------------------------",
+              value: " ",
+              inline: false,
+            },
+            {
+              name: "Cartes recherchées",
+              value: cardsWanted.length
+                ? cardsWanted
+                  .map(card =>
+                    `**${card.name}**\n` +
+                    `ID: \`${card.card_id}\` x${card.amount || 1} ${getRaritySymbols(card.rarity)}`
+                  )
+                  .join("\n\n")
+                : "Aucune carte recherchée.",
+              inline: false,
+            }
+          ]);
+
+        await interaction.reply({ embeds: [embed] });
         break;
 
       case "removecard":

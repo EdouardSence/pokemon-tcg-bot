@@ -1,4 +1,4 @@
-const { Client, GatewayIntentBits, Partials, REST, Routes } = require('discord.js');
+const { Client, GatewayIntentBits, Partials, REST, Routes, ActivityType } = require('discord.js');
 const dotenv = require('dotenv');
 const { listenToDatabase } = require('./database');
 const { handleInteraction } = require('./interactions');
@@ -33,6 +33,11 @@ client.on("interactionCreate", (interaction) => handleInteraction(client, intera
 client.once("ready", () => {
   console.log(`Connecté en tant que ${client.user.tag}`);
   listenToDatabase(client);
+  // set presence
+  client.user.setPresence({
+    activities: [{ name: "les cartes", type: ActivityType.Watching }],
+    status: "online",
+  });
 });
 
 client.login(process.env.TOKEN);
