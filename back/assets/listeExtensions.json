@@ -1,0 +1,38 @@
+{
+  "A1": {
+    "extension_id": "A1",
+    "extension_en": "Genetic Apex",
+    "extension_fr": "puissance-genetique",
+    "isTradable": true
+  },
+  "A1a": {
+    "extension_id": "A1a",
+    "extension_en": "Mythical Island",
+    "extension_fr": "l-ile-fabuleuse",
+    "isTradable": true
+  },
+  "A2": {
+    "extension_id": "A2",
+    "extension_en": "Space-Time Smackdown",
+    "extension_fr": "choc-spatio-temporel",
+    "isTradable": true
+  },
+  "A2a": {
+    "extension_id": "A2a",
+    "extension_en": "Triumphant Light",
+    "extension_fr": "lumiere-triomphale",
+    "isTradable": true
+  },
+  "A2b": {
+    "extension_id": "A2b",
+    "extension_en": "Shining Revelry",
+    "extension_fr": "rejouissances-rayonnantes",
+    "isTradable": false
+  },
+  "PROMO": {
+    "extension_id": "PROMO",
+    "extension_en": "Promo A",
+    "extension_fr": "promo-a",
+    "isTradable": false
+  }
+}
