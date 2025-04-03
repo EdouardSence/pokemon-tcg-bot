@@ -2,7 +2,6 @@ const fs = require("fs");
 const axios = require("axios");
 const listeExtensions = require("./listeExtensions.json");
 // -------------- TRIE DU JSON  ----------------
-
 // function qui supprime cleaned_test.json et jsonFR et compare.json si ils existent
 function deleteFiles() {
   const filesToDelete = ["cleaned_test.json", "jsonFR.json", "compare.json"];
@@ -44,36 +43,7 @@ async function ETAPE1() {
         return value;
       }
 
-      // Détermine la rareté en fonction de packPoint
-      const rarityMap = {
-        35: 1,
-        70: 2,
-        150: 3,
-        500: 4,
-        400: 5,
-        1250: 6,
-        1500: 7,
-        1000: 8,
-        1350: 9,
-        2500: 10,
-      };
-
       const rarity = rarityMap[parsePackPoint(packPoint)] ?? null; // Définit null si packPoint n'est pas dans la liste
-
-      // Détermine le coût d'échange en fonction de la rareté
-      const tradeCostMap = {
-        1: 0,
-        2: 0,
-        3: 120,
-        4: 500,
-        5: 400,
-        6: 0,
-        7: 0,
-        8: 0,
-        9: 0,
-        10: 0,
-        null: 0,
-      };
 
       const tradeCost = tradeCostMap[rarity] ?? null; // Définit null si la rareté n'est pas dans la liste
 
@@ -118,15 +88,6 @@ async function ETAPE1() {
 // JSON FRANCAIS curl -X GET "https://phawpbusbqwdlbxaedev.supabase.co/rest/v1/cards?select=*" -H "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBoYXdwYnVzYnF3ZGxieGFlZGV2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzQ5NzQ1OTEsImV4cCI6MjA1MDU1MDU5MX0.pY-Zi1AoEuHHNgGB1yPuqy4cyA6vy57W4VSYrar0SiQ" -H "Accept: application/json"
 
 async function ETAPE2() {
-  var extensionFRBySetId = {
-    "puissance-genetique": "A1",
-    "l-ile-fabuleuse": "A1a",
-    "choc-spatio-temporel": "A2",
-    "lumiere-triomphale": "A2a",
-    "rejouissances-rayonnantes": "A2b",
-    "promo-a": "PROMO",
-  };
-
   // function with a int param, and return the same in string BUT with 0 in front like 1 -> 001, 10 -> 010, 100 -> 100
   function formatNumber(number) {
     return number.toString().padStart(3, "0");
@@ -171,28 +132,34 @@ async function ETAPE2() {
   );
 }
 
-// ETAPE 3 RAJOUTER LES NOMS FR
+// ETAPE 3 RAJOUTER LES NOMS FR + on ajoute les raretés manquantes
 
 async function ETAPE3() {
-  var extensionFRBySetId = {
-    A1: "puissance-genetique",
-    A1a: "l-ile-fabuleuse",
-    A2: "choc-spatio-temporel",
-    A2a: "lumiere-triomphale",
-    A2b: "rejouissances-rayonnantes",
-    "promo-a": "promo-a",
-  };
-
   const data = JSON.parse(fs.readFileSync("cleaned_test.json", "utf8"));
   const dataFR = JSON.parse(fs.readFileSync("./jsonFR.json", "utf8"));
 
   // pour chaque element de data, regarder si il y a le meme id dabs dataFR ET SI OUI, rajouter les fr: {name, set_name, image, fullName}
-
   var updatedData = data.map((pokemon) => {
     const matchingCard = dataFR.find((card) => card.pokemonID === pokemon.id);
     if (matchingCard) {
+      var rarity =
+        pokemon.rarity === null
+          ? mapRaritySymbol[matchingCard.rarity]
+          : pokemon.rarity;
+      var packPoint =
+        pokemon.pack_point === 0 || pokemon.pack_point === null
+          ? packPointMap[rarity]
+          : pokemon.pack_point;
+      var tradeCost =
+        pokemon.trade_cost === 0 || pokemon.trade_cost === null
+          ? tradeCostMap[rarity]
+          : pokemon.trade_cost;
       return {
         ...pokemon,
+        rarity: rarity,
+        pack_point: packPoint,
+        trade_cost: tradeCost,
+        raritySymbol: matchingCard.rarity,
         fr: {
           name: matchingCard.card_fr,
           set_name: matchingCard.set,
@@ -228,14 +195,13 @@ async function ETAPE3() {
 // QUELLE EXTENSION ET CARTE PEUVENT ETRE TRADE
 async function ETAPE4() {
   const data1 = JSON.parse(fs.readFileSync("cleaned_test.json", "utf8"));
-  // Mettre à jour les valeurs de set_name_fr et image_fr
   var updatedData = data1.map((pokemon) => {
     return {
       ...pokemon,
       isTradable:
         listeExtensions[pokemon.setId]?.isTradable === false
           ? false
-          : pokemon.rarity < 6,
+          : pokemon.rarity < 6 || pokemon.rarity !== null,
     };
   });
 
@@ -293,6 +259,15 @@ async function ETAPE5() {
   );
 }
 
+// remplacer le contenu de cards.json par le contenu de cleaned_test.json puis suppimer cleaned_test.json
+function ETAPE6() {
+  fs.copyFile("cleaned_test.json", "cards.json", (err) => {
+    if (err) throw err;
+    console.log("cards.json was updated with cleaned_test.json");
+  });
+  deleteFiles();
+}
+
 // (async function main() {
 //   await ETAPE1();
 //   await ETAPE2();
@@ -300,6 +275,10 @@ async function ETAPE5() {
 //   await ETAPE4();
 //   await ETAPE5();
 // })();
+
+// QUAND on est sur que tout est bon on peut faire ETAPE6
+ETAPE6()
+
 
 // deleteFiles();
 
@@ -328,3 +307,93 @@ async function ETAPE5() {
 //     }
 //     console.log('File has been cleaned and saved as listeExtensions.json');
 // });
+
+// ------------------------- FUNCTION CONSTANTES -------------------------
+var extensionFRBySetId = {
+  A1: "puissance-genetique",
+  A1a: "l-ile-fabuleuse",
+  A2: "choc-spatio-temporel",
+  A2a: "lumiere-triomphale",
+  A2b: "rejouissances-rayonnantes",
+  "promo-a": "promo-a",
+};
+
+var mapRaritySymbol2 = {
+  1: "♢",
+  2: "♢♢",
+  3: "♢♢♢",
+  4: "♢♢♢♢",
+  5: "☆",
+  6: "☆☆",
+  7: "☆☆☆",
+  8: "✧",
+  9: "✧✧",
+  10: "♛",
+  null: "-",
+};
+
+var mapRaritySymbol = {
+  "♢": 1,
+  "♢♢": 2,
+  "♢♢♢": 3,
+  "♢♢♢♢": 4,
+  "☆": 5,
+  "☆☆": 6,
+  "☆☆☆": 7,
+  "✧": 8,
+  "✧✧": 9,
+  "♛": 10,
+  "-": null,
+};
+
+// Détermine le coût d'échange en fonction de la rareté
+var tradeCostMap = {
+  1: 0,
+  2: 0,
+  3: 120,
+  4: 500,
+  5: 400,
+  6: 0,
+  7: 0,
+  8: 0,
+  9: 0,
+  10: 0,
+  null: 0,
+};
+
+// Détermine la rareté en fonction de packPoint
+const rarityMap = {
+  35: 1,
+  70: 2,
+  150: 3,
+  500: 4,
+  400: 5,
+  1250: 6,
+  1500: 7,
+  1000: 8,
+  1350: 9,
+  2500: 10,
+};
+
+// Determine les packPoint en fonction de la rareté
+const packPointMap = {
+  1: 35,
+  2: 70,
+  3: 150,
+  4: 500,
+  5: 400,
+  6: 1250,
+  7: 1500,
+  8: 1000,
+  9: 1350,
+  10: 2500,
+};
+
+var extensionFRBySetId = {
+  "puissance-genetique": "A1",
+  "l-ile-fabuleuse": "A1a",
+  "choc-spatio-temporel": "A2",
+  "lumiere-triomphale": "A2a",
+  "rejouissances-rayonnantes": "A2b",
+  "promo-a": "PROMO",
+};

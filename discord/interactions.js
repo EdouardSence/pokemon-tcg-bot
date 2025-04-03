@@ -27,7 +27,9 @@ const getRaritySymbols = (rarity) => {
     return "♦".repeat(rarity); // Losange
   } else if (rarity >= 5 && rarity <= 7) {
     return "★".repeat(rarity - 4); // Étoile
-  } else if (rarity === 8) {
+  } else if (rarity >= 8 && rarity <= 9) {
+    return "✧".repeat(rarity - 7); // Shiny
+  } else if (rarity === 10) {
     return "👑"; // Couronne
   }
   return "";
@@ -52,7 +54,9 @@ async function handleAddCardsToOffer(interaction, options, authorCommandId) {
 
   try {
     const requests = cardsList.map(({ id, amount }) =>
-      axios.post(`${API_URL}users/${authorCommandId}/card_to_offer/${id}`, { amount })
+      axios.post(`${API_URL}users/${authorCommandId}/card_to_offer/${id}`, {
+        amount,
+      })
     );
     await Promise.all(requests);
 
@@ -89,7 +93,9 @@ async function handleAddCardsWanted(interaction, options, authorCommandId) {
 
   try {
     const requests = cardsList.map(({ id, amount }) =>
-      axios.post(`${API_URL}users/${authorCommandId}/card_wanted/${id}`, { amount })
+      axios.post(`${API_URL}users/${authorCommandId}/card_wanted/${id}`, {
+        amount,
+      })
     );
     await Promise.all(requests);
 
@@ -107,7 +113,12 @@ async function handleAddCardsWanted(interaction, options, authorCommandId) {
   }
 }
 
-async function handleShowCardToOffer(client, interaction, options, authorCommandId) {
+async function handleShowCardToOffer(
+  client,
+  interaction,
+  options,
+  authorCommandId
+) {
   try {
     // get the discord_id by the interaction
     await interaction.deferReply({ ephemeral: false }); // On peut désactiver ephemeral pour que tout le monde voie
@@ -208,7 +219,12 @@ async function handleShowCardToOffer(client, interaction, options, authorCommand
   }
 }
 
-async function handleShowCardWanted(client, interaction, options, authorCommandId) {
+async function handleShowCardWanted(
+  client,
+  interaction,
+  options,
+  authorCommandId
+) {
   try {
     await interaction.deferReply({ ephemeral: false }); // On peut désactiver ephemeral pour que tout le monde voie
     const username = options.getString("username");
@@ -227,7 +243,7 @@ async function handleShowCardWanted(client, interaction, options, authorCommandI
       response = await getUserFromDb(username);
       user = await client.users.fetch(response.id_discord);
     }
-  const cards_wanted = response.cards_wanted;
+    const cards_wanted = response.cards_wanted;
 
     if (!cards_wanted || cards_wanted.length === 0) {
       return await interaction.editReply("Tu n'as pas demandé de carte.");
@@ -349,6 +365,116 @@ async function handleUsersList(interaction) {
   }
 }
 
+// commande pour supprimer son compte TODO faudra peut etre renforcer la sécurité un jour
+async function handleDeleteAccount(interaction) {
+  try {
+    const userId = interaction.user.id;
+
+    // Fetch user data to determine language
+    const user = await getUserFromDb(userId);
+    const isFrench = user.language === "fr";
+
+    const embed = new EmbedBuilder()
+      .setTitle(isFrench ? "❓ Confirmation" : "❓ Confirmation")
+      .setDescription(
+        isFrench
+          ? "Es-tu sûr de vouloir supprimer ton compte ? Cette action est irréversible."
+          : "Are you sure you want to delete your account? This action is irreversible."
+      )
+      .setColor("#FF5555");
+
+    const row = new ActionRowBuilder().addComponents(
+      new ButtonBuilder()
+        .setCustomId("confirm_delete_account")
+        .setLabel(isFrench ? "Oui, supprimer" : "Yes, delete")
+        .setStyle(ButtonStyle.Danger),
+      new ButtonBuilder()
+        .setCustomId("cancel_delete_account")
+        .setLabel(isFrench ? "Non, annuler" : "No, cancel")
+        .setStyle(ButtonStyle.Secondary)
+    );
+
+    await interaction.reply({
+      embeds: [embed],
+      components: [row],
+      ephemeral: true,
+    });
+
+    const collector = interaction.channel.createMessageComponentCollector({
+      filter: (i) =>
+        i.customId === "confirm_delete_account" ||
+        i.customId === "cancel_delete_account",
+      time: 30000, // 30 seconds
+    });
+
+    collector.on("collect", async (i) => {
+      if (i.user.id !== userId) {
+        return await i.reply({
+          content: isFrench
+            ? "❌ Tu ne peux pas interagir avec cette confirmation."
+            : "❌ You cannot interact with this confirmation.",
+          ephemeral: true,
+        });
+      }
+
+      if (i.customId === "confirm_delete_account") {
+        try {
+          await axios.delete(`${API_URL}users/${userId}`);
+          await i.update({
+            content: isFrench
+              ? "✅ Ton compte a été supprimé avec succès."
+              : "✅ Your account has been successfully deleted.",
+            embeds: [],
+            components: [],
+          });
+        } catch (error) {
+          console.error(error);
+          await i.update({
+            content:
+              error.response?.data?.error ||
+              (isFrench
+                ? "❌ Erreur lors de la suppression du compte."
+                : "❌ Error while deleting the account."),
+            embeds: [],
+            components: [],
+          });
+        }
+      } else if (i.customId === "cancel_delete_account") {
+        await i.update({
+          content: isFrench
+            ? "❌ Suppression du compte annulée."
+            : "❌ Account deletion canceled.",
+          embeds: [],
+          components: [],
+        });
+      }
+      collector.stop();
+    });
+
+    collector.on("end", async (_, reason) => {
+      if (reason === "time") {
+        await interaction.editReply({
+          content: isFrench
+            ? "⏰ Temps écoulé. Suppression du compte annulée."
+            : "⏰ Time expired. Account deletion canceled.",
+          embeds: [],
+          components: [],
+        });
+      }
+    });
+  } catch (error) {
+    console.error(error);
+    await interaction.reply({
+      content:
+        error.response?.data?.error ||
+        (isFrench
+          ? "❌ Une erreur est survenue. Veuillez réessayer plus tard."
+          : "❌ An error occurred. Please try again later."),
+      ephemeral: true,
+    });
+  }
+}
+
 // se declenche si l'utilisateur n'est pas enregistré
 async function handleUserNotRegistered(interaction) {
   try {
@@ -381,73 +507,219 @@ async function handleUserNotRegistered(interaction) {
       ephemeral: true,
     });
 
-    // Création du collector sur le message envoyé
     const collector = sentMessage.createMessageComponentCollector({
       filter: (i) => i.customId === "lang_fr" || i.customId === "lang_en",
-      time: 60000, // 60 secondes
+      time: 60000,
     });
 
     collector.on("collect", async (i) => {
-      if (i.customId === "lang_fr") {
-        await i.reply({
+      try {
+        // Ajout d'un try/catch ici
+        if (i.customId === "lang_fr") {
+          await i.reply({
+            content:
+              "Tu as choisi le français.\n\n📩 Envoie-moi ton code ami pour t'enregistrer !",
+            ephemeral: true,
+          });
+        } else {
+          await i.reply({
+            content:
+              "You chose English.\n\n📩 Send me your friend code to register!",
+            ephemeral: true,
+          });
+        }
+
+        const filter = (response) => response.author.id === i.user.id;
+        const messageCollector = i.channel.createMessageCollector({
+          filter,
+          time: 60000,
+          max: 1,
+        });
+
+        messageCollector.on("collect", async (message) => {
+          try {
+            // Ajout d'un try/catch dans l'event handler
+            if (message.author.id !== i.user.id) return;
+            const messageContent = message.content.toString();
+
+            // Option pour quitter
+            if (messageContent.toLowerCase() === "exit") {
+              try {
+                await message.delete();
+              } catch (deleteError) {
+                console.error(
+                  "Erreur lors de la suppression du message d'exit:",
+                  deleteError
+                );
+              }
+
+              await i.followUp({
+                content:
+                  i.customId === "lang_fr"
+                    ? "👋 Processus d'enregistrement annulé."
+                    : "👋 Registration process cancelled.",
+                ephemeral: true,
+              });
+
+              messageCollector.stop("exit");
+              return;
+            }
+
+            const friendCode = messageContent.replace(/[-\s]/g, "");
+
+            if (!/^\d{16}$/.test(friendCode)) {
+              await i.followUp({
+                content:
+                  i.customId === "lang_fr"
+                    ? "❌ Le code ami doit contenir 16 chiffres. Veuillez réessayer ou tapez 'exit' pour annuler."
+                    : "❌ Friend code must contain 16 digits. Please try again or type 'exit' to cancel.",
+                ephemeral: true,
+              });
+
+              // On ne stoppe pas le collecteur ici pour permettre à l'utilisateur de réessayer
+              return;
+            }
+
+            try {
+              // Ajout d'un try/catch spécifique pour l'appel API
+              const response = await axios.post(`${API_URL}users`, {
+                id_discord: message.author.id,
+                name: message.author.username,
+                id_friend: friendCode,
+                language: i.customId === "lang_fr" ? "fr" : "en",
+              });
+
+              if (response.data.error) {
+                console.error("API Error:", response.data.error);
+                if (
+                  response.data.error.data &&
+                  response.data.error.data.error
+                ) {
+                  console.error(
+                    "Detailed error:",
+                    response.data.error.data.error
+                  );
+                }
+
+                await i.followUp({
+                  content:
+                    i.customId === "lang_fr"
+                      ? "❌ Une erreur est survenue lors de l'enregistrement. Veuillez réessayer ou tapez 'exit' pour annuler."
+                      : "❌ An error occurred during registration. Please try again or type 'exit' to cancel.",
+                  ephemeral: true,
+                });
+
+                // On ne stoppe pas le collecteur pour permettre un nouvel essai
+                return;
+              }
+
+              // Succès - on informe l'utilisateur et on arrête le collecteur
+              await i.followUp({
+                content:
+                  i.customId === "lang_fr"
+                    ? "✅ Ton compte a été enregistré avec succès!"
+                    : "✅ Your account has been successfully registered!",
+                ephemeral: true,
+              });
+
+              messageCollector.stop("success");
+            } catch (apiError) {
+              console.error("Erreur lors de l'appel API:", apiError);
+
+              await i.followUp({
+                content:
+                  i.customId === "lang_fr"
+                    ? `❌ Erreur: ${
+                        apiError.response?.data?.error ||
+                        "Problème de communication avec le serveur"
+                      }. Veuillez réessayer ou tapez 'exit' pour annuler.`
+                    : `❌ Error: ${
+                        apiError.response?.data?.error ||
+                        "Communication issue with the server"
+                      }. Please try again or type 'exit' to cancel.`,
+                ephemeral: true,
+              });
+
+              // On ne stoppe pas le collecteur pour permettre un nouvel essai
+            }
+          } catch (collectorError) {
+            console.error(
+              "Erreur dans le collector de messages:",
+              collectorError
+            );
+          }
+        });
+
+        // Modifier le gestionnaire d'événement "end" pour préciser quand le collecteur s'arrête
+        messageCollector.on("end", (collected, reason) => {
+          if (reason === "time") {
+            try {
+              i.followUp({
+                content:
+                  i.customId === "lang_fr"
+                    ? "⏰ Délai d'attente expiré. Veuillez réessayer la commande."
+                    : "⏰ Timeout expired. Please try the command again.",
+                ephemeral: true,
+              });
+            } catch (timeoutError) {
+              console.error(
+                "Erreur lors de l'envoi du message d'expiration:",
+                timeoutError
+              );
+            }
+          }
+        });
+      } catch (buttonError) {
+        console.error("Erreur lors du traitement du bouton:", buttonError);
+        try {
+          i.reply({
+            content: "❌ Une erreur est survenue. Veuillez réessayer.",
+            ephemeral: true,
+          });
+        } catch (replyError) {
+          console.error("Impossible de répondre à l'interaction:", replyError);
+        }
+      }
+    });
+
+    collector.on("end", (collected, reason) => {
+      if (reason === "time" && collected.size === 0) {
+        try {
+          interaction.followUp({
+            content:
+              "⏰ Délai d'attente expiré pour la sélection de langue. Veuillez réessayer la commande.",
+            ephemeral: true,
+          });
+        } catch (error) {
+          console.error(
+            "Erreur lors de l'envoi du message d'expiration:",
+            error
+          );
+        }
+      }
+    });
+  } catch (error) {
+    console.error("Erreur principale dans handleUserNotRegistered:", error);
+    try {
+      if (!interaction.replied && !interaction.deferred) {
+        await interaction.reply({
           content:
-            "Tu as choisi le français.\n\n📩 Envoie-moi ton code ami pour t'enregistrer !",
+            "❌ Une erreur s'est produite lors de l'enregistrement. Veuillez réessayer plus tard.",
           ephemeral: true,
         });
       } else {
-        await i.reply({
+        await interaction.followUp({
           content:
-            "You chose English.\n\n📩 Send me your friend code to register!",
+            "❌ Une erreur s'est produite lors de l'enregistrement. Veuillez réessayer plus tard.",
           ephemeral: true,
         });
       }
-
-      // Création d'un collecteur pour capturer la réponse de l'utilisateur
-      const filter = (response) => response.author.id === i.user.id; // Filtrer pour ne prendre que la réponse de l'utilisateur
-      const messageCollector = i.channel.createMessageCollector({
-        filter,
-        time: 60000,
-        max: 1,
-      });
-
-      messageCollector.on("collect", async (message) => {
-        // if it's not the user who sent the message, return
-        if (message.author.id !== i.user.id) return;
-        const friendCode = message.content.replace(/-/g, "");
-
-        if (!/^\d{16}$/.test(friendCode)) {
-          return await message.reply({
-            content: "❌ Le code ami doit contenir 16 chiffres.",
-            ephemeral: true,
-          });
-        }
-
-        const response = await axios.post(`${API_URL}users`, {
-          id_discord: message.author.id,
-          name: message.author.username,
-          id_friend: message.content,
-          language: i.customId === "lang_fr" ? "fr" : "en",
-        });
-
-        if (response.data.error) {
-          await message.react("❌");
-          return await message.reply({
-            content: "❌ Une erreur est survenue lors de l'enregistrement.",
-            ephemeral: true,
-          });
-        }
-
-        // met une réaction pour confirmer l'enregistrement sur le message de l'utilisateur
-        await message.react("✅");
-        // puis on supprime le message au bout de 2 secondes
-        setTimeout(() => message.delete(), 2000);
-      });
-
-      // Ici tu peux appeler la fonction d'enregistrement de l'utilisateur
-    });
-  } catch (error) {
-    console.error(error);
-    await interaction.reply("Erreur lors de la récupération des utilisateurs.");
+    } catch (replyError) {
+      console.error(
+        "Impossible de répondre à l'interaction après une erreur:",
+        replyError
+      );
+    }
   }
 }
 
@@ -581,9 +853,6 @@ async function handleInteraction(client, interaction) {
 
   try {
     const user = await getUserFromDb(authorCommandId);
-    if (!user) {
-      return handleUserNotRegistered(interaction);
-    }
 
     // ✅ Gérer les interactions d'autocomplétion
     if (interaction.isAutocomplete()) {
@@ -615,39 +884,77 @@ async function handleInteraction(client, interaction) {
     }
 
     // ✅ Gérer les commandes normales
+
     const { commandName, options } = interaction;
 
     switch (commandName) {
       case "add_cards_to_offer":
+        if (!user) {
+          return await handleUserNotRegistered(interaction);
+        }
         await handleAddCardsToOffer(interaction, options, authorCommandId);
         break;
 
       case "add_cards_wanted":
+        if (!user) {
+          return await handleUserNotRegistered(interaction);
+        }
         await handleAddCardsWanted(interaction, options, authorCommandId);
         break;
 
       case "show_cards_to_offer":
-        await handleShowCardToOffer(client, interaction, options, authorCommandId);
+        if (!user) {
+          return await handleUserNotRegistered(interaction);
+        }
+        await handleShowCardToOffer(
+          client,
+          interaction,
+          options,
+          authorCommandId
+        );
         break;
 
       case "show_cards_wanted":
-        await handleShowCardWanted(client, interaction, options, authorCommandId);
+        if (!user) {
+          return await handleUserNotRegistered(interaction);
+        }
+        await handleShowCardWanted(
+          client,
+          interaction,
+          options,
+          authorCommandId
+        );
         break;
 
       case "init":
       case "reset":
+        if (!user) {
+          return await handleUserNotRegistered(interaction);
+        }
         await interaction.reply(
           `${
             commandName.charAt(0).toUpperCase() + commandName.slice(1)
           } de ta collection en cours...`
         );
         break;
-
+      case "delete_account":
+        if (!user) {
+          return await handleUserNotRegistered(interaction);
+        }
+        await handleDeleteAccount(interaction);
+        break;
       case "listcards":
+        if (!user) {
+          return await handleUserNotRegistered(interaction);
+        }
         await interaction.reply("Affichage de ta collection en cours...");
         break;
 
       case "removecard":
+        if (!user) {
+          return await handleUserNotRegistered(interaction);
+        }
+
         const removeCardId = options.getString("id");
         await interaction.reply(
           `Carte ${removeCardId} retirée de ta collection !`

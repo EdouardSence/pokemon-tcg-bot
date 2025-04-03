@@ -71,6 +71,9 @@ const commands = [
         .setName("reset")
         .setDescription("Réinitialise ta collection de cartes"),
     new SlashCommandBuilder()
+        .setName("delete_account")
+        .setDescription("Suppression de votre compte"),
+    new SlashCommandBuilder()
         .setName("showcard")
         .setDescription("Affiche une carte de ta collection")
         .addStringOption(option =>
