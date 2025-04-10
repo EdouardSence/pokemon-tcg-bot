@@ -52,24 +52,43 @@ async function handleAddCardsToOffer(interaction, options, authorCommandId) {
     return;
   }
 
+  const failedCards = [];
+
   try {
     const requests = cardsList.map(({ id, amount }) =>
-      axios.post(`${API_URL}users/${authorCommandId}/card_to_offer/${id}`, {
-        amount,
-      })
+      axios
+        .post(`${API_URL}users/${authorCommandId}/card_to_offer/${id}`, {
+          amount,
+        })
+        .catch((error) => {
+          failedCards.push({ id, amount, error: error.response?.data?.error });
+        })
     );
     await Promise.all(requests);
 
     const addedCards = cardsList
+      .filter(({ id }) => !failedCards.some((failed) => failed.id === id))
       .map(({ id, amount }) => `- Carte ${id} (x${amount ? amount : 1})`)
       .join("\n");
-    await interaction.editReply(
-      `Cartes ajoutées à ta collection :\n${addedCards}`
-    );
+
+    let replyMessage = `Cartes ajoutées à ta collection :\n${addedCards}`;
+    if (failedCards.length > 0) {
+      const failedCardsList = failedCards
+        .map(
+          ({ id, amount, error }) =>
+            `- Carte ${id} (x${amount ? amount : 1}) : ${
+              error || "Erreur inconnue"
+            }`
+        )
+        .join("\n");
+      replyMessage += `\n\nCartes non ajoutées :\n${failedCardsList}`;
+    }
+
+    await interaction.editReply(replyMessage);
   } catch (error) {
     console.error(error);
     await interaction.editReply(
-      error.response?.data?.error || "Erreur lors de l'ajout des cartes."
+      "Une erreur inattendue est survenue lors de l'ajout des cartes."
     );
   }
 }
@@ -91,24 +110,119 @@ async function handleAddCardsWanted(interaction, options, authorCommandId) {
     return;
   }
 
+  const failedCards = [];
+
   try {
     const requests = cardsList.map(({ id, amount }) =>
-      axios.post(`${API_URL}users/${authorCommandId}/card_wanted/${id}`, {
+      axios
+        .post(`${API_URL}users/${authorCommandId}/card_wanted/${id}`, {
+          amount,
+        })
+        .catch((error) => {
+          failedCards.push({ id, amount, error: error.response?.data?.error });
+        })
+    );
+    await Promise.all(requests);
+
+    const addedCards = cardsList
+      .filter(({ id }) => !failedCards.some((failed) => failed.id === id))
+      .map(({ id, amount }) => `- Carte ${id} (x${amount ? amount : 1})`)
+      .join("\n");
+
+    let replyMessage = `Cartes ajoutées à ta collection :\n${addedCards}`;
+    if (failedCards.length > 0) {
+      const failedCardsList = failedCards
+        .map(
+          ({ id, amount, error }) =>
+            `- Carte ${id} (x${amount ? amount : 1}) : ${
+              error || "Erreur inconnue"
+            }`
+        )
+        .join("\n");
+      replyMessage += `\n\nCartes non ajoutées :\n${failedCardsList}`;
+    }
+
+    await interaction.editReply(replyMessage);
+  } catch (error) {
+    console.error(error);
+    await interaction.editReply(
+      "Une erreur inattendue est survenue lors de l'ajout des cartes."
+    );
+  }
+}
+
+async function handleRemoveCardsToOffer(interaction, options, authorCommandId) {
+  await interaction.deferReply({ ephemeral: true });
+
+  const cardsList = [];
+  for (let i = 1; i <= 5; i++) {
+    const cardId = options.getString(`search${i}`);
+    if (!cardId) continue;
+
+    const amount = options.getInteger(`amount${i}`);
+    cardsList.push({ id: cardId, amount });
+  }
+  if (cardsList.length === 0) {
+    await interaction.editReply("Tu dois sélectionner au moins une carte !");
+    return;
+  }
+
+  try {
+    const requests = cardsList.map(({ id, amount }) =>
+      axios.delete(`${API_URL}users/${authorCommandId}/card_to_offer/${id}`, {
+        params: { amount: amount },
+      })
+    );
+    await Promise.all(requests);
+
+    const removedCards = cardsList
+      .map(({ id, amount }) => `- Carte ${id} (x${amount ? amount : 1})`)
+      .join("\n");
+    await interaction.editReply(
+      `Cartes retirées de ta collection :\n${removedCards}`
+    );
+  } catch (error) {
+    console.error(error);
+    await interaction.editReply(
+      error.response?.data?.error || "Erreur lors de la suppression des cartes."
+    );
+  }
+}
+
+async function handleRemoveCardsWanted(interaction, options, authorCommandId) {
+  await interaction.deferReply({ ephemeral: true });
+
+  const cardsList = [];
+  for (let i = 1; i <= 5; i++) {
+    const cardId = options.getString(`search${i}`);
+    if (!cardId) continue;
+
+    const amount = options.getInteger(`amount${i}`);
+    cardsList.push({ id: cardId, amount });
+  }
+  if (cardsList.length === 0) {
+    await interaction.editReply("Tu dois sélectionner au moins une carte !");
+    return;
+  }
+
+  try {
+    const requests = cardsList.map(({ id, amount }) =>
+      axios.delete(`${API_URL}users/${authorCommandId}/card_wanted/${id}`, {
         amount,
       })
     );
     await Promise.all(requests);
 
-    const addedCards = cardsList
+    const removedCards = cardsList
       .map(({ id, amount }) => `- Carte ${id} (x${amount ? amount : 1})`)
       .join("\n");
     await interaction.editReply(
-      `Cartes ajoutées à ta collection :\n${addedCards}`
+      `Cartes retirées de ta collection :\n${removedCards}`
     );
   } catch (error) {
     console.error(error);
     await interaction.editReply(
-      error.response?.data?.error || "Erreur lors de l'ajout des cartes."
+      error.response?.data?.error || "Erreur lors de la suppression des cartes."
     );
   }
 }
@@ -156,7 +270,7 @@ async function handleShowCardToOffer(
     const createMessagePayload = () => {
       const card = cards[index];
       const raritySymbols = getRaritySymbols(card.rarity);
-
+      
       const embed = new EmbedBuilder()
         .setTitle("Cartes à offrir")
         .setDescription(
@@ -475,6 +589,115 @@ async function handleDeleteAccount(interaction) {
   }
 }
 
+async function handleResetAccount(interaction) {
+  try {
+    const userId = interaction.user.id;
+
+    // Fetch user data to determine language
+    const user = await getUserFromDb(userId);
+    const isFrench = user.language === "fr";
+
+    const embed = new EmbedBuilder()
+      .setTitle(isFrench ? "❓ Confirmation" : "❓ Confirmation")
+      .setDescription(
+        isFrench
+          ? "Es-tu sûr de vouloir supprimer ta collection ? Cette action est irréversible."
+          : "Are you sure you want to delete your collection? This action is irreversible."
+      )
+      .setColor("#FF5555");
+
+    const row = new ActionRowBuilder().addComponents(
+      new ButtonBuilder()
+        .setCustomId("confirm_reset_account")
+        .setLabel(isFrench ? "Oui, supprimer" : "Yes, delete")
+        .setStyle(ButtonStyle.Danger),
+      new ButtonBuilder()
+        .setCustomId("cancel_reset_account")
+        .setLabel(isFrench ? "Non, annuler" : "No, cancel")
+        .setStyle(ButtonStyle.Secondary)
+    );
+
+    await interaction.reply({
+      embeds: [embed],
+      components: [row],
+      ephemeral: true,
+    });
+
+    const collector = interaction.channel.createMessageComponentCollector({
+      filter: (i) =>
+        i.customId === "confirm_reset_account" ||
+        i.customId === "cancel_reset_account",
+      time: 30000, // 30 seconds
+    });
+
+    collector.on("collect", async (i) => {
+      if (i.user.id !== userId) {
+        return await i.reply({
+          content: isFrench
+            ? "❌ Tu ne peux pas interagir avec cette confirmation."
+            : "❌ You cannot interact with this confirmation.",
+          ephemeral: true,
+        });
+      }
+
+      if (i.customId === "confirm_reset_account") {
+        try {
+          await axios.post(`${API_URL}users/${userId}/reset`);
+          await i.update({
+            content: isFrench
+              ? "✅ Ta collection a été supprimée avec succès."
+              : "✅ Your collection has been successfully deleted.",
+            embeds: [],
+            components: [],
+          });
+        } catch (error) {
+          console.error(error);
+          await i.update({
+            content:
+              error.response?.data?.error ||
+              (isFrench
+                ? "❌ Erreur lors de la suppression de la collection."
+                : "❌ Error while deleting the collection."),
+            embeds: [],
+            components: [],
+          });
+        }
+      } else if (i.customId === "cancel_reset_account") {
+        await i.update({
+          content: isFrench
+            ? "❌ Suppression de la collection annulée."
+            : "❌ Collection deletion canceled.",
+          embeds: [],
+          components: [],
+        });
+      }
+      collector.stop();
+    });
+
+    collector.on("end", async (_, reason) => {
+      if (reason === "time") {
+        await interaction.editReply({
+          content: isFrench
+            ? "⏰ Temps écoulé. Suppression de la collection annulée."
+            : "⏰ Time expired. Collection deletion canceled.",
+          embeds: [],
+          components: [],
+        });
+      }
+    });
+  } catch (error) {
+    console.error(error);
+    await interaction.reply({
+      content:
+        error.response?.data?.error ||
+        (isFrench
+          ? "❌ Une erreur est survenue. Veuillez réessayer plus tard."
+          : "❌ An error occurred. Please try again later."),
+      ephemeral: true,
+    });
+  }
+}
+
 // se declenche si l'utilisateur n'est pas enregistré
 async function handleUserNotRegistered(interaction) {
   try {
@@ -530,29 +753,28 @@ async function handleUserNotRegistered(interaction) {
         }
 
         const filter = (response) => response.author.id === i.user.id;
+        // Remove the max: 1 to allow multiple attempts
         const messageCollector = i.channel.createMessageCollector({
           filter,
-          time: 60000,
-          max: 1,
+          time: 120000, // Extended time to 2 minutes to give more time for retries
         });
 
         messageCollector.on("collect", async (message) => {
           try {
-            // Ajout d'un try/catch dans l'event handler
             if (message.author.id !== i.user.id) return;
             const messageContent = message.content.toString();
 
+            try {
+              await message.delete();
+            } catch (deleteError) {
+              console.error(
+                "Erreur lors de la suppression du message: ",
+                deleteError
+              );
+            }
+
             // Option pour quitter
             if (messageContent.toLowerCase() === "exit") {
-              try {
-                await message.delete();
-              } catch (deleteError) {
-                console.error(
-                  "Erreur lors de la suppression du message d'exit:",
-                  deleteError
-                );
-              }
-
               await i.followUp({
                 content:
                   i.customId === "lang_fr"
@@ -560,7 +782,6 @@ async function handleUserNotRegistered(interaction) {
                     : "👋 Registration process cancelled.",
                 ephemeral: true,
               });
-
               messageCollector.stop("exit");
               return;
             }
@@ -575,13 +796,11 @@ async function handleUserNotRegistered(interaction) {
                     : "❌ Friend code must contain 16 digits. Please try again or type 'exit' to cancel.",
                 ephemeral: true,
               });
-
-              // On ne stoppe pas le collecteur ici pour permettre à l'utilisateur de réessayer
+              // No return here allows the collector to continue listening
               return;
             }
 
             try {
-              // Ajout d'un try/catch spécifique pour l'appel API
               const response = await axios.post(`${API_URL}users`, {
                 id_discord: message.author.id,
                 name: message.author.username,
@@ -608,8 +827,7 @@ async function handleUserNotRegistered(interaction) {
                       : "❌ An error occurred during registration. Please try again or type 'exit' to cancel.",
                   ephemeral: true,
                 });
-
-                // On ne stoppe pas le collecteur pour permettre un nouvel essai
+                // Continue listening for more attempts
                 return;
               }
 
@@ -639,8 +857,7 @@ async function handleUserNotRegistered(interaction) {
                       }. Please try again or type 'exit' to cancel.`,
                 ephemeral: true,
               });
-
-              // On ne stoppe pas le collecteur pour permettre un nouvel essai
+              // Continue listening for more attempts
             }
           } catch (collectorError) {
             console.error(
@@ -779,69 +996,208 @@ async function handleAutocompleteUser(interaction) {
   }
 }
 
-// permet d'envoyer la notifcation de trade en message privé
-async function sendPrivateMessageForTrade(
-  client,
-  user1,
-  user2,
-  cardUser1,
-  cardUser2
-) {
+async function handleAutocompleteCardsToOffer(interaction) {
   try {
-    const user1Discord = await client.users.fetch(user1.id_discord);
-    const user2Discord = await client.users.fetch(user2.id_discord);
-    const idFriend = 1213141516; // Remplacer par le vrai code ami
+    const focusedOption = interaction.options.getFocused(true);
+    const { name, value } = focusedOption;
 
-    const embedToSend = new EmbedBuilder()
-      .setTitle("📤 Tu dois envoyer cette carte")
+    if (name.startsWith("search")) {
+      const response = await axios.get(
+        `${API_URL}users/${interaction.user.id}/cards_to_offer/autocomplete`,
+        {
+          params: { search: value },
+        }
+      );
+      await interaction.respond(
+        response.data.map((card) => ({
+          name:
+            " x" +
+            card.amount +
+            " " +
+            card.fullName +
+            " " +
+            getRaritySymbols(card.rarity),
+          value: card.id,
+        }))
+      );
+    }
+  } catch (error) {
+    console.error("Erreur lors de l'autocomplétion :", error);
+  }
+}
+
+async function handleAutocompleteCardsWanted(interaction) {
+  try {
+    const focusedOption = interaction.options.getFocused(true);
+    const { name, value } = focusedOption;
+    if (name.startsWith("search")) {
+      const response = await axios.get(
+        `${API_URL}users/${interaction.user.id}/cards_wanted/autocomplete`,
+        {
+          params: { search: value },
+        }
+      );
+      await interaction.respond(
+        response.data.map((card) => ({
+          name:
+            " x" +
+            card.amount +
+            " " +
+            card.fullName +
+            " " +
+            getRaritySymbols(card.rarity),
+          value: card.id,
+        }))
+      );
+    }
+  } catch (error) {
+    console.error("Erreur lors de l'autocomplétion :", error);
+  }
+}
+
+// // permet d'envoyer la notifcation de trade en message privé
+// async function sendPrivateMessageForTrade(
+//   client,
+//   user1,
+//   user2,
+//   cardUser1,
+//   cardUser2
+// ) {
+//   try {
+//     const user1Discord = await client.users.fetch(user1.id_discord);
+//     const user2Discord = await client.users.fetch(user2.id_discord);
+//     const idFriend = user2.id_friend;
+
+//     const embedToSend = new EmbedBuilder()
+//       .setTitle("📤 Tu dois envoyer cette carte")
+//       .setDescription(
+//         `Tu dois envoyer la carte ${cardUser1.fullName} à **${user2Discord.username}**.`
+//       )
+//       .setColor("#FF5555")
+//       .setThumbnail(user1Discord.displayAvatarURL({ dynamic: true }))
+//       .setImage(cardUser1.image)
+//       .setFooter({ text: "Assure-toi de bien envoyer cette carte !" });
+
+//     const embedToReceive = new EmbedBuilder()
+//       .setTitle("📥 Tu vas recevoir cette carte")
+//       .setDescription(
+//         `En échange, tu vas recevoir la carte ${cardUser2.fullName} de **${user2Discord.username}**.`
+//       )
+//       .setColor("#55FF55")
+//       .setThumbnail(user2Discord.displayAvatarURL({ dynamic: true }))
+//       .setImage(cardUser2.image)
+//       .setFooter({ text: "L'échange est en attente de confirmation." });
+
+//     const friendCodeMessage = `Le code ami de **${user2Discord.username}** est : \`${idFriend}\``;
+
+//     const row = new ActionRowBuilder().addComponents(
+//       new ButtonBuilder()
+//         .setCustomId("copy_friend_code")
+//         .setLabel("Copier le code ami")
+//         .setStyle(ButtonStyle.Secondary)
+//     );
+
+//     await user1Discord.send({ embeds: [embedToSend] });
+//     await user1Discord.send({ embeds: [embedToReceive] });
+
+//     const messageWithButton = await user1Discord.send({
+//       content: friendCodeMessage,
+//       components: [row],
+//     });
+
+//     const collector = messageWithButton.createMessageComponentCollector({
+//       filter: (i) => i.customId === "copy_friend_code",
+//       time: 60000, // 60 secondes
+//     });
+
+//     collector.on("collect", async (i) => {
+//       await i.reply({
+//         content: `Code ami copié : \`${idFriend}\``,
+//         ephemeral: true,
+//       });
+//     });
+//   } catch (error) {
+//     console.error("Erreur lors de l'envoi du message d'échange :", error);
+//   }
+// }
+
+async function handleHelp(interaction) {
+  try {
+    // Récupérer les données de l'utilisateur pour déterminer la langue
+    const userId = interaction.user.id;
+    let isFrench = true; // Par défaut en français
+
+    try {
+      const user = await getUserFromDb(userId);
+      isFrench = user.language === "fr";
+    } catch (error) {
+      // Si l'utilisateur n'est pas enregistré, on utilise le français par défaut
+      console.log(
+        "Utilisateur non enregistré, utilisation du français par défaut"
+      );
+    }
+
+    // Créer l'embed
+    const helpEmbed = new EmbedBuilder()
+      .setTitle(isFrench ? "📚 Guide des Commandes" : "📚 Commands Guide")
       .setDescription(
-        `Tu dois envoyer la carte ${cardUser1.fullName} à **${user2Discord.username}**.`
+        isFrench
+          ? "Voici la liste des commandes disponibles pour le bot de trading de cartes."
+          : "Here is the list of available commands for the card trading bot."
       )
       .setColor("#FF5555")
-      .setThumbnail(user1Discord.displayAvatarURL({ dynamic: true }))
-      .setImage(cardUser1.image)
-      .setFooter({ text: "Assure-toi de bien envoyer cette carte !" });
-
-    const embedToReceive = new EmbedBuilder()
-      .setTitle("📥 Tu vas recevoir cette carte")
-      .setDescription(
-        `En échange, tu vas recevoir la carte ${cardUser2.fullName} de **${user2Discord.username}**.`
+      .setThumbnail(interaction.client.user.displayAvatarURL({ dynamic: true }))
+      .addFields(
+        {
+          name: isFrench ? "🔹 Commandes de Base" : "🔹 Basic Commands",
+          value: isFrench
+            ? "• `/register` - Crée ton compte pour commencer à utiliser le bot.\n• `/showcard [search]` - Affiche une carte spécifique.\n• `/users` - Affiche la liste des utilisateurs enregistrés."
+            : "• `/register` - Create your account to start using the bot.\n• `/showcard [search]` - Display a specific card.\n• `/users` - Display the list of registered users.",
+        },
+        {
+          name: isFrench
+            ? "🔹 Gestion des Cartes à Offrir"
+            : "🔹 Managing Cards to Offer",
+          value: isFrench
+            ? "• `/add_cards_to_offer [search1-5] [amount1-5]` - Ajoute des cartes que tu veux offrir.\n• `/remove_cards_to_offer [search1-5] [amount1-5]` - Retire des cartes de ta liste d'offres.\n• `/show_cards_to_offer [username]` - Affiche tes cartes à offrir ou celles d'un autre utilisateur."
+            : "• `/add_cards_to_offer [search1-5] [amount1-5]` - Add cards you want to offer.\n• `/remove_cards_to_offer [search1-5] [amount1-5]` - Remove cards from your offer list.\n• `/show_cards_to_offer [username]` - Display your cards to offer or those of another user.",
+        },
+        {
+          name: isFrench
+            ? "🔹 Gestion des Cartes Recherchées"
+            : "🔹 Managing Wanted Cards",
+          value: isFrench
+            ? "• `/add_cards_wanted [search1-5] [amount1-5]` - Ajoute des cartes que tu recherches.\n• `/remove_cards_wanted [search1-5] [amount1-5]` - Retire des cartes de ta liste de recherche.\n• `/show_cards_wanted [username]` - Affiche tes cartes recherchées ou celles d'un autre utilisateur."
+            : "• `/add_cards_wanted [search1-5] [amount1-5]` - Add cards you are looking for.\n• `/remove_cards_wanted [search1-5] [amount1-5]` - Remove cards from your wanted list.\n• `/show_cards_wanted [username]` - Display your wanted cards or those of another user.",
+        },
+        {
+          name: isFrench ? "🔹 Gestion de Compte" : "🔹 Account Management",
+          value: isFrench
+            ? "• `/reset` - Réinitialise ta collection (supprime toutes tes cartes).\n• `/delete_account` - Supprime complètement ton compte."
+            : "• `/reset` - Reset your collection (delete all your cards).\n• `/delete_account` - Completely delete your account.",
+        },
+        {
+          name: isFrench ? "🔹 Aide" : "🔹 Help",
+          value: isFrench
+            ? "• `/help` - Affiche ce guide des commandes.\n\nUtilise l'autocomplétion pour faciliter la recherche de cartes et d'utilisateurs !"
+            : "• `/help` - Display this command guide.\n\nUse autocomplete to easily search for cards and users!",
+        }
       )
-      .setColor("#55FF55")
-      .setThumbnail(user2Discord.displayAvatarURL({ dynamic: true }))
-      .setImage(cardUser2.image)
-      .setFooter({ text: "L'échange est en attente de confirmation." });
+      .setFooter({
+        text: isFrench
+          ? "Pour plus d'informations, contactez un administrateur."
+          : "For more information, contact an administrator.",
+      })
+      .setTimestamp();
 
-    const friendCodeMessage = `Le code ami de **${user2Discord.username}** est : \`${idFriend}\``;
-
-    const row = new ActionRowBuilder().addComponents(
-      new ButtonBuilder()
-        .setCustomId("copy_friend_code")
-        .setLabel("Copier le code ami")
-        .setStyle(ButtonStyle.Secondary)
-    );
-
-    await user1Discord.send({ embeds: [embedToSend] });
-    await user1Discord.send({ embeds: [embedToReceive] });
-
-    const messageWithButton = await user1Discord.send({
-      content: friendCodeMessage,
-      components: [row],
-    });
-
-    const collector = messageWithButton.createMessageComponentCollector({
-      filter: (i) => i.customId === "copy_friend_code",
-      time: 60000, // 60 secondes
-    });
-
-    collector.on("collect", async (i) => {
-      await i.reply({
-        content: `Code ami copié : \`${idFriend}\``,
-        ephemeral: true,
-      });
-    });
+    // Envoi de l'embed
+    await interaction.reply({ embeds: [helpEmbed], ephemeral: false });
   } catch (error) {
-    console.error("Erreur lors de l'envoi du message d'échange :", error);
+    console.error("Erreur lors de l'affichage de l'aide :", error);
+    await interaction.reply({
+      content: "Une erreur est survenue lors de l'affichage de l'aide.",
+      ephemeral: true,
+    });
   }
 }
 
@@ -859,11 +1215,14 @@ async function handleInteraction(client, interaction) {
       const commandName = interaction.commandName;
 
       switch (commandName) {
-        case "removecard":
         case "add_cards_to_offer":
           await handleAutocompleteCard(interaction);
         case "add_cards_wanted":
           await handleAutocompleteCard(interaction);
+        case "remove_cards_to_offer":
+          await handleAutocompleteCardsToOffer(interaction);
+        case "remove_cards_wanted":
+          await handleAutocompleteCardsWanted(interaction);
         case "showcard":
           await handleAutocompleteCard(interaction);
           break;
@@ -873,7 +1232,6 @@ async function handleInteraction(client, interaction) {
         case "show_cards_wanted":
           await handleAutocompleteUser(interaction);
           break;
-
         default:
           console.warn(
             `Aucune autocomplétion définie pour la commande: ${commandName}`
@@ -902,6 +1260,20 @@ async function handleInteraction(client, interaction) {
         await handleAddCardsWanted(interaction, options, authorCommandId);
         break;
 
+      case "remove_cards_to_offer":
+        if (!user) {
+          return await handleUserNotRegistered(interaction);
+        }
+        await handleRemoveCardsToOffer(interaction, options, authorCommandId);
+        break;
+
+      case "remove_cards_wanted":
+        if (!user) {
+          return await handleUserNotRegistered(interaction);
+        }
+        await handleRemoveCardsWanted(interaction, options, authorCommandId);
+        break;
+
       case "show_cards_to_offer":
         if (!user) {
           return await handleUserNotRegistered(interaction);
@@ -925,17 +1297,17 @@ async function handleInteraction(client, interaction) {
           authorCommandId
         );
         break;
-
-      case "init":
       case "reset":
         if (!user) {
           return await handleUserNotRegistered(interaction);
         }
-        await interaction.reply(
-          `${
-            commandName.charAt(0).toUpperCase() + commandName.slice(1)
-          } de ta collection en cours...`
-        );
+        await handleResetAccount(interaction, options, authorCommandId);
+        break;
+      case "register":
+        if (user) {
+          return await interaction.reply("Tu es déjà enregistré !");
+        }
+        await handleUserNotRegistered(interaction);
         break;
       case "delete_account":
         if (!user) {
@@ -943,32 +1315,15 @@ async function handleInteraction(client, interaction) {
         }
         await handleDeleteAccount(interaction);
         break;
-      case "listcards":
-        if (!user) {
-          return await handleUserNotRegistered(interaction);
-        }
-        await interaction.reply("Affichage de ta collection en cours...");
-        break;
-
-      case "removecard":
-        if (!user) {
-          return await handleUserNotRegistered(interaction);
-        }
-
-        const removeCardId = options.getString("id");
-        await interaction.reply(
-          `Carte ${removeCardId} retirée de ta collection !`
-        );
-        break;
-
       case "showcard":
         await handleShowCard(interaction, options);
         break;
-
       case "users":
         await handleUsersList(interaction);
         break;
-
+      case "help":
+        await handleHelp(interaction);
+        break;
       default:
         break;
     }
@@ -980,6 +1335,5 @@ async function handleInteraction(client, interaction) {
 
 module.exports = {
   handleInteraction,
-  sendPrivateMessageForTrade,
   getUserFromDb,
 };

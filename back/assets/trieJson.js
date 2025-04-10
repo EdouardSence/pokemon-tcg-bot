@@ -199,9 +199,11 @@ async function ETAPE4() {
     return {
       ...pokemon,
       isTradable:
-        listeExtensions[pokemon.setId]?.isTradable === false
+        pokemon.rarity === null ||
+        pokemon.rarity >= 6 ||
+        !listeExtensions[pokemon.setId]?.isTradable
           ? false
-          : pokemon.rarity < 6 || pokemon.rarity !== null,
+          : true,
     };
   });
 
@@ -260,7 +262,7 @@ async function ETAPE5() {
 }
 
 // remplacer le contenu de cards.json par le contenu de cleaned_test.json puis suppimer cleaned_test.json
-function ETAPE6() {
+async function ETAPE6() {
   fs.copyFile("cleaned_test.json", "cards.json", (err) => {
     if (err) throw err;
     console.log("cards.json was updated with cleaned_test.json");
@@ -268,16 +270,16 @@ function ETAPE6() {
   deleteFiles();
 }
 
-// (async function main() {
-//   await ETAPE1();
-//   await ETAPE2();
-//   await ETAPE3();
-//   await ETAPE4();
-//   await ETAPE5();
-// })();
+(async function main() {
+  await ETAPE1();
+  await ETAPE2();
+  await ETAPE3();
+  await ETAPE4();
+  await ETAPE5();
+  await ETAPE6();
+})();
 
 // QUAND on est sur que tout est bon on peut faire ETAPE6
-ETAPE6()
 
 
 // deleteFiles();

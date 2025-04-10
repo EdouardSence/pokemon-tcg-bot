@@ -9,6 +9,7 @@ const getUserByDiscordId = async (discord_id) => {
             u.id_discord, 
             u.language,
             u.name,
+            u.id_friend,
             json_agg(DISTINCT jsonb_build_object('card_id', gc.card_id, 'amount', gc.amount)) AS cards_to_offer,
             json_agg(DISTINCT jsonb_build_object('card_id', rc.card_id, 'amount', rc.amount)) AS cards_wanted
         FROM 
@@ -30,6 +31,7 @@ const getUserByDiscordId = async (discord_id) => {
     id: users[0].id,
     id_discord: users[0].id_discord,
     name: users[0]?.name || null,
+    id_friend: users[0]?.id_friend || null,
     language: users[0].language.toLowerCase(),
     cards_to_offer: Array.isArray(users[0].cards_to_offer)
       ? users[0].cards_to_offer
@@ -54,6 +56,7 @@ const getUserByIdBd = async (id_bd) => {
             u.id_discord, 
             u.language,
             u.name,
+            u.id_friend,
             json_agg(DISTINCT jsonb_build_object('card_id', gc.card_id, 'amount', gc.amount)) AS cards_to_offer,
             json_agg(DISTINCT jsonb_build_object('card_id', rc.card_id, 'amount', rc.amount)) AS cards_wanted
         FROM 
@@ -75,6 +78,7 @@ const getUserByIdBd = async (id_bd) => {
     id: users[0].id,
     id_discord: users[0].id_discord,
     name: users[0]?.name || null,
+    id_friend: users[0]?.id_friend || null,
     language: users[0].language.toLowerCase(),
     cards_to_offer: Array.isArray(users[0].cards_to_offer)
       ? users[0].cards_to_offer
@@ -98,6 +102,7 @@ const getUserByIdFriend = async (id_friend) => {
             u.id_discord, 
             u.language,
             u.name,
+            u.id_friend,
             json_agg(DISTINCT jsonb_build_object('card_id', gc.card_id, 'amount', gc.amount)) AS cards_to_offer,
             json_agg(DISTINCT jsonb_build_object('card_id', rc.card_id, 'amount', rc.amount)) AS cards_wanted
         FROM 
@@ -119,6 +124,7 @@ const getUserByIdFriend = async (id_friend) => {
     id: users[0].id,
     id_discord: users[0].id_discord,
     name: users[0]?.name || null,
+    id_friend: users[0]?.id_friend || null,
     language: users[0].language.toLowerCase(),
     cards_to_offer: Array.isArray(users[0].cards_to_offer)
       ? users[0].cards_to_offer

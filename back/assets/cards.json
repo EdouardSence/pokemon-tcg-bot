@@ -5756,7 +5756,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Venusaur ex",
       "set_name": "Genetic Apex",
@@ -5779,7 +5779,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Exeggutor ex",
       "set_name": "Genetic Apex",
@@ -5802,7 +5802,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Charizard ex",
       "set_name": "Genetic Apex",
@@ -5825,7 +5825,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Arcanine ex",
       "set_name": "Genetic Apex",
@@ -5848,7 +5848,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Moltres ex",
       "set_name": "Genetic Apex",
@@ -5871,7 +5871,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Blastoise ex",
       "set_name": "Genetic Apex",
@@ -5894,7 +5894,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Starmie ex",
       "set_name": "Genetic Apex",
@@ -5917,7 +5917,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Articuno ex",
       "set_name": "Genetic Apex",
@@ -5940,7 +5940,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Pikachu ex",
       "set_name": "Genetic Apex",
@@ -5963,7 +5963,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Zapdos ex",
       "set_name": "Genetic Apex",
@@ -5986,7 +5986,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Gengar ex",
       "set_name": "Genetic Apex",
@@ -6009,7 +6009,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Mewtwo ex",
       "set_name": "Genetic Apex",
@@ -6032,7 +6032,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Machamp ex",
       "set_name": "Genetic Apex",
@@ -6055,7 +6055,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Marowak ex",
       "set_name": "Genetic Apex",
@@ -6078,7 +6078,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Wigglytuff ex",
       "set_name": "Genetic Apex",
@@ -6101,7 +6101,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Erika",
       "set_name": "Genetic Apex",
@@ -6124,7 +6124,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Misty",
       "set_name": "Genetic Apex",
@@ -6147,7 +6147,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Blaine",
       "set_name": "Genetic Apex",
@@ -6170,7 +6170,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Koga",
       "set_name": "Genetic Apex",
@@ -6193,7 +6193,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Giovanni",
       "set_name": "Genetic Apex",
@@ -6216,7 +6216,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Brock",
       "set_name": "Genetic Apex",
@@ -6239,7 +6239,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Sabrina",
       "set_name": "Genetic Apex",
@@ -6262,7 +6262,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Lt. Surge",
       "set_name": "Genetic Apex",
@@ -6285,7 +6285,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Moltres ex",
       "set_name": "Genetic Apex",
@@ -6308,7 +6308,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Articuno ex",
       "set_name": "Genetic Apex",
@@ -6331,7 +6331,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Zapdos ex",
       "set_name": "Genetic Apex",
@@ -6354,7 +6354,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Gengar ex",
       "set_name": "Genetic Apex",
@@ -6377,7 +6377,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Machamp ex",
       "set_name": "Genetic Apex",
@@ -6400,7 +6400,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Wigglytuff ex",
       "set_name": "Genetic Apex",
@@ -6423,7 +6423,7 @@
     "pack_point": 1500,
     "rarity": 7,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Charizard ex",
       "set_name": "Genetic Apex",
@@ -6446,7 +6446,7 @@
     "pack_point": 1500,
     "rarity": 7,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Pikachu ex",
       "set_name": "Genetic Apex",
@@ -6469,7 +6469,7 @@
     "pack_point": 1500,
     "rarity": 7,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Mewtwo ex",
       "set_name": "Genetic Apex",
@@ -6492,7 +6492,7 @@
     "pack_point": 1500,
     "rarity": 7,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Mew",
       "set_name": "Genetic Apex",
@@ -6515,7 +6515,7 @@
     "pack_point": 2500,
     "rarity": 10,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Charizard ex",
       "set_name": "Genetic Apex",
@@ -6538,7 +6538,7 @@
     "pack_point": 2500,
     "rarity": 10,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Pikachu ex",
       "set_name": "Genetic Apex",
@@ -6561,7 +6561,7 @@
     "pack_point": 2500,
     "rarity": 10,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Mewtwo ex",
       "set_name": "Genetic Apex",
@@ -8286,7 +8286,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Celebi ex",
       "set_name": "Mythical Island",
@@ -8309,7 +8309,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Gyarados ex",
       "set_name": "Mythical Island",
@@ -8332,7 +8332,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Mew ex",
       "set_name": "Mythical Island",
@@ -8355,7 +8355,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Aerodactyl ex",
       "set_name": "Mythical Island",
@@ -8378,7 +8378,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Pidgeot ex",
       "set_name": "Mythical Island",
@@ -8401,7 +8401,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Budding Expeditioner",
       "set_name": "Mythical Island",
@@ -8424,7 +8424,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Blue",
       "set_name": "Mythical Island",
@@ -8447,7 +8447,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Leaf",
       "set_name": "Mythical Island",
@@ -8470,7 +8470,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Mew ex",
       "set_name": "Mythical Island",
@@ -8493,7 +8493,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Aerodactyl ex",
       "set_name": "Mythical Island",
@@ -8516,7 +8516,7 @@
     "pack_point": 1500,
     "rarity": 7,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Celebi ex",
       "set_name": "Mythical Island",
@@ -8539,7 +8539,7 @@
     "pack_point": 2500,
     "rarity": 10,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Mew ex",
       "set_name": "Mythical Island",
@@ -12679,7 +12679,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Yanmega ex",
       "set_name": "Space-Time Smackdown",
@@ -12702,7 +12702,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Infernape ex",
       "set_name": "Space-Time Smackdown",
@@ -12725,7 +12725,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Palkia ex",
       "set_name": "Space-Time Smackdown",
@@ -12748,7 +12748,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Pachirisu ex",
       "set_name": "Space-Time Smackdown",
@@ -12771,7 +12771,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Mismagius ex",
       "set_name": "Space-Time Smackdown",
@@ -12794,7 +12794,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Gallade ex",
       "set_name": "Space-Time Smackdown",
@@ -12817,7 +12817,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Weavile ex",
       "set_name": "Space-Time Smackdown",
@@ -12840,7 +12840,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Darkrai ex",
       "set_name": "Space-Time Smackdown",
@@ -12863,7 +12863,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Dialga ex",
       "set_name": "Space-Time Smackdown",
@@ -12886,7 +12886,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Lickilicky ex",
       "set_name": "Space-Time Smackdown",
@@ -12909,7 +12909,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Cyrus",
       "set_name": "Space-Time Smackdown",
@@ -12932,7 +12932,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Team Galactic Grunt",
       "set_name": "Space-Time Smackdown",
@@ -12955,7 +12955,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Cynthia",
       "set_name": "Space-Time Smackdown",
@@ -12978,7 +12978,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Volkner",
       "set_name": "Space-Time Smackdown",
@@ -13001,7 +13001,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Dawn",
       "set_name": "Space-Time Smackdown",
@@ -13024,7 +13024,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Mars",
       "set_name": "Space-Time Smackdown",
@@ -13047,7 +13047,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Yanmega ex",
       "set_name": "Space-Time Smackdown",
@@ -13070,7 +13070,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Infernape ex",
       "set_name": "Space-Time Smackdown",
@@ -13093,7 +13093,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Pachirisu ex",
       "set_name": "Space-Time Smackdown",
@@ -13116,7 +13116,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Mismagius ex",
       "set_name": "Space-Time Smackdown",
@@ -13139,7 +13139,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Gallade ex",
       "set_name": "Space-Time Smackdown",
@@ -13162,7 +13162,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Weavile ex",
       "set_name": "Space-Time Smackdown",
@@ -13185,7 +13185,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Darkrai ex",
       "set_name": "Space-Time Smackdown",
@@ -13208,7 +13208,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Lickilicky ex",
       "set_name": "Space-Time Smackdown",
@@ -13231,7 +13231,7 @@
     "pack_point": 1500,
     "rarity": 7,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Palkia ex",
       "set_name": "Space-Time Smackdown",
@@ -13254,7 +13254,7 @@
     "pack_point": 1500,
     "rarity": 7,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Dialga ex",
       "set_name": "Space-Time Smackdown",
@@ -13277,7 +13277,7 @@
     "pack_point": 2500,
     "rarity": 10,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Palkia ex",
       "set_name": "Space-Time Smackdown",
@@ -13300,7 +13300,7 @@
     "pack_point": 2500,
     "rarity": 10,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Dialga ex",
       "set_name": "Space-Time Smackdown",
@@ -15186,7 +15186,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Leafeon ex",
       "set_name": "Triumphant Light",
@@ -15209,7 +15209,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Glaceon ex",
       "set_name": "Triumphant Light",
@@ -15232,7 +15232,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Garchomp ex",
       "set_name": "Triumphant Light",
@@ -15255,7 +15255,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Probopass ex",
       "set_name": "Triumphant Light",
@@ -15278,7 +15278,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Arceus ex",
       "set_name": "Triumphant Light",
@@ -15301,7 +15301,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Irida",
       "set_name": "Triumphant Light",
@@ -15324,7 +15324,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Celestic Town Elder",
       "set_name": "Triumphant Light",
@@ -15347,7 +15347,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Barry",
       "set_name": "Triumphant Light",
@@ -15370,7 +15370,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Adaman",
       "set_name": "Triumphant Light",
@@ -15393,7 +15393,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Leafeon ex",
       "set_name": "Triumphant Light",
@@ -15416,7 +15416,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Glaceon ex",
       "set_name": "Triumphant Light",
@@ -15439,7 +15439,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Garchomp ex",
       "set_name": "Triumphant Light",
@@ -15462,7 +15462,7 @@
     "pack_point": 1250,
     "rarity": 6,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Probopass ex",
       "set_name": "Triumphant Light",
@@ -15485,7 +15485,7 @@
     "pack_point": 1500,
     "rarity": 7,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Arceus ex",
       "set_name": "Triumphant Light",
@@ -15508,7 +15508,7 @@
     "pack_point": 2500,
     "rarity": 10,
     "trade_cost": 0,
-    "isTradable": true,
+    "isTradable": false,
     "en": {
       "name": "Arceus ex",
       "set_name": "Triumphant Light",

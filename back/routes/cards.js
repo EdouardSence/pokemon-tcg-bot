@@ -17,6 +17,10 @@ router.get("/", async (req, res) => {
 });
 
 // Autocompletion pour trouver les cartes
+const removeAccents = (str) => {
+  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+};
+
 router.get("/autocomplete", async (req, res) => {
   try {
     let { search, id_discord, isTradable } = req.query;
@@ -36,13 +40,15 @@ router.get("/autocomplete", async (req, res) => {
     search = search || "";
     isTradable = isTradable === "true"; // Convertir string en boolean
 
+    const normalizedSearch = removeAccents(search.toLowerCase());
+
     const cards = await getAllCards();
     const filteredCards = cards
       .filter((card) => {
         // Vérifier si la recherche correspond à une partie du nom ou de l'id
-        const matchesSearch = card[user.language].fullName
-          .toLowerCase()
-          .includes(search.toLowerCase());
+        const matchesSearch = removeAccents(
+          card[user.language].fullName.toLowerCase()
+        ).includes(normalizedSearch);
 
         // Vérifier si la carte est tradable si nécessaire
         const matchesTradable = !isTradable || card.isTradable;
